@@ -1,2 +1,0 @@
-# ppinc
-PorkyPictures.inc
