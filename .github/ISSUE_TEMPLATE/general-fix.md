@@ -15,9 +15,10 @@ A clear and concise description of what the fix and the problem is.
 If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
+ - OS: [e.g. macOS, Windows, Linux (if Linux, please state distro)]
+ - Browser [e.g. chrome, safari, firefox]
  - Version [e.g. 22]
+
 
 if possible, add debug data
 
