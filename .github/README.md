@@ -20,7 +20,9 @@ Productions of Porky
 
 `games` is the page that contains all the games that we make.
  
-`header.css` is the CSS settings for all files
+`header.css` is the CSS settings for the header
+
+`pagestyle.css` is the CSS settings for the pages
 
 `Header.js` is the JavaScript settings the heading/navbar
 
