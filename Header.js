@@ -11,3 +11,4 @@ function ModifyHeader() {
         $("#logoText").hide();
     }
 }
+
