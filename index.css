@@ -1,0 +1,21 @@
+.mainBody {
+    font-size: 18px;
+    
+}
+.mainBody-intro-container {
+    display:flex;
+    justify-content:center;
+}
+.mainBody-intro{
+    background-color: lightgoldenrodyellow;
+    padding: 100px 250px 100px 250px;
+    margin: 50px 0px 50px 0px;
+    
+    
+}
+.mainBody-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+        
+}
