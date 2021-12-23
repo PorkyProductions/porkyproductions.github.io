@@ -1,6 +1,7 @@
 // JavaScript source code
-let ORIENTATION_isLandscape = true;
 
+//SCREEN ORIENTATION
+let ORIENTATION_isLandscape = true;
 $(document).ready(function () {
     DetectScreenOrientation();
 })
@@ -15,3 +16,15 @@ function DetectScreenOrientation() {
     ORIENTATION_isLandscape = (window.innerHeight <= window.innerWidth);
     return ORIENTATION_isLandscape;
 }
+//DEVICE TYPE
+const DetectDeviceType = () => {
+    const ua = navigator.userAgent;
+    if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+        return "tablet";
+    }
+    else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+        return "mobile";
+    }
+    return "desktop";
+};
+let DEVICE_type = DetectDeviceType();
