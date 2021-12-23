@@ -1,20 +1,13 @@
 // JavaScript source code
 
 $(document).ready(function () {
+    console.log("ready");
     ModifyHeader();
 })
-jQuery(window).on("orientationchange", function (event) {
-    //When screen orientation changes
-    ModifyHeader();
 
-});
 function ModifyHeader() {
-    if (ORIENTATION_isLandscape) {
-        //if current screen orientation is horizontal / landscape
-        $('logoText').show();
-    } else {
-        //portrait
-        $('logoText').hide();
-
+    console.log(DEVICE_type);
+    if (DEVICE_type == "mobile") {
+        $("#logoText").hide();
     }
 }
