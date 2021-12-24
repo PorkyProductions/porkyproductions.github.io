@@ -1,13 +1,13 @@
 // Main page javascript
 
 const HomeMain = {
-    init: function() {
+    init: function () {
         this.bindEvents();
     }
-    , bindEvents: function() {
+    , bindEvents: function () {
         document.getElementById('search-input').addEventListener('keyup', this.search);
     }
-    , search: function(e) {
+    , search: function (e) {
         const search_input = document.getElementById('search-input');
         const search_button = document.getElementById('search-button');
         const search_results = document.getElementById('search-results');
@@ -28,7 +28,7 @@ const HomeMain = {
             search_results.style.display = 'none';
             search_button.style.display = 'none';
         }
-    }, search_ajax: function(search_input) {
+    }, search_ajax: function (search_input) {
         const search_results_list = document.getElementById('search-results-list');
         const search_results_none = document.getElementById('search-results-none');
         const search_results = document.getElementById('search-results');
@@ -49,7 +49,7 @@ const HomeMain = {
         const xhr = new XMLHttpRequest();
         const url = '/search/' + search_input;
         xhr.open('GET', url, true);
-        xhr.onreadystatechange = function() {
+        xhr.onreadystatechange = function () {
             if (xhr.readyState == 4 && xhr.status == 200) {
                 const json = JSON.parse(xhr.responseText);
                 if (json.length > 0) {
@@ -73,6 +73,6 @@ const HomeMain = {
     }
 };
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     HomeMain.init();
 });
