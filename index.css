@@ -1,28 +1,25 @@
 .mainBody {
-    font-size: 18px;
-    line-height: 30px;
+  font-size: 18px;
+  line-height: 30px;
 }
 .mainBody-intro-container {
-    display:flex;
-    background-color: lightgoldenrodyellow;
-
+  display: flex;
+  background-color: lightgoldenrodyellow;
 }
-.mainBody-intro{
-    padding: 0px 0px 0px 250px;
-    max-width: 800px;
-    margin: 50px 0px 50px 0px;
-    text-align: left;
-    
+.mainBody-intro {
+  padding: 0px 0px 0px 250px;
+  max-width: 800px;
+  margin: 50px 0px 50px 0px;
+  text-align: left;
 }
-.mainBody-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 400px;
-        
+.mainBody-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px;
 }
-.mainBody-tile{
-    padding: 50px;
-    margin: 50px;
-    border: 5px solid lightblue;
-    border-radius: 10px;
+.mainBody-tile {
+  padding: 50px;
+  margin: 50px;
+  border: 5px solid lightblue;
+  border-radius: 10px;
 }
