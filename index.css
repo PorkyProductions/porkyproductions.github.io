@@ -4,11 +4,12 @@
 }
 .mainBody-intro-container {
     display:flex;
+    background-color: lightgoldenrodyellow;
 
 }
 .mainBody-intro{
-    background-color: lightgoldenrodyellow;
-    padding: 100px 57.2% 100px 250px;
+    padding: 0px 0px 0px 250px;
+    max-width: 800px;
     margin: 50px 0px 50px 0px;
     text-align: left;
     
