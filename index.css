@@ -16,7 +16,13 @@
 }
 .mainBody-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 400px;
         
+}
+.mainBody-tile{
+    padding: 50px;
+    margin: 50px;
+    border: 5px solid lightblue;
+    border-radius: 10px;
 }
