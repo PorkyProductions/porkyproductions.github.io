@@ -15,3 +15,11 @@
   margin-bottom: auto;
   font-family: Arial;
 }
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: block;
+}
