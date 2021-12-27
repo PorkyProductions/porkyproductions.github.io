@@ -3,14 +3,13 @@
 
 ### Step 1: Don't
 
-We are an open source project, but most of the development is handled by PorkyProductions. You can still contribute, and we LOVE new ideas for insults and stuff, but be aware that most development is handled by PorkyProductions.
+We are an open source project, but most of the development is handled by PorkyProductions. You can still contribute, but be aware that most development is handled by PorkyProductions.
 
 ### Step 2: Decide what the problem is
 
 #### **Did you find a bug?**
 
-* **Do not open up a GitHub issue if the bug is a security vulnerability
-  in DMV**, and instead to refer to our Communtiy Guidelines for contact info.
+* **Do not open up a GitHub issue if the bug is a security vulnerability**, and instead to refer to our Communtiy Guidelines for contact info.
 
 * **Ensure the bug was not already reported** by searching on GitHub under [Issues](https://github.com/PorkyProductions/ppinc/issues).
 
