@@ -11,6 +11,7 @@
 
     <script src="js/Utility.js"></script>
     <script src="js/Header.js"></script>
+    <script src="js/models.js"></script>
 
     <link rel="stylesheet" href="css/Header.css" />
     <link rel="stylesheet" href="css/MasterStyle.css" />
@@ -49,12 +50,13 @@
         <div class="mainBody-grid">
             <div class="mainBody-tile">
                 <h3>
-                    Hedgehog - By Tristan 
+                    Hedgehog - By Tristan
                 </h3>
                 <a href="models/hedgehog.stl">Download Hedgehog Model (.stl)</a>
                 <br />
-                <img src="images/HedgehogModel_Front.png" width ="300"alt="Hedgehog Model Front"/>
-                <img src="images/HedgehogModel_Side.png" width ="300"alt="Hedgehog Model Front"/>
+                <button id="button_HedgehogPreviewLeft"></button>
+                <img id="hedgehogModelPreview" src="images/HedgehogPreview_Front.png" width ="300"height="250" alt="Hedgehog Model Front" />
+                <button id="button_HedgehogPreviewRight"></button>
             </div>
             <div class="mainBody-tile">
                 <h3>
@@ -67,9 +69,10 @@
                     <a href="models/old boooke.blend">Download Old Books Model (.blend)</a>
                     <br>
                     <br>
-                    <img src="images/books.png" width ="300"alt="Old Books Model"/>
+                    <img src="images/books.png" width ="300"height ="250"alt="Old Books Model"/>
 
                 </p>
+            </div>
             
         </div>
     </div>
