@@ -28,3 +28,9 @@ const DetectDeviceType = () => {
     return "desktop";
 };
 let DEVICE_type = DetectDeviceType();
+
+
+// IF the device is a mobile device or a tablet device, hide the "#logoText" element
+if (DEVICE_type == "mobile") {
+    $("#logoText").hide();
+}
