@@ -1,28 +1,28 @@
 .mainBody-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .mainBody-tile {
-    padding: 50px;
-    margin: 50px;
-    border: 5px solid lightblue;
-    border-radius: 30px;
-    text-align: left;
+  padding: 50px;
+  margin: 50px;
+  border: 5px solid lightblue;
+  border-radius: 30px;
+  text-align: left;
 }
 
 .buttonBigger {
-    color: #fff;
-    padding: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 30px;
-    display: inline-block;
-    border: none;
-    font-family: "Inter", sans-serif;
-    background: linear-gradient(90deg, #439816, #166f98);
-    background-size: 100%;        
-  }
+  color: #fff;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+  display: inline-block;
+  border: none;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(90deg, #439816, #166f98);
+  background-size: 100%;
+}
 
-/* ^^ BE WARNED: CHANGING THE COLOR OF THE buttonBigger CLASS WILL CHANGE THE COLOR OF ALL THE BUTTONS ON THE SITE ^^ */ 
+/* ^^ BE WARNED: CHANGING THE COLOR OF THE buttonBigger CLASS WILL CHANGE THE COLOR OF ALL THE BUTTONS ON THE SITE ^^ */
 /* CREATE A NEW CLASS IF YOU WANT TO CHANGE THE COLOR OF THE BUTTONS */

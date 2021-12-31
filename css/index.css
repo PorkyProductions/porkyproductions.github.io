@@ -15,7 +15,6 @@
 .mainBody-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
 }
 .mainBody-tile {
   padding: 50px;

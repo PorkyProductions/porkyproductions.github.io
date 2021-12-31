@@ -15,7 +15,6 @@ Productions of Porky
 
 ## Files
 
-
 `index.html` is the main page of the website.
 
 `404` is our error page.
@@ -25,7 +24,7 @@ Productions of Porky
 `3DPrints.html` is the page that contains all the 3D prints that we make.
 
 `develop.html` is the page that contains all of the technologies that we developed.
- 
+
 `Header.css` is the CSS settings for the header
 
 `MasterStyle.css` is the CSS settings for the pages
@@ -35,9 +34,3 @@ Productions of Porky
 `HomeMain.js` is the JavaScript settings for the main page
 
 `Utility.js` is the JavaScript settings for all the other pages
-
-
-
-
-
- 

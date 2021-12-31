@@ -28,17 +28,17 @@ class ImagePreview {
         this.pointer++;
         this.pointer = this.pointer % this.length;
     }
-    
+
     MovePointerLeft() {
         this.pointer--;
         if (this.pointer < 0) {
             this.pointer = this.length - 1;
-        }      
+        }
     }
     OnSwitchRight() {
         this.MovePointerRight();
         $(this.elementID).attr("src", this.GetCurrentImage());
-        
+
     }
     OnSwitchLeft() {
         this.MovePointerLeft();
@@ -46,7 +46,7 @@ class ImagePreview {
     }
 }
 $(document).ready(function () {
-    var HedgehogModelPreview = new ImagePreview("hedgehogModelPreview", ["HedgehogPreview_Front", "HedgehogPreview_Side", "HedgehogPreview_Top","HedgehogPreview_Back"]);
+    var HedgehogModelPreview = new ImagePreview("hedgehogModelPreview", ["HedgehogPreview_Front", "HedgehogPreview_Side", "HedgehogPreview_Top", "HedgehogPreview_Back"]);
     $("#button_HedgehogPreviewLeft").click(function () {
         HedgehogModelPreview.OnSwitchLeft();
     })
