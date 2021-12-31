@@ -20,6 +20,9 @@
     display: inline-block;
     border: none;
     font-family: "Inter", sans-serif;
-    background: linear-gradient(90deg, hsla(99, 75%, 34%, 1), hsla(199, 75%, 34%, 1));
+    background: linear-gradient(90deg, #439816, #166f98);
     background-size: 100%;        
   }
+
+/* ^^ BE WARNED: CHANGING THE COLOR OF THE buttonBigger CLASS WILL CHANGE THE COLOR OF ALL THE BUTTONS ON THE SITE ^^ */ 
+/* CREATE A NEW CLASS IF YOU WANT TO CHANGE THE COLOR OF THE BUTTONS */
