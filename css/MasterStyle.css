@@ -23,3 +23,12 @@
   width: 100%;
   display: block;
 }
+
+.centerAri {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: block;
+  font-family: Arial;
+}

@@ -1,5 +1,9 @@
 # PorkyProductions.io
 
+## Status
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/06ce0012-d18f-42dc-9085-ba48e11ec983/deploy-status)](https://app.netlify.com/sites/practical-lamport-2debac/deploys)
+
 ## Technologies We Use
 
 <img alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
