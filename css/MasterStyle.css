@@ -43,6 +43,7 @@
   font-family: Arial;
 }
 
+
 .blue-gradient {
   border-radius: 13px;
   background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
@@ -61,3 +62,10 @@
       background-position: 0% 50%;
     }
   };
+
+.blue-purp-gradient {
+  border-radius: 13px;
+  background: linear-gradient(90deg, #0062ff 0%, #ff00f2 100%);
+          background-size : "400% 400%";
+          animation : "gradient 25s ease infinite";
+      }
