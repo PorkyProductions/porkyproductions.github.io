@@ -19,9 +19,11 @@ Productions of Porky
 
 ## Files
 
+### HTML
+
 `index.html` is the main page of the website.
 
-`404` is our error page.
+`404.html` is our error page.
 
 `games.html` is the page that contains all the games that we make.
 
@@ -29,12 +31,24 @@ Productions of Porky
 
 `develop.html` is the page that contains all of the technologies that we developed.
 
+`models.html` is the page that contains all of the models that we made.
+
+### CSS
+
 `Header.css` is the CSS settings for the header
 
 `MasterStyle.css` is the CSS settings for the pages
 
+`index.css` is the CSS settings for specific elements on the index page
+
+`models.css` is the CSS settings for specific elements on the models page
+
+### JavaScript
+
 `Header.js` is the JavaScript settings the heading/navbar
 
-`HomeMain.js` is the JavaScript settings for the main page
+`index.js` is the JavaScript settings for the main page
 
-`Utility.js` is the JavaScript settings for all the other pages
+`Utility.js` is the JavaScript utility to recognize mobile devices and hide the navbar
+
+`models.js` is the JavaScript settings for the models page
