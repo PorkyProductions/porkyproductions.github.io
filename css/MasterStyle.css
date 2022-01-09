@@ -16,6 +16,16 @@
   font-family: Arial;
 }
 
+.mainTitle-white {
+  font-size: 36px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: Arial;
+}
+
 .center {
   text-align: center;
   margin-left: auto;
@@ -32,3 +42,25 @@
   display: block;
   font-family: Arial;
 }
+
+
+.blue-gradient {
+  border-radius: 13px;
+  background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+          background-size : "400% 400%";
+          animation : "gradient 25s ease infinite";
+      }
+        
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  };
+
+
