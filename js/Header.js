@@ -19,11 +19,7 @@ function ChangeTitle(text) {
     titleText.innerHTML = text;
 }
 
-let author = ("<a href='" + AUTHOR_URL + "'>" + AUTHOR_NAME + "</a>");
-let authorText = document.getElementById("author");
-function ChangeAuthor(text) {
-    authorText.innerHTML = text;
-}
+let author = "PorkyProductions"
 
 console.log("Header.js loaded");
 console.log (title);
