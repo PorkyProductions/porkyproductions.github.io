@@ -27,6 +27,6 @@
 .blue-purp-gradient {
   border-radius: 13px;
   background: linear-gradient(90deg, #0062ff 0%, #ff00f2 100%);
-          background-size : "400% 400%";
-          animation : "gradient 25s ease infinite";
+          background-size : 400% 400%;
+          animation : gradient 25s ease infinite;
       }
