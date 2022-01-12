@@ -1,3 +1,7 @@
+$(document).ready(function () {
+    OnStart();
+
+})
 //turns image name like books to images/books.png
 function ImageNamesToFileNames(imageName) {
     return "images/" + imageName + ".png";
@@ -45,7 +49,9 @@ class ImagePreview {
         $(this.elementID).attr("src", this.GetCurrentImage());
     }
 }
-$(document).ready(function () {
+
+function OnStart() {
+    //runs when page loads
     var HedgehogModelPreview = new ImagePreview("hedgehogModelPreview", ["HedgehogPreview_Front", "HedgehogPreview_Side", "HedgehogPreview_Top", "HedgehogPreview_Back"]);
     $("#button_HedgehogPreviewLeft").click(function () {
         HedgehogModelPreview.OnSwitchLeft();
@@ -53,5 +59,4 @@ $(document).ready(function () {
     $("#button_HedgehogPreviewRight").click(function () {
         HedgehogModelPreview.OnSwitchRight();
     })
-
-})
+}
