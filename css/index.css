@@ -30,3 +30,11 @@
           background-size : 400% 400%;
           animation : gradient 25s ease infinite;
       }
+.block-description-header{
+    padding-top: 100px;
+    padding-bottom:50px;
+}
+.block-description-text {
+    color: #FFFFFF;
+    padding-bottom: 100px;
+}
