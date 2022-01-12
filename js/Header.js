@@ -1,8 +1,7 @@
 // JavaScript source code
 
 $(document).ready(function () {
-    console.log("ready");
-    ModifyHeader();
+    OnStart();
 })
 
 function ModifyHeader() {
@@ -19,10 +18,15 @@ function ChangeTitle(text) {
     titleText.innerHTML = text;
 }
 
-let author = "PorkyProductions"
+function OnStart() {
+    //all code will run on load
+    console.log("ready");
+    ModifyHeader();
+    let author = "PorkyProductions"
 
-console.log("Header.js loaded");
-console.log (title);
-console.log (titleText);
-console.log (author);
-console.log (authorText);
+    console.log("Header.js loaded");
+    console.log(title);
+    console.log(titleText);
+    console.log(author);
+    console.log(authorText);
+}
