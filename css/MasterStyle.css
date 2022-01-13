@@ -76,4 +76,59 @@
 }
 }
 
+.red-gradient {
+  border-radius: 13px;
+  background: linear-gradient(90deg, #ff0000 0%, #ffe600 100%);
+          background-size : 400% 400%;
+          animation : gradient 25s ease infinite;
+      }
+        
+@keyframes gradient {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
 
+.green-gradient {
+  border-radius: 13px;
+  background: linear-gradient(90deg, #08AEEA 0%, #2AF598 100%);
+          background-size : 400% 400%;
+          animation : gradient 25s ease infinite;
+      }
+        
+@keyframes gradient {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+
+.grey-gradient {
+  border-radius: 13px;
+  background: linear-gradient(90deg, #000000 0%, #676d6a 100%);
+          background-size : 400% 400%;
+          animation : gradient 25s ease infinite;
+      }
+        
+@keyframes gradient {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
