@@ -15,6 +15,16 @@
     padding: 7px;
 }
 
+.mainBodyRale {
+    font-style: normal;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
 .mainTitle {
   font-size: 36px;
   font-weight: bold;
@@ -25,6 +35,17 @@
   font-family: Arial;
 }
 
+.mainTitleRale {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Raleway', sans-serif;
+}
+
 .mainTitle-white {
   font-size: 36px;
   font-weight: bold;
@@ -33,6 +54,17 @@
   margin-top: auto;
   margin-bottom: auto;
   font-family: Arial;
+}
+
+.mainTitleRale-white {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Raleway', sans-serif;
 }
 
 .center {

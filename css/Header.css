@@ -47,6 +47,8 @@ body {
 .header-logoText {
   position: absolute;
   font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 @media screen and (max-width: 700px) {
