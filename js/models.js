@@ -1,3 +1,8 @@
+// JavaScript Source Code
+// Original Author: PorkyProductions
+// Language: javascript es6
+// Path: js\models.js
+
 $(document).ready(function () {
     OnStart();
 

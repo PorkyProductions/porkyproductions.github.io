@@ -1,4 +1,7 @@
-// JavaScript source code
+// JavaScript Source Code
+// Original Author: PorkyProductions
+// Language: javascript es6
+// Path: js\Header.js
 
 $(document).ready(function () {
     OnStart();

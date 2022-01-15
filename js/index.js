@@ -1,4 +1,7 @@
-// Main page javascript
+// JavaScript Source Code
+// Original Author: PorkyProductions
+// Language: javascript es6
+// Path: js\index.js
 
 const HomeMain = {
     init: function () {
