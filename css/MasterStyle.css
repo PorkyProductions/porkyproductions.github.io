@@ -164,3 +164,51 @@
     background-position: 0% 50%;
 }
 }
+
+.rainbow-gradient {
+  border-radius: 13px;
+  background: linear-gradient(90deg, #ff0000 0%, #ffae00 15%, #ffff01 30%, #00ff00 45%, #00ffae 60%, #00ffff 75%, #0000ff 90%, #ff00ff 100%);
+          background-size : 400% 400%;
+          animation : gradient 25s ease infinite;
+      }
+@keyframes gradient {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+
+.padding-small {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.padding-medium {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.padding-semi-large {
+  padding-top: 50px; 
+  padding-bottom: 50px;
+}
+
+.padding-large {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.padding-xlarge {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.padding-ultra-large {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
