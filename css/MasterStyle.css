@@ -10,6 +10,15 @@ Heads and Bodies
   font-family: Arial;
 }
 
+.mainBody-white {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+  font-family: Arial;
+  color: white;
+}
+
 .mainBodyAlt {
     margin-left: auto;
     margin-right: auto;
