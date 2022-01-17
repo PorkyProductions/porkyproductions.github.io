@@ -28,6 +28,7 @@ function OnStart() {
     let author = "PorkyProductions"
     let title = "PorkyProductions.io"
     let titleText = "#logoText"
+    let authorText = "The PorkyProductions team"
 
     console.log("Header.js loaded");
     console.log(title);
