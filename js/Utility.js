@@ -41,7 +41,3 @@ if (DEVICE_type == "mobile") {
 if (DEVICE_type == "mobile" && ORIENTATION_isLandscape) {
     $("#logoText").show();
 }
-// If the device is a tablet device in landscape mode, show the "#logoText" element
-if (DEVICE_type == "tablet" && ORIENTATION_isLandscape) {
-    $("#logoText").show();
-}
