@@ -102,8 +102,22 @@ Gradients and Keyframes
 */
 
 .red-orange-gradient {
-    background: linear-gradient(45deg, #FF2CAA 0%, #ffff01 100%);
-    border-radius: 13px;
+  border-radius: 13px;
+  background: linear-gradient(45deg, #FF2CAA 0%, #ffff01 100%);
+          background-size : 400% 400%;
+          animation : gradient 25s ease infinite;
+      }
+  
+@keyframes gradient {
+0% {
+background-position: 0% 50%;
+}
+50% {
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
 }
 
 .blue-gradient {
@@ -270,4 +284,9 @@ Padding Rules
 .padding-ultra-large {
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.unreasonable-padding {
+  padding-top: 1000px;
+  padding-bottom: 1000px;
 }
