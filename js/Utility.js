@@ -37,3 +37,7 @@ let DEVICE_type = DetectDeviceType();
 if (DEVICE_type == "mobile") {
     $("#logoText").hide();
 }
+// If the device is a mobile device in landscape mode, show the "#logoText" element
+if (DEVICE_type == "mobile" && ORIENTATION_isLandscape) {
+    $("#logoText").show();
+} 
