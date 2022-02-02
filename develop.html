@@ -45,7 +45,7 @@
     <br />
     <div style="padding-left: 20px">
         <div class="mainTitle">
-            <h1>Technlogical Developments</h1>
+            <h1 class="raleway">Technlogical Developments</h1>
         </div>
         <br />
         <p class="mainBody">
@@ -60,7 +60,7 @@
             <div class='blue-gradient'>
               
                 <br>
-                <h1 class="mainTitle-white block-description-header" >
+                <h1 class="mainTitleRale-white block-description-header" >
                     (de)Motivator
                 </h1>
   
@@ -75,7 +75,7 @@
             <div class='red-gradient'>
               
                 <br>
-                <h1 class="mainTitle-white block-description-header" >
+                <h1 class="mainTitleRale-white block-description-header" >
                     PorkyOS
                 </h1>
   
@@ -91,7 +91,7 @@
         <div class='green-gradient'>
               
             <br>
-            <h1 class="mainTitle-white block-description-header" >
+            <h1 class="mainTitleRale-white block-description-header" >
                 PorkyNet
             </h1>
 
@@ -105,7 +105,7 @@
         <div class='grey-gradient'>
               
             <br>
-            <h1 class="mainTitle-white block-description-header" >
+            <h1 class="mainTitleRale-white block-description-header" >
                 Coming Soon
             </h1>
 
@@ -117,6 +117,9 @@
         <br>
         <br>
         </p>
+    </div>
+    <div class="loader-wrapper loader-padding">
+        <span class="loader"><span class="loader-inner"></span></span>  
     </div>
     <div class="footer">
         <br>
@@ -137,6 +140,12 @@
         <a class="center" href="credits.html">Credits</a>
         <a class="center" href="https://practical-lamport-2debac.netlify.app/">Sister Site (identical, if this site doesn't work, try this)</a>
     </div>
+    <!--BELOW is the function that hides the loading screen. Refer to "index.js"-->
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+      </script>
 </body>
 </html>
 <!--Hi there reader. It looks like youve reached the end of our code. Thats pretty cool. Have you been working this entire time? Maybe give yourself a break. You work more productive when youre not tired :) -->

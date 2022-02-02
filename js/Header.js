@@ -3,9 +3,9 @@
 // Language: javascript es6
 // Path: js\Header.js
 
-$(document).ready(function () {
-    OnStart();
-})
+$(document).ready(() => {
+        OnStart();
+    })
 
 function ModifyHeader() {
     console.log(DEVICE_type);
@@ -27,7 +27,7 @@ function OnStart() {
     ModifyHeader();
     let author = "PorkyProductions"
     let title = "PorkyProductions.io"
-    let titleText = "#logoText"
+    let titleText = logoText.innerHTML;
     let authorText = "The PorkyProductions team"
 
     console.log("Header.js loaded");

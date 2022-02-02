@@ -44,13 +44,13 @@
     </div>
     <br />
     <div style="padding-left: 20px">
-        <div class="mainTitle">
+        <div class="mainTitleRale">
             <h1>Hedgehog Studios Games</h1>
         </div>
         <br />
     </div>
     <div class="dark-blue-gradient">
-        <h1 class="mainTitle-white padding-xlarge">
+        <h1 class="mainTitleRale-white padding-xlarge">
             Platforms
         </h1>
     </div>
@@ -61,7 +61,7 @@
     </div>
 
     <div class="dark-green-gradient">
-        <h1 class="mainTitle-white padding-xlarge">
+        <h1 class="mainTitleRale-white padding-xlarge">
             Currently Available Games
         </h1>
     </div>
@@ -73,7 +73,7 @@
 
 
     <div class="grey-gradient">
-        <h1 class="mainTitle-white padding-xlarge">
+        <h1 class="mainTitleRale-white padding-xlarge">
             Games In Development
         </h1>
     </div>
@@ -81,6 +81,9 @@
         <p class="mainBody center padding-small">
             Hedgehog Studios is currently working on a new local multiplayer (LAN) fighting game. It is unkown when the game will be realeased.
         </p>
+    </div>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>  
     </div>
 
 
@@ -103,6 +106,15 @@
         <a class="center" href="credits.html">Credits</a>
         <a class="center" href="https://practical-lamport-2debac.netlify.app/">Sister Site (identical, if this site doesn't work, try this)</a>
     </div>
+    <div class="loader-wrapper loader-padding">
+        <span class="loader"><span class="loader-inner"></span></span>  
+    </div>
+    <!--BELOW is the function that hides the loading screen. Refer to "index.js"-->
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+      </script>
 </body>
 </html>
 <!--Hi there reader. It looks like youve reached the end of our code. Thats pretty cool. Have you been working this entire time? Maybe give yourself a break. You work more productive when youre not tired :) -->

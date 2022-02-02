@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/MasterStyle.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/3dprint.css" />
     <link rel="icon" type="icon" href="assets/HedgehogIcon.png" />
     <!--FAVICON-->
 </head>
@@ -46,11 +47,11 @@
     </div>
     <br />
     <div style="padding-left: 20px">
-        <div class="mainTitle">
+        <div class="mainTitle raleway">
             <h1>3D Prints</h1>
         </div>
         <br />
-        <img src="images/IMG_4488.JPG" width="10" class="center" alt="imperial credit" />
+        <img src="images/IMG_4488.JPG" class="center imgSmall" alt="imperial credit" />
         <p class="mainBody">THE IMPERIAL CREDIT</p>
         <br />
         <p class="mainBody">
@@ -60,6 +61,9 @@
             It does not have to rely on cryptography and is cheap and easy to
             produce via a 3D Printer.
         </p>
+    </div>
+    <div class="loader-wrapper loader-padding">
+        <span class="loader"><span class="loader-inner"></span></span>  
     </div>
     <div class="footer">
         <br>
@@ -80,6 +84,12 @@
         <a class="center" href="credits.html">Credits</a>
         <a class="center" href="https://practical-lamport-2debac.netlify.app/">Sister Site (identical, if this site doesn't work, try this)</a>
     </div>
+    <!--BELOW is the function that hides the loading screen. Refer to "index.js"-->
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+      </script>
 </body>
 </html>
 <!--Hi there reader. It looks like youve reached the end of our code. Thats pretty cool. Have you been working this entire time? Maybe give yourself a break. You work more productive when youre not tired :) -->
