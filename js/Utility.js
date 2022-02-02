@@ -20,7 +20,7 @@ function DetectScreenOrientation() {
     return ORIENTATION_isLandscape;
 }
 //DEVICE TYPE
-const DetectDeviceType = () => {
+function DetectDeviceType() {
     const ua = navigator.userAgent;
     if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
         return "tablet";
@@ -32,8 +32,8 @@ const DetectDeviceType = () => {
     else {
         return "desktop";
     }
-    
-};
+
+}
 let DEVICE_type = DetectDeviceType();
 
 
