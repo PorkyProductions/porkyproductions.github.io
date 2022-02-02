@@ -13,8 +13,20 @@
   text-align: left;
   color: white;
 }
-#flyin {font-size: 0px; opacity: 0; transition: 100ms; }
-#flyin.run { font-size: 20px; opacity: 1; }
+
+#flyin {	
+  overflow: hidden;
+  position: relative;
+  animation: flyin 1s linear;
+}
+@keyframes flyin {
+  0%   { 
+  transform: translateX(200%); 		
+  }
+  100% { 
+  transform: translateX(0%); 
+  }
+ }
 
 .mainBody-grid {
   display: grid;

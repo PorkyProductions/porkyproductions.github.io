@@ -3,4 +3,4 @@
 
 console.log("index.js is running");
 
-document.getElementById("flyin").className = "run";
+document.getElementById("flyin").className = "flyin.run";
