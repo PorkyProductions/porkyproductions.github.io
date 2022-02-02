@@ -13,6 +13,8 @@
   text-align: left;
   color: white;
 }
+#flyin {font-size: 0px; opacity: 0; transition: 100ms; }
+#flyin.run { font-size: 20px; opacity: 1; }
 
 .mainBody-grid {
   display: grid;
@@ -40,3 +42,8 @@
     color: #FFFFFF;
     padding-bottom: 100px;
 }
+
+/* 
+FLY IN TEXT
+ */
+
