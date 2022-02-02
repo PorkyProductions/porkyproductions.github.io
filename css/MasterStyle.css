@@ -59,6 +59,18 @@ Heads and Bodies
     font-family: 'Raleway', sans-serif;
 }
 
+.mainTitleRaleBold {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  color: #000000;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+
 .mainTitle-white {
   font-size: 36px;
   font-weight: bold;
