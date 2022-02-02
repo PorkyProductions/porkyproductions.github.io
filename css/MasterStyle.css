@@ -47,6 +47,11 @@ Loader
 }
 
 
+.loader-padding {
+  padding-top: 300px;
+  padding-bottom: 5000px;
+}
+
 /* 
 Heads and Bodies
 */
