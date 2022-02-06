@@ -19,6 +19,7 @@
 <img alt="CSS3" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" />
 <img alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
 <img alt="jQuery" width="26px" src="https://www.codeconquest.com/wp-content/uploads/jQuery-logo-300x300.jpg" />
+<img alt="Bootstrap CSS" width="26px" src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg">
 <img alt="Visual Studio" width="26px" src="https://visualstudio.microsoft.com/wp-content/uploads/2021/10/Product-Icon.svg" />
 <img alt="Visual Studio Code" width="26px" src="https://visualstudio.microsoft.com/wp-content/uploads/2019/09/vs-code-responsive-01-1.png" />
 
