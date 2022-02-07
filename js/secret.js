@@ -1,6 +1,6 @@
 function SecretHeart() {
     var counter = 0;
-    var heart = document.getElementById("#FooterHeart");
+    var heart = $("#FooterHeart").$("svg");
     heart.addEventListener("click", function() {
         counter++;
         console.log(counter);
