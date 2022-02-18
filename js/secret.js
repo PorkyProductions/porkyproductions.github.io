@@ -1,7 +1,8 @@
+var counter = 0;
 function SecretHeart() {
-    var counter = 0;
-    var heart = $("#FooterHeart").$("svg");
-    heart.addEventListener("click", function() {
+    var id = "FooterHeart";
+    var heart = document.getElementById("FooterHeart");
+    heart.addEventListener("click", function () {
         counter++;
         console.log(counter);
         if (counter === 10) {

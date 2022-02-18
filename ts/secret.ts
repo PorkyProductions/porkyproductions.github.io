@@ -1,8 +1,9 @@
 // If the id "FooterHeart" is clicked 10 times by the user, show an alert
 
+var counter = 0;
+
 function SecretHeart(): void {
     let id = "FooterHeart";
-    let counter = 0;
     let heart = document.getElementById("FooterHeart");
     heart.addEventListener("click", function () {
         counter++;
