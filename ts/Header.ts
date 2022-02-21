@@ -3,6 +3,7 @@
 // Language: javascript es6
 // Path: js\Header.js
 
+
 $(document).ready(() => {
     OnStart();
 })
@@ -35,4 +36,35 @@ console.log(title);
 console.log(titleText);
 console.log(author);
 console.log(authorText);
+};
+
+
+const altLogotext = [
+    "PorkyProductions",
+    "PorkyProductions.io",
+    "The PorkyProductions team",
+    "PeanutButterPatties",
+    "PatinjoesPeople",
+    "PutiminPork",
+    "PorkyPants",
+    "PorkyPants.io",
+    "PorkyPants.com",
+    "PorkyPants.org",
+    "PorkyPants.net",
+    "PopcornPackage",
+    "PainPage",
+    "PaperPair",
+    "PearlPair",
+    "PartyPartner",
+    "PaymentPattern",
+    "PartyPackage",
+    "PaymentPages",
+    "PearlPackages",
+    "PerformancePercentage",
+];
+
+function generateText() {
+    logoText = altLogotext[Math.floor(Math.random() * altLogotext.length)];
+    console.log(logoText);
+    document.getElementById("logoText").innerHTML = logoText;
 }
