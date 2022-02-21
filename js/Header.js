@@ -31,3 +31,32 @@ function OnStart() {
     console.log(author);
     console.log(authorText);
 }
+;
+var altLogotext = [
+    "PorkyProductions",
+    "PorkyProductions.io",
+    "The PorkyProductions team",
+    "PeanutButterPatties",
+    "PatinjoesPeople",
+    "PutiminPork",
+    "PorkyPants",
+    "PorkyPants.io",
+    "PorkyPants.com",
+    "PorkyPants.org",
+    "PorkyPants.net",
+    "PopcornPackage",
+    "PainPage",
+    "PaperPair",
+    "PearlPair",
+    "PartyPartner",
+    "PaymentPattern",
+    "PartyPackage",
+    "PaymentPages",
+    "PearlPackages",
+    "PerformancePercentage",
+];
+function generateText() {
+    logoText = altLogotext[Math.floor(Math.random() * altLogotext.length)];
+    console.log(logoText);
+    document.getElementById("logoText").innerHTML = logoText;
+}
