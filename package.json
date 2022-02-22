@@ -5,7 +5,7 @@
   "main": "js/index.js",
   "scripts": {
     "test": "node js/index.js",
-    "build": "npm update && npm install -d typescript && npx tsc ts/Header.ts --outDir js/ && npx tsc ts/secret.ts --outDir js/"
+    "build": "npm update && npm install -d typescript && npx tsc ts/Header.ts --outDir js/ && npx tsc ts/secret.ts --outDir js/ && npx tsc ts/index.ts --outDir ts/ && npx tsc ts/models.ts --outDir ts/ && mpx tsc ts/Utility.ts --outDir ts/ && npm run test"
   },
   "repository": {
     "type": "git",
