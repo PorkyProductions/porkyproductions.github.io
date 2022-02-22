@@ -63,8 +63,16 @@ const altLogotext = [
     "PerformancePercentage",
 ];
 
+var altLogoClickAmount: number = 0;
+
 function generateText() {
     logoText = altLogotext[Math.floor(Math.random() * altLogotext.length)];
     console.log(logoText);
     document.getElementById("logoText").innerHTML = logoText;
-}
+    altLogoClickAmount++;
+    console.log(altLogoClickAmount);
+    if (altLogoClickAmount == 10) {
+        window.location.href = "https://github.com/PorkyProductions/porkyproductions.github.io";
+    };
+    return 0;
+};
