@@ -28,5 +28,8 @@
   "homepage": "https://github.com/PorkyProductions/porkyproductions.github.io#readme",
   "dependencies": {
     "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.13"
   }
 }

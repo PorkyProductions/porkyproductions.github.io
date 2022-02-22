@@ -5,6 +5,10 @@
 $(document).ready(function () {
     OnStart();
 });
+$(document).on("load", function () {
+    $("#header").fadeIn("slow");
+});
+// if the user scrolls down, hide the header
 function ModifyHeader() {
     console.log(DEVICE_type);
     if (DEVICE_type == "mobile") {

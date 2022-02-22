@@ -8,6 +8,12 @@ $(document).ready(() => {
     OnStart();
 })
 
+$(document).on("load", () => {
+    $("#header").fadeIn("slow");
+})
+
+
+
 function ModifyHeader() {
 console.log(DEVICE_type);
 if (DEVICE_type == "mobile") {
