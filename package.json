@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/PorkyProductions/porkyproductions.github.io/issues"
   },
-  "homepage": "https://github.com/PorkyProductions/porkyproductions.github.io#readme"
+  "homepage": "https://github.com/PorkyProductions/porkyproductions.github.io#readme",
+  "dependencies": {
+    "typescript": "^4.5.5"
+  }
 }
