@@ -1,0 +1,28 @@
+{
+  "name": "porkyproductions.github.io",
+  "version": "1.0.0",
+  "description": "The PorkyProductions.io website source code.",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "node js/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PorkyProductions/porkyproductions.github.io.git"
+  },
+  "keywords": [
+    "ppio",
+    "porkyproductions",
+    "porky",
+    "porkyproductions.github.io",
+    "github",
+    "gh-pages",
+    "porkyproductions"
+  ],
+  "author": "PorkyProductions",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/PorkyProductions/porkyproductions.github.io/issues"
+  },
+  "homepage": "https://github.com/PorkyProductions/porkyproductions.github.io#readme"
+}
