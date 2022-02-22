@@ -12,7 +12,7 @@ function ImageNamesToFileNames(imageName) {
     return "images/" + imageName + ".png";
 }
 function ImageNamesArrayToFileNamesArray(imageNamesArray) {
-    var fileNames = [];
+    const fileNames = [];
     for (var i = 0; i < imageNamesArray.length; i++) {
         imageName = imageNamesArray[i];
         fileName = ImageNamesToFileNames(imageName);
@@ -55,7 +55,7 @@ class ImagePreview {
     }
 }
 
-function OnStart() {
+function OnStart(): void {
     //runs when page loads
     var HedgehogModelPreview = new ImagePreview("hedgehogModelPreview", ["HedgehogPreview_Front", "HedgehogPreview_Side", "HedgehogPreview_Top", "HedgehogPreview_Back"]);
     $("#button_HedgehogPreviewLeft").click(function () {
