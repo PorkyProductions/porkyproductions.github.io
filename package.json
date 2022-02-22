@@ -4,7 +4,8 @@
   "description": "The PorkyProductions.io website source code.",
   "main": "js/index.js",
   "scripts": {
-    "test": "node js/index.js"
+    "test": "node js/index.js",
+    "build": "npm update && npm install -d typescript && npx tsc ts/Header.ts --outDir js/ && npx tsc ts/secret.ts --outDir js/"
   },
   "repository": {
     "type": "git",
