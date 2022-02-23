@@ -13,6 +13,7 @@ $(document).on("load", () => {
 })
 
 
+// if the user scrolls down, hide the header
 
 function ModifyHeader() {
 console.log(DEVICE_type);
