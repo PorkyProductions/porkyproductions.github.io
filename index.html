@@ -36,9 +36,11 @@ porkyproductions.github.io
     <meta name="description" content="The Offical Website of PorkyProductions">
     <meta name="apple-touch-icon" content="assets/HedgehogIcon.png" />
     <title>Home - Porky Productions</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+      // Fallback to loading jQuery from a local path if the CDN is unavailable
+      (window.jQuery || document.write('<script src="./node_modules/jquery/dist/jquery.min.js"><\/script>'));
+    </script>
 <!--Twitter Emoji Javascript-->
 <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
     <!-----SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS----->
