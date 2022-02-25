@@ -2,6 +2,9 @@
 // Original Author: PorkyProductions
 // Language: javascript es6
 // Path: js\Header.js
+
+type float = number;
+
 $(document).ready(function () {
     OnStart();
 });
@@ -69,3 +72,20 @@ function generateText() {
     return 0;
 }
 ;
+
+var mainLogoClickAmount: float = 0;
+
+function changeColorOfMainLogoText(): void {
+    var color: string = "rgb(" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + ")";
+    document.getElementById("mainLogoText").style.color = color;
+    console.log(color);
+    mainLogoClickAmount++;
+    console.log(mainLogoClickAmount);
+    if (mainLogoClickAmount === 10) {
+        var color: string = "rgb(255,255,255)";
+        var mainLogoClickAmount: float = 0;
+    }
+    else {
+        console.log("🚀 ~ file: index.ts ~ line 86 ~ changeColorOfMainLogoText ~ else");
+};
+};
