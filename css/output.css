@@ -1238,6 +1238,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 800;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .tracking-tight {
   letter-spacing: -0.025em;
 }

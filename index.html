@@ -63,7 +63,7 @@ porkyproductions.github.io
     <!--FAVICON-->
 </head>
 
-  <body id="page">
+  <body id="page" class="dark:bg-black dark:text-white">
     <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="relative bg-white overflow-hidden">
   <div class="max-w-7xl mx-auto">
@@ -78,7 +78,7 @@ porkyproductions.github.io
             <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
               <div class="flex items-center justify-between w-full md:w-auto">
                 <a href="#">
-                  <span class="sr-only">Workflow</span>
+                  <span class="sr-only">PorkyProductions</span>
                   <img class="h-8 w-auto sm:h-10" src="assets/HedgehogIcon.png">
                 </a>
                 <div class="-mr-2 flex items-center md:hidden">
@@ -148,8 +148,8 @@ porkyproductions.github.io
 
       <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
         <div class="sm:text-center lg:text-left">
-          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-            <span class="block xl:inline">Porky Productions</span>
+          <h1 class="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl md:text-6xl">
+            <span class="block xl:inline" onclick="generateText()" id="logoText">Porky Productions</span>
           </h1>
           <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Porky Productions is a group of highly established individuals
             namely Tristan and Ryan, who are on the path for technological
@@ -264,7 +264,7 @@ porkyproductions.github.io
           
           <div class='red-orange-gradient' id="flyin">
 
-              <h1 class="mainTitleRale-white block-description-header">The PorkyProductions Origin Story</h1>
+              <h1 class="mainTitleRale-white block-description-header text-white">The PorkyProductions Origin Story</h1>
               <p class="mainBody block-description-text" style="padding-left: 20%; padding-right: 20%
 ">
                   Our story begins in 2017, when our founders, Tristan and Ryan met in school.
@@ -301,13 +301,13 @@ porkyproductions.github.io
               <a class="center" href="credits.html" class="footer-text">Credits</a>
               <a class="center" href="https://practical-lamport-2debac.netlify.app/">Fallback Site</a>
           </div>
-          <div class="footer-bottom">
+          <div class="footer-bottom" style="display: block;">
               <p>
                   © 2022 PorkyProductions. All Rights Reserved.
               </p>
-              &nbsp;
+              <br>
               <p>
-                Made with <img src="https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/2764.svg" alt="love" height="10px" onclick="addToCounter()"> at PorkyProductions
+                Made with <img src="https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/2764.svg" alt="love" style="height: 100px; margin: auto;" onclick="addToCounter()"> at PorkyProductions
               </p>
           </div>
       </div>
