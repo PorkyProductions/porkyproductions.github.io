@@ -2,26 +2,23 @@
 // Original Author: PorkyProductions
 // Language: javascript es6
 // Path: js\Utility.js
-
 //SCREEN ORIENTATION
-let ORIENTATION_isLandscape = true;
+var ORIENTATION_isLandscape = true;
 $(document).ready(function () {
     DetectScreenOrientation();
-})
+});
 jQuery(window).on("orientationchange", function (event) {
     //When screen orientation changes
     DetectScreenOrientation();
-
 });
 function DetectScreenOrientation() {
-
     //detects orientation of device
     ORIENTATION_isLandscape = (window.innerHeight <= window.innerWidth);
     return ORIENTATION_isLandscape;
 }
 //DEVICE TYPE
 function DetectDeviceType() {
-    const ua = navigator.userAgent;
+    var ua = navigator.userAgent;
     if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
         return "tablet";
     }
@@ -32,11 +29,8 @@ function DetectDeviceType() {
     else {
         return "desktop";
     }
-
 }
-let DEVICE_type = DetectDeviceType();
-
-
+var DEVICE_type = DetectDeviceType();
 // IF the device is a mobile device or a tablet device, hide the "#logoText" element
 if (DEVICE_type == "mobile") {
     $("#logoText").hide();
@@ -44,4 +38,25 @@ if (DEVICE_type == "mobile") {
 // If the device is a mobile device in landscape mode, show the "#logoText" element
 if (DEVICE_type == "mobile" && ORIENTATION_isLandscape) {
     $("#logoText").show();
-} 
+}
+function finiteMobileDeviceType() {
+    if (/(iPhone|iPod|iPad)/i.test(ua)) {
+        console.log("iOS");
+    }
+    else if (/Android/i.test(ua)) {
+        console.log("Android");
+    }
+    else if (/BlackBerry/i.test(ua)) {
+        console.log("BlackBerry");
+    }
+    else if (/Windows Phone/i.test(ua)) {
+        console.log("Windows Phone");
+    }
+    else if (/webOS/i.test(ua)) {
+        console.log("webOS");
+    }
+    else {
+        console.log("ERR: Unknown Device");
+    }
+    return 0;
+}

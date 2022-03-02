@@ -45,3 +45,25 @@ if (DEVICE_type == "mobile") {
 if (DEVICE_type == "mobile" && ORIENTATION_isLandscape) {
     $("#logoText").show();
 } 
+
+function finiteMobileDeviceType() {
+    if (/(iPhone|iPod|iPad)/i.test(ua)) {
+        console.log("iOS");
+    }
+    else if (/Android/i.test(ua)) {
+        console.log("Android");
+    }
+    else if (/BlackBerry/i.test(ua)) {
+        console.log("BlackBerry");
+    }
+    else if (/Windows Phone/i.test(ua)) {
+        console.log("Windows Phone");
+    }
+    else if (/webOS/i.test(ua)) {
+        console.log("webOS");
+    }
+    else {
+        console.log("ERR: Unknown Device");
+    }
+    return 0;
+}
