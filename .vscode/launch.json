@@ -1,11 +1,11 @@
 {
-    "configurations": [
-
+    "configurations": [       
         {
-            "name": "Launch Microsoft Edge and open the Edge DevTools",
+            "command": "npx serve",
+            "name": "Run npm start",
             "request": "launch",
-            "type": "vscode-edge-devtools.debug",
-            "url": "http://127.0.0.1:5500/" // Provide your project's url to finish configuring
+            "type": "node-terminal"
         }
+
     ]
 }
