@@ -17,6 +17,9 @@ export default {
                 models: resolve(__dirname, 'models.html'),
                 rushGameDownload: resolve(__dirname, 'rushGameDownload.html'),  
             },
-        }
-    }
+            output: {
+                dir: resolve(__dirname, 'docs'),
+            },
+        },
+    },
 }
