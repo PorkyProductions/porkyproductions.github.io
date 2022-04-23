@@ -2,10 +2,10 @@
 // Original Author: PorkyProductions
 // Language: javascript es6
 // Path: js\Header.js
-$(document).ready(function () {
+$(document).ready(() => {
     OnStart();
 });
-$(document).on("load", function () {
+$(document).on("load", () => {
     $("#header").fadeIn("slow");
 });
 // if the user scrolls down, hide the header
@@ -15,8 +15,8 @@ function ModifyHeader() {
         $("#logoText").hide();
     }
 }
-var title = document.getElementById("title");
-var titleText = document.getElementById("titleText");
+let title = document.getElementById("title");
+let titleText = document.getElementById("titleText");
 function ChangeTitle(text) {
     title.style.display = "block";
     titleText.innerHTML = text;
@@ -25,10 +25,10 @@ function OnStart() {
     //all code will run on load
     console.log("ready");
     ModifyHeader();
-    var author = "PorkyProductions";
-    var title = "PorkyProductions.io";
-    var titleText = logoText.innerHTML;
-    var authorText = "The PorkyProductions team";
+    let author = "PorkyProductions";
+    let title = "PorkyProductions.io";
+    let titleText = logoText.innerHTML;
+    let authorText = "The PorkyProductions team";
     console.log("Header.js loaded");
     console.log(title);
     console.log(titleText);
@@ -36,7 +36,7 @@ function OnStart() {
     console.log(authorText);
 }
 ;
-var altLogotext = [
+const altLogotext = [
     "PorkyProductions",
     "PorkyProductions.io",
     "The PorkyProductions team",

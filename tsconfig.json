@@ -2,6 +2,7 @@
     "compilerOptions": {
         "outDir": "./js/",
         "target": "es2019",
+        "moduleResolution": "node"
     },
     "compileOnSave": true,
     "files": [

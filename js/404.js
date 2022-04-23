@@ -1,15 +1,15 @@
 // This will be a script to scale the image on the 404 page
 // Grab the image
-var Hedgehog = document.querySelector('hog');
-var noHog = document.querySelector('noHog');
-var fourOhFour = document.querySelector('404');
+const Hedgehog = document.querySelector('hog');
+const noHog = document.querySelector('noHog');
+const fourOhFour = document.querySelector('404');
 // Begin the scaling loop
-var scale = function () {
+let scale = () => {
     // Grab the width and height of the image
-    var width = Hedgehog.clientWidth;
-    var height = Hedgehog.clientHeight;
+    const width = Hedgehog.clientWidth;
+    const height = Hedgehog.clientHeight;
     // Scale the image
-    Hedgehog.style.transform = "scale(".concat(width / height, ")");
+    Hedgehog.style.transform = `scale(${width / height})`;
     requestAnimationFrame(scale);
 };
 // Begin the scaling loop
@@ -20,7 +20,7 @@ else {
     console.log('Hedgehog not found');
     noHog.innerHTML = 'Hedgehog not found';
 }
-fourOhFour.addEventListener('click', function () {
+fourOhFour.addEventListener('click', () => {
     // Make the font bigger with each click
-    fourOhFour.style.fontSize = "".concat(parseInt(fourOhFour.style.fontSize) + 1, "px");
+    fourOhFour.style.fontSize = `${parseInt(fourOhFour.style.fontSize) + 1}px`;
 });

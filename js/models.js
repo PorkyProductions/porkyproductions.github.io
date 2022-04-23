@@ -10,7 +10,7 @@ function ImageNamesToFileNames(imageName) {
     return "images/" + imageName + ".png";
 }
 function ImageNamesArrayToFileNamesArray(imageNamesArray) {
-    var fileNames = [];
+    const fileNames = [];
     for (var i = 0; i < imageNamesArray.length; i++) {
         imageName = imageNamesArray[i];
         fileName = ImageNamesToFileNames(imageName);
@@ -18,36 +18,35 @@ function ImageNamesArrayToFileNamesArray(imageNamesArray) {
     }
     return fileNames;
 }
-var ImagePreview = /** @class */ (function () {
-    function ImagePreview(ID, imageNames) {
+class ImagePreview {
+    constructor(ID, imageNames) {
         this.elementID = "#" + ID;
         this.files = ImageNamesArrayToFileNamesArray(imageNames);
         this.pointer = 0;
         this.length = this.files.length;
     }
-    ImagePreview.prototype.GetCurrentImage = function () {
+    GetCurrentImage() {
         return this.files[this.pointer];
-    };
-    ImagePreview.prototype.MovePointerRight = function () {
+    }
+    MovePointerRight() {
         this.pointer++;
         this.pointer = this.pointer % this.length;
-    };
-    ImagePreview.prototype.MovePointerLeft = function () {
+    }
+    MovePointerLeft() {
         this.pointer--;
         if (this.pointer < 0) {
             this.pointer = this.length - 1;
         }
-    };
-    ImagePreview.prototype.OnSwitchRight = function () {
+    }
+    OnSwitchRight() {
         this.MovePointerRight();
         $(this.elementID).attr("src", this.GetCurrentImage());
-    };
-    ImagePreview.prototype.OnSwitchLeft = function () {
+    }
+    OnSwitchLeft() {
         this.MovePointerLeft();
         $(this.elementID).attr("src", this.GetCurrentImage());
-    };
-    return ImagePreview;
-}());
+    }
+}
 function OnStart() {
     //runs when page loads
     var HedgehogModelPreview = new ImagePreview("hedgehogModelPreview", ["HedgehogPreview_Front", "HedgehogPreview_Side", "HedgehogPreview_Top", "HedgehogPreview_Back"]);
