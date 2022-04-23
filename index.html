@@ -36,138 +36,67 @@ porkyproductions.github.io
     <meta name="description" content="The Offical Website of PorkyProductions">
     <meta name="apple-touch-icon" content="assets/HedgehogIcon.png" />
     <title>Home - Porky Productions</title>
+    <script type="module" src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-    <script>
-      // Fallback to loading jQuery from a local path if the CDN is unavailable
-      (window.jQuery || document.write('<script src="./node_modules/jquery/dist/jquery.min.js"><\/script>'));
-    </script>
     <!-----SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS----->
 
-    <script type="text/javascript" src="js/Utility.js"></script>
-    <script type="text/javascript" src="js/Header.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/secret.js"></script>
+    <script type="module" src="./js/Utility.js"></script>
+    <script type="module" src="./js/Header.js"></script>
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/secret.js"></script>
 
 <!--CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS------->
 <!--In-House-->
-    <link rel="stylesheet" href="css/MasterStyle.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="./css/MasterStyle.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/output.css" />
 <!--GFonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet"> 
 
-    <link rel="icon" type="icon" href="assets/HedgehogIcon.png" />
+    <link rel="icon" type="icon" href="./assets/HedgehogIcon.png" />
     <!--FAVICON-->
 </head>
 
   <body id="page" class="dark:bg-black dark:text-white">
-    <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="relative bg-white overflow-hidden">
-  <div class="max-w-7xl mx-auto">
-    <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-      <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-        <polygon points="50,0 100,0 50,100 0,100" />
-      </svg>
-
-      <div>
-        <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
-          <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
-            <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
-              <div class="flex items-center justify-between w-full md:w-auto">
-                <a href="#">
-                  <span class="sr-only">PorkyProductions</span>
-                  <img class="h-8 w-auto sm:h-10" src="assets/HedgehogIcon.png">
-                </a>
-                <div class="-mr-2 flex items-center md:hidden">
-                  <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <!-- Heroicon name: outline/menu -->
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-              <a href="index.html" class="font-medium text-gray-500 hover:text-gray-900">Home</a>
-
-              <a href="games.html" class="font-medium text-gray-500 hover:text-gray-900">Games</a>
-
-              <a href="3DPrints.html" class="font-medium text-gray-500 hover:text-gray-900">3D Prints</a>
-
-              <a href="models.html" class="font-medium text-gray-500 hover:text-gray-900">Models</a>
-
-              <a href="develop.html" class="font-medium text-gray-500 hover:text-indigo-500">Developments</a>
-            </div>
-          </nav>
+      <div id="header" class="header">
+        <!--Hegdehog logo thing-->
+        <a href="index.html" class="logo">
+          <img
+            src="./assets/HedgehogIcon.png"
+            width="100"
+            height="70"
+            alt="hedgehog logo"
+          />
+        </a>
+        <div
+          id="logoText"
+          class="header-logoText dark:text-black"
+          onclick="generateText()"
+          oncontextmenu="generateText()"
+          style="left: 140px; top: 45px; font-size: 23px"
+        >
+          PorkyProductions
         </div>
-
-        <!--
-          Mobile menu, show/hide based on menu open state.
-
-          Entering: "duration-150 ease-out"
-            From: "opacity-0 scale-95"
-            To: "opacity-100 scale-100"
-          Leaving: "duration-100 ease-in"
-            From: "opacity-100 scale-100"
-            To: "opacity-0 scale-95"
-        -->
-        <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-          <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-            <div class="px-5 pt-4 flex items-center justify-between">
-              <div>
-                <img class="h-8 w-auto" src="assets/" alt="">
-              </div>
-              <div class="-mr-2">
-                <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                  <span class="sr-only">Close main menu</span>
-                  <!-- Heroicon name: outline/x -->
-                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="px-2 pt-2 pb-3 space-y-1">
-              <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
-
-              <a href="games.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Games</a>
-
-              <a href="3DPrints.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">3D Prints</a>
-
-              <a href="models.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Models</a>
-            </div>
-            <a href="develop.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Developments</a>
-          </div>
+        <div class="header-right">
+          <!--Different headers-->
+          <a class="active" href="index.html">Home <img src="node_modules/bootstrap-icons/icons/house-door.svg" alt=""></a>
+          <a href="games.html">Games <img src="node_modules/bootstrap-icons/icons/controller.svg" alt=""></a>
+          <a href="3DPrints.html">3D Prints <img src="node_modules/bootstrap-icons/icons/badge-3d.svg" alt=""></a>
+          <a href="models.html">Models <img src="node_modules/bootstrap-icons/icons/boxes.svg" alt=""></a>
+          <a href="develop.html">Developments <img src="node_modules/bootstrap-icons/icons/code-slash.svg" alt=""></a>
         </div>
       </div>
-
-      <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-        <div class="sm:text-center lg:text-left">
-          <h1 class="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl md:text-6xl">
-            <span class="block xl:inline" onclick="generateText()" id="logoText">Porky Productions</span>
-          </h1>
-          <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Porky Productions is a group of highly established individuals
-            namely Tristan and Ryan, who are on the path for technological
-            development in many areas. This website is meant to showcase our
-            accomplishments as well as to create something that we can be proud
-            about.</p>
-          <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-            <div class="rounded-md shadow">
-            </div>
-          </div>
+      <br />
+  <!--NOTE: Titles and Headers are the "Raleway" font, everything else is Arial or sans-serif -->
+      <div class="dark:bg-black dark:text-white">
+        <div class="padding-semi-large text-9xl sm:text-5xl md:text-9xl lg:text-9xl text-center font-bold" id="mainLogoText" style="font-family: 'Raleway', sans-serif;" onclick="changeColorOfMainLogoText()">
+          <h1>PorkyProductions</h1>
         </div>
-      </main>
-    </div>
-  </div>
-  <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="assets/HedgehogIcon.png" alt="">
-  </div>
-</div>
+        </div>
+        <br />
       <br />
       <div class="mainBody">
           
@@ -229,7 +158,6 @@ porkyproductions.github.io
           <br>
           <div id="flyin">
               <h1 class=" block-description-header mainTitleRale">Our Founders</h1>
-
               <div class="mainBody-grid">
                   <div class="mainBody-tile">
                       <h3 class="ralewayBold">Tristan</h3>
@@ -271,7 +199,7 @@ porkyproductions.github.io
                   They became friends and eventually discorvered that they could make a website using the "Google Sites" service.
                   What better thing to make a website about than a hedgehog pencil sharpener that Tristan had brought to school and named "Porky".
                   After this website (PorkyPictures.inc) was created, many other websites followed such as PorkySchool.edu, PorkyPizza.eat, and <br />PorkyBlackHolesThatWillDestroyTheEntireUniverse-<br>SoYouProbablyShouldntUseThem.com.com.inc  <br>
-                 <br />
+                  <br />
                   At this point, Porky had developed a cult following. But then, sadly, a hater of porky stole the pencil sharpener, and destroyed it.
                   However, at the last moment, Porky transferred into a Hedgehog plush, where it resides to this day.
                   Later on, the old websites were archived, and consolidated into one company, called PorkyProductions, which is where we are today.
@@ -292,24 +220,24 @@ porkyproductions.github.io
           
           <!--BEYOND THIS POINT IS THE FOOTER -- NO TOUCHING OR ELSE IT WILL BREAK-->
           <div class="footer">
-              <img src="assets/PPio logo.png" height="60" width="265" alt="porky productions logo" />
-              <a class="center" href="index.html" class="footer-text">Home</a>
-              <a class="center" href="games.html" class="footer-text">Games</a>
-              <a class="center" href="3DPrints.html" class="footer-text">3D Prints</a>
-              <a class="center" href="models.html" class="footer-text">Models</a>
-              <a class="center" href="develop.html" class="footer-text">Developments</a>
-              <a class="center" href="credits.html" class="footer-text">Credits</a>
-              <a class="center" href="https://practical-lamport-2debac.netlify.app/">Fallback Site</a>
-          </div>
-          <div class="footer-bottom text-center" style="display: block;">
-              <p>
-                  © 2022 PorkyProductions. All Rights Reserved. Licensed under the Apache-2.0 License
-              </p>
-              <br>
-              <p>
-                Made with <img src="https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/2764.svg" alt="love" style="height: 100px; margin: auto;" onclick="addToCounter()"> at PorkyProductions
-              </p>
-          </div>
+            <img src="assets/PPio logo.png" height="60" width="265" alt="porky productions logo" />
+            <a class="center footer-text" href="index.html">Home</a>
+            <a class="center footer-text" href="games.html">Games</a>
+            <a class="center footer-text" href="3DPrints.html">3D Prints</a>
+            <a class="center footer-text" href="models.html">Models</a>
+            <a class="center footer-text" href="develop.html">Developments</a>
+            <a class="center footer-text" href="credits.html">Credits</a>
+            <a class="center footer-text" href="https://practical-lamport-2debac.netlify.app/">Fallback Site</a>
+        </div>
+        <div class="footer-bottom text-center" style="display: block;">
+            <p>
+                © 2022 PorkyProductions. All Rights Reserved. Licensed under the Apache-2.0 License
+            </p>
+            <br>
+            <p>
+              Made with <img src="https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/2764.svg" alt="love" style="height: 100px; margin: auto;" onclick="addToCounter()"> at PorkyProductions
+            </p>
+        </div>
       </div>
       <!--BELOW is the function that hides the loading screen. Refer to "index.js"-->
       <script>

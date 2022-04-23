@@ -1,16 +1,16 @@
 // Definition of Counter
 var counter = 0;
 // Definitions of sounds
-var beep = new Audio('audio/Beep Short .mp3');
-var air_woosh = new Audio('audio/Air Woosh Underwater.mp3');
-var alarm_clock = new Audio('audio/Alarm Clock.mp3');
-var cartoon_boing = new Audio('audio/Cartoon Boing.mp3');
-var crash = new Audio('audio/Crash .mp3');
-var glass_crunch = new Audio('audio/Glass Crunch.mp3');
-var glass_crush = new Audio('audio/Glass Crush.mp3');
-var glass_shatters = new Audio('audio/Glass Shatters Into Debris.mp3');
-var explosion_distant = new Audio('audio/Big Explosion Distant.mp3');
-var explosion = new Audio('audio/Big Explosion Cut Off.mp3');
+const beep = new Audio('../audio/Beep Short .mp3');
+const air_woosh = new Audio('../audio/Air Woosh Underwater.mp3');
+const alarm_clock = new Audio('../audio/Alarm Clock.mp3');
+const cartoon_boing = new Audio('../audio/Cartoon Boing.mp3');
+const crash = new Audio('../audio/Crash .mp3');
+const glass_crunch = new Audio('../audio/Glass Crunch.mp3');
+const glass_crush = new Audio('../audio/Glass Crush.mp3');
+const glass_shatters = new Audio('../audio/Glass Shatters Into Debris.mp3');
+const explosion_distant = new Audio('../audio/Big Explosion Distant.mp3');
+const explosion = new Audio('../audio/Big Explosion Cut Off.mp3');
 // Audio handlers
 function beepHandler() {
     beep.play();
@@ -90,7 +90,7 @@ function addToCounter() {
 }
 ;
 // Library of congradulations
-var congratsLibrary = [
+const congratsLibrary = [
     "You are awesome!",
     "You are great!",
     "You are amazing!",

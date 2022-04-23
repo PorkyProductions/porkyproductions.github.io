@@ -12,16 +12,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-----SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS----->
 
-    <script src="js/Utility.js"></script>
-    <script src="js/Header.js"></script>
+    <script type="module" src="./js/Utility.js"></script>
+    <script type="module" src="./js/Header.js"></script>
 
     <!--CSS-----------------------------CSS--CSS--CSSCSS--CSS--CSSCSS--CSS--CSSCSS--CSS--CSSCSS--CSS--CSSCSS--CSS--CSSCSS--CSS--CSSCSS--CSS--CSSCSS--CSS--CSS-->
-    <link rel="stylesheet" href="css/games.css" />
+    <link rel="stylesheet" href="./css/games.css" />
 
-    <link rel="stylesheet" href="css/output.css" />
-    <link rel="stylesheet" href="css/MasterStyle.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="icon" type="icon" href="assets/HedgehogIcon.png" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/MasterStyle.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="icon" type="icon" href="./assets/HedgehogIcon.png" />
     <!--FAVICON-->
 </head>
 
@@ -74,6 +74,8 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
   </nav>
   
     <br />
@@ -114,19 +116,20 @@
                 </div>
         </div>
     </div>
+    <!--BEYOND THIS POINT IS THE FOOTER -- NO TOUCHING OR ELSE IT WILL BREAK-->
     <div class="footer">
-        <img src="assets/PPio logo.png" height="60" width="265" alt="porky productions logo" />
-        <a class="center" href="index.html" class="footer-text">Home</a>
-        <a class="center" href="games.html" class="footer-text">Games</a>
-        <a class="center" href="3DPrints.html" class="footer-text">3D Prints</a>
-        <a class="center" href="models.html" class="footer-text">Models</a>
-        <a class="center" href="develop.html" class="footer-text">Developments</a>
-        <a class="center" href="credits.html" class="footer-text">Credits</a>
-        <a class="center" href="https://practical-lamport-2debac.netlify.app/">Fallback Site</a>
-    </div>
-    <div class="footer-bottom text-center" style="display: block;">
+      <img src="assets/PPio logo.png" height="60" width="265" alt="porky productions logo" />
+      <a class="center footer-text" href="index.html">Home</a>
+      <a class="center footer-text" href="games.html">Games</a>
+      <a class="center footer-text" href="3DPrints.html">3D Prints</a>
+      <a class="center footer-text" href="models.html">Models</a>
+      <a class="center footer-text" href="develop.html">Developments</a>
+      <a class="center footer-text" href="credits.html">Credits</a>
+      <a class="center footer-text" href="https://practical-lamport-2debac.netlify.app/">Fallback Site</a>
+  </div>
+  <div class="footer-bottom text-center" style="display: block;">
       <p>
-          © 2022 PorkyProductions. All Rights Reserved.
+          © 2022 PorkyProductions. All Rights Reserved. Licensed under the Apache-2.0 License
       </p>
       <br>
       <p>
