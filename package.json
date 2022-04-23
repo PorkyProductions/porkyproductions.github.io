@@ -5,7 +5,8 @@
   "main": "js/index.js",
   "scripts": {
     "test": "node js/index.js",
-    "build": "npm update && tsc -p tsconfig.json"
+    "build": "npm update && tsc -p tsconfig.json",
+    "css": 
   },
   "repository": {
     "type": "git",
