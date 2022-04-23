@@ -12,8 +12,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-----SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS----->
 
-    <script type="module" src="ts/Utility.ts"></script>
-    <script type="module" src="ts/Header.ts"></script>
+    <script type="module" src="./ts/Utility.ts"></script>
+    <script type="module" src="./ts/Header.ts"></script>
 
     <!--CSS-----------------------------CSS--CSS--CSSCSS--CSS--CSSCSS--CSS--CSSCSS--CSS--CSSCSS--CSS--CSSCSS--CSS--CSSCSS--CSS--CSSCSS--CSS--CSSCSS--CSS--CSS-->
     <link rel="stylesheet" href="css/games.css" />
@@ -83,24 +83,25 @@
     
 
 
+    <!--BEYOND THIS POINT IS THE FOOTER -- NO TOUCHING OR ELSE IT WILL BREAK-->
     <div class="footer">
-        <br>
-        <br>
-        <img src="assets/PPio logo.png" width="25%" class="image-center" alt="porky productions logo" />
-        <br>
-        <p class="text-center">
-            Porky Productions is a group of highly established individuals namely
-            Tristan and Ryan, who are on the path for technological development
-            in many areas. This website is meant to showcase our accomplishments
-            as well as to create something that we can be proud about.
+        <img src="assets/PPio logo.png" height="60" width="265" alt="porky productions logo" />
+        <a class="center footer-text" href="index.html">Home</a>
+        <a class="center footer-text" href="games.html">Games</a>
+        <a class="center footer-text" href="3DPrints.html">3D Prints</a>
+        <a class="center footer-text" href="models.html">Models</a>
+        <a class="center footer-text" href="develop.html">Developments</a>
+        <a class="center footer-text" href="credits.html">Credits</a>
+        <a class="center footer-text" href="https://practical-lamport-2debac.netlify.app/">Fallback Site</a>
+    </div>
+    <div class="footer-bottom text-center" style="display: block;">
+        <p>
+            © 2022 PorkyProductions. All Rights Reserved. Licensed under the Apache-2.0 License
         </p>
-        <a class="center" href="index.html">Home</a>
-        <a class="center" href="games.html">Games</a>
-        <a class="center" href="3DPrints.html">3D Prints</a>
-        <a class="center" href="models.html">Models</a>
-        <a class="center" href="develop.html">Developments</a>
-        <a class="center" href="credits.html">Credits</a>
-        <a class="center" href="https://practical-lamport-2debac.netlify.app/">Sister Site (identical, if this site doesn't work, try this)</a>
+        <br>
+        <p>
+          Made with <img src="https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/2764.svg" alt="love" style="height: 100px; margin: auto;" onclick="addToCounter()"> at PorkyProductions
+        </p>
     </div>
     <div class="loader-wrapper loader-padding">
         <span class="loader"><span class="loader-inner"></span></span>

@@ -43,10 +43,10 @@ porkyproductions.github.io
     </script>
     <!-----SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS----->
 
-    <script type="module" src="ts/Utility.ts"></script>
-    <script type="module" src="ts/Header.ts"></script>
-    <script type="module" src="ts/index.ts"></script>
-    <script type="module" src="ts/secret.ts"></script>
+    <script type="module" src="./js/Utility.js"></script>
+    <script type="module" src="./js/Header.js"></script>
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/secret.js"></script>
 
 <!--CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS------->
 <!--In-House-->
@@ -68,7 +68,7 @@ porkyproductions.github.io
         <!--Hegdehog logo thing-->
         <a href="index.html" class="logo">
           <img
-            src="https://lh3.googleusercontent.com/k-u9rOXwTYfcI8FFUc_8yLpkOBHc0C-uG7MZC-xzG4_w4Z3exV0m0iMTbWJ2yGfxMUR2OjfAe-rdDn7xwhptNoh4mWP3KE10yBYD59oAFR8q-ZPcOn026JLPfq5foH7MoTUoawCiNA=w270-h214-p-k"
+            src="./assets/HedgehogIcon.png"
             width="100"
             height="70"
             alt="hedgehog logo"
@@ -76,7 +76,7 @@ porkyproductions.github.io
         </a>
         <div
           id="logoText"
-          class="header-logoText"
+          class="header-logoText dark:text-black"
           onclick="generateText()"
           oncontextmenu="generateText()"
           style="left: 140px; top: 45px; font-size: 23px"
@@ -106,8 +106,9 @@ porkyproductions.github.io
       <br />
   <!--NOTE: Titles and Headers are the "Raleway" font, everything else is Arial or sans-serif -->
       <div class="dark:bg-black dark:text-white">
-        <div class="mainTitleRaleBold padding-semi-large" id="mainLogoText" onclick="changeColorOfMainLogoText()">
+        <div class="padding-semi-large text-9xl text-center font-bold" id="mainLogoText" style="font-family: 'Raleway', sans-serif;" onclick="changeColorOfMainLogoText()">
           <h1>PorkyProductions</h1>
+        </div>
         </div>
         <br />
       <br />
@@ -212,7 +213,7 @@ porkyproductions.github.io
                   They became friends and eventually discorvered that they could make a website using the "Google Sites" service.
                   What better thing to make a website about than a hedgehog pencil sharpener that Tristan had brought to school and named "Porky".
                   After this website (PorkyPictures.inc) was created, many other websites followed such as PorkySchool.edu, PorkyPizza.eat, and <br />PorkyBlackHolesThatWillDestroyTheEntireUniverse-<br>SoYouProbablyShouldntUseThem.com.com.inc  <br>
-                 <br />
+                  <br />
                   At this point, Porky had developed a cult following. But then, sadly, a hater of porky stole the pencil sharpener, and destroyed it.
                   However, at the last moment, Porky transferred into a Hedgehog plush, where it resides to this day.
                   Later on, the old websites were archived, and consolidated into one company, called PorkyProductions, which is where we are today.
@@ -233,24 +234,24 @@ porkyproductions.github.io
           
           <!--BEYOND THIS POINT IS THE FOOTER -- NO TOUCHING OR ELSE IT WILL BREAK-->
           <div class="footer">
-              <img src="assets/PPio logo.png" height="60" width="265" alt="porky productions logo" />
-              <a class="center" href="index.html" class="footer-text">Home</a>
-              <a class="center" href="games.html" class="footer-text">Games</a>
-              <a class="center" href="3DPrints.html" class="footer-text">3D Prints</a>
-              <a class="center" href="models.html" class="footer-text">Models</a>
-              <a class="center" href="develop.html" class="footer-text">Developments</a>
-              <a class="center" href="credits.html" class="footer-text">Credits</a>
-              <a class="center" href="https://practical-lamport-2debac.netlify.app/">Fallback Site</a>
-          </div>
-          <div class="footer-bottom text-center" style="display: block;">
-              <p>
-                  © 2022 PorkyProductions. All Rights Reserved. Licensed under the Apache-2.0 License
-              </p>
-              <br>
-              <p>
-                Made with <img src="https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/2764.svg" alt="love" style="height: 100px; margin: auto;" onclick="addToCounter()"> at PorkyProductions
-              </p>
-          </div>
+            <img src="assets/PPio logo.png" height="60" width="265" alt="porky productions logo" />
+            <a class="center footer-text" href="index.html">Home</a>
+            <a class="center footer-text" href="games.html">Games</a>
+            <a class="center footer-text" href="3DPrints.html">3D Prints</a>
+            <a class="center footer-text" href="models.html">Models</a>
+            <a class="center footer-text" href="develop.html">Developments</a>
+            <a class="center footer-text" href="credits.html">Credits</a>
+            <a class="center footer-text" href="https://practical-lamport-2debac.netlify.app/">Fallback Site</a>
+        </div>
+        <div class="footer-bottom text-center" style="display: block;">
+            <p>
+                © 2022 PorkyProductions. All Rights Reserved. Licensed under the Apache-2.0 License
+            </p>
+            <br>
+            <p>
+              Made with <img src="https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/2764.svg" alt="love" style="height: 100px; margin: auto;" onclick="addToCounter()"> at PorkyProductions
+            </p>
+        </div>
       </div>
       <!--BELOW is the function that hides the loading screen. Refer to "index.js"-->
       <script>
