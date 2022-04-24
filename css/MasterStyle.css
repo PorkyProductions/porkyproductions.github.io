@@ -21,7 +21,7 @@ body {
   text-decoration: none;
   font-size: 32px;
   line-height: 25px;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .header a.logo {
@@ -238,7 +238,7 @@ Gradients and Keyframes
 
 .red-orange-gradient {
   border-radius: 13px;
-  background: linear-gradient(45deg, #FF2CAA 0%, #ffff01 100%);
+  background: linear-gradient(45deg, #FF2CAA 0%, #6f01ff 100%);
           background-size : 400% 400%;
           animation : gradient 25s ease infinite;
       }
@@ -257,7 +257,7 @@ background-position: 0% 50%;
 
 .blue-gradient {
   border-radius: 13px;
-  background: linear-gradient(90deg, #0000f4 0%, #00e5ff 100%);
+  background: linear-gradient(90deg, #0000f4 0%, #00ffcf 100%);
           background-size : 400% 400%;
           animation : gradient 25s ease infinite;
       }
