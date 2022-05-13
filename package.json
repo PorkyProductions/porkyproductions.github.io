@@ -30,7 +30,7 @@
     "bootstrap-icons": "^1.8.1",
     "jquery": "^3.6.0",
     "serve": "^13.0.2",
-    "typescript": "^4.6.3",
+    "typescript": "^4.6.4",
     "uadetect": "^2.0.2",
     "vite": "^2.9.5"
   },
