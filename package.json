@@ -4,8 +4,8 @@
   "description": "The PorkyProductions.io website source code.",
   "main": "js/index.js",
   "scripts": {
-    "test": "node js/index.js",
-    "build": "npm update && tsc -p tsconfig.json"
+    "test": "npx serve",
+    "build": "npx tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",

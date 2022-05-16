@@ -1,6 +1,6 @@
 {
   "name": "uadetect",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "The dead-simple way of interacting with the navigator API",
   "main": "./dist/index.js",
   "scripts": {
@@ -43,7 +43,7 @@
   "bugs": {
     "url": "https://github.com/PorkyProductions/UA-detect/issues"
   },
-  "homepage": "https://github.com/PorkyProductions/UA-detect#readme",
+  "homepage": "https://porkyproductions.github.io/UA-detect/",
   "dependencies": {
     "jquery": "^3.6.0",
     "serve": "^13.0.2",
