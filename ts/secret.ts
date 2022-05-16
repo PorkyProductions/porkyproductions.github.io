@@ -114,5 +114,4 @@ const congratsLibrary = [
     "WOAH! That means you either read the source code, or you're really curious. Either way, we <3 you!",
     "SUP COOL PERSON!",
     "WOW LOOK AT YOU"
-
 ];
