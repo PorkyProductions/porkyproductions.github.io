@@ -1,6 +1,9 @@
 const { resolve } = require('path')
+import { VitePWA } from 'vite-plugin-pwa'
 export default {
-    plugins: [],
+    plugins: [
+        VitePWA({})
+    ],
     server: {
         open: '/index.html',
         port: 3000,
