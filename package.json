@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/PorkyProductions/porkyproductions.github.io#readme",
   "dependencies": {
-    "bootstrap-icons": "^1.8.2",
+    "bootstrap-icons": "^1.8.3",
     "jquery": "^3.6.0",
     "sass": "^1.51.0",
     "serve": "^13.0.2",
