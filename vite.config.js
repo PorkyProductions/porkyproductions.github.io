@@ -1,8 +1,6 @@
 const { resolve } = require('path')
-import { VitePWA } from 'vite-plugin-pwa'
 export default {
     plugins: [
-        VitePWA({})
     ],
     server: {
         open: '/index.html',

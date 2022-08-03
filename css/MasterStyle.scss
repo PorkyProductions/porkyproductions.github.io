@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+
+@mixin m-auto {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -132,20 +140,15 @@ Heads and Bodies
 }
 
 
-.mainBody {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+@mixin mainBody {
+  @include m-auto();
   text-align: center;
   font-family: Arial;
 }
 
 .mainBody-white {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  text-align: center;
-  font-family: Arial;
+  @include mainBody();
+  color: white;
 }
 
 .mainBodyAlt {
@@ -260,7 +263,8 @@ background-position: 0% 50%;
   background: linear-gradient(90deg, #0000f4 0%, #00ffcf 100%);
           background-size : 400% 400%;
           animation : gradient 25s ease infinite;
-      }
+  padding-right: 30px;
+}
         
 @keyframes gradient {
 0% {
