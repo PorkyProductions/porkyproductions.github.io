@@ -8,9 +8,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        'primary': '#000064',
-        'secondary': '#00FFFF',
-        'tertiary': '#A31621',
+        'primary': '#0000f4',
+        'secondary': '#3AAFB9',
+        'secondary-dark': '#21757A',
+        'secondary-darkest': '#073B3A',
+        'ppio-red': '#710627',
+        'ppio-hotshot': '#FF4D80'
       },
     }
   },
