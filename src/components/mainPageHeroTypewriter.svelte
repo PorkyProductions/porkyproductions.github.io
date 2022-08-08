@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
     import '../app.css'
     // @ts-ignore
     import Typewriter from 'svelte-typewriter'
@@ -25,11 +27,8 @@
     <main class="pl-3">
         <div id="bg" class="p-10">
             <p class="text-white text-2xl">
-                Hi, we're <Typewriter
-            --cursor-width={props["--cursor-width"]}
-            --cursor-color={props["--cursor-color"]}
-            on:done={() => console.log("The animation has finished!")}
-            {...props}>
+                Hi, we're 
+        <Typewriter --cursor-width={props["--cursor-width"]} --cursor-color={props["--cursor-color"]} on:done={() => console.log("The animation has finished!")} {...props}>
             <h3 class="font-secondary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
                 PorkyProductions
             </h3>

@@ -9,9 +9,9 @@ module.exports = {
     extend: {
       colors: {
         'primary': '#0000f4',
-        'secondary': '#3AAFB9',
-        'secondary-dark': '#21757A',
-        'secondary-darkest': '#073B3A',
+        'secondary': '#1AC8ED',
+        'secondary-dark': '#7BE0AD',
+        'secondary-darkest': '#357266',
         'ppio-red': '#710627',
         'ppio-hotshot': '#FF4D80'
       },
