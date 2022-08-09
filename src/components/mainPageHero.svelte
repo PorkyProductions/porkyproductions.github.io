@@ -1,6 +1,7 @@
 <script>
     import '../app.css'
     import HeroTypewriter from './mainPageHeroTypewriter.svelte';
+    import hedgehog from '/./../images/HedgehogIcon.png'
 </script>
 
 
@@ -10,7 +11,7 @@
             <HeroTypewriter />
         </div>
         <div class="m-auto">
-            <img src="../../images/HedgehogIcon.png" alt="The PorkyProductions Logo">
+            <img src={hedgehog} alt="The PorkyProductions Logo">
         </div>
     </div>
 </hero>

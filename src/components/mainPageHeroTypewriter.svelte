@@ -29,22 +29,22 @@
             <p class="text-white text-2xl">
                 Hi, we're 
         <Typewriter --cursor-width={props["--cursor-width"]} --cursor-color={props["--cursor-color"]} on:done={() => console.log("The animation has finished!")} {...props}>
-            <h3 class="font-secondary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
+            <h3 class="font-primary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
                 PorkyProductions
             </h3>
-            <h3 class="font-secondary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
+            <h3 class="font-primary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
                 Making Games
             </h3>
-            <h3 class="ffont-secondary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
+            <h3 class="font-primary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
                 Developing Software
             </h3>
-            <h3 class="font-secondary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
+            <h3 class="font-primary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
                 3D Printing
             </h3>
-            <h3 class="font-secondary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
+            <h3 class="font-primary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
                 Pushing What's Possible
             </h3>
-            <h3 class="font-secondary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
+            <h3 class="font-primary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
                 PorkyProductions
             </h3>
         </Typewriter>

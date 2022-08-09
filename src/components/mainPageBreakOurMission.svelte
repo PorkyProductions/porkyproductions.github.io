@@ -7,7 +7,7 @@
             <h1 class="text-center font-semibold text-white font-primary sm:text-lg md:text-xl lg:text-2xl xl:text-3xl p-6">
                 Our Mission
             </h1>
-            <p class="text-center text-white font-primary sm:text-sm md:text-md lg:text-lg xl:text-xl px-10 pb-10">
+            <p class="text-center text-white font-secondary sm:text-sm md:text-md lg:text-lg xl:text-xl px-10 pb-10">
                 Here at PorkyProductions© we are on a mission to create technology that can change the world.
                 Whether it be a game, a model, or a software development, we are dedicated to positively impacting the world.
                 We chose to do this because we believe that technology (when used in the right ways) can and will positively impact humanity.
