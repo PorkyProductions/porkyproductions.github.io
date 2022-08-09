@@ -14,31 +14,32 @@
 </script>
 
 
-<header class="bg-slate-200 dark:bg-slate-700 dark:text-white ">
+<header class="bg-slate-200 dark:bg-slate-700 dark:text-white rounded-b-lg">
     <a href="index.html" class="hover:bg-slate-300 dark:hover:bg-slate-800 hover:rounded-xl rounded-lg"><img src={hedgehog} alt="a hedgehog" id="HH" on:mouseover={spin} on:focus={spin}></a>
     {#if DEVICE_type === "mobile"}
         <div></div>
     {:else if DEVICE_type === "desktop"}
         <div class="flex content-center justify-between p-4">
-            <div class="flex justify-between content-center">
+            <div class="flex justify-between content-center p-2">
                 <a href="games.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-primary hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
                     Games 
                 </a>
+                <br>
                 <img src={controller} alt="controller">
             </div>
-            <div class="flex justify-between content-center">
+            <div class="flex justify-between content-center p-2">
                 <a href="3Dprints.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-primary hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
                     3D Prints
                 </a>
                 <img src={badge3d} alt="">
             </div>
-            <div class="flex justify-between content-center">
+            <div class="flex justify-between content-center p-2">
                 <a href="models.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-primary hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
                     Models
                 </a>
                 <img src={boxes} alt="boxes">
             </div>
-            <div class="flex justify-between content-center">
+            <div class="flex justify-between content-center p-2">
                 <a href="developments.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-primary hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
                     Developments
                 </a>
