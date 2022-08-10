@@ -8,6 +8,8 @@ export default defineConfig({
     rollupOptions: {
         input: {
             index: 'index.html',
+            games: 'games.html',
+            threeDPrints: '3DPrints.html'
         },
         output: {
             dir: './docs',
