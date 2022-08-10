@@ -88,8 +88,4 @@
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
     }
-    a:hover {
-    color:black;
-     background-color: lightgray;
-    }
 </style>
