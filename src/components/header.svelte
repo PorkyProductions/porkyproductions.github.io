@@ -56,6 +56,7 @@
     header {
         position: sticky;
         top: 0;
+        z-index: 5;
     }
     .spin {
         animation: spin 2s infinite cubic-bezier(0.96, 0.95, 0, 1.22);
