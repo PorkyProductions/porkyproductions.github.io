@@ -14,7 +14,7 @@
 </script>
 
 
-<header class="bg-slate-200 dark:bg-slate-700 dark:text-white rounded-b-lg">
+<header class="bg-slate-200 dark:bg-slate-700 dark:text-white">
     <a href="index.html" class="hover:bg-slate-300 dark:hover:bg-slate-800 hover:rounded-xl rounded-lg"><img src={hedgehog} alt="a hedgehog" id="HH" on:mouseover={spin} on:focus={spin}></a>
     {#if DEVICE_type === "mobile"}
         <div></div>
