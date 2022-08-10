@@ -1,16 +1,18 @@
 <script>
-    // https://vitejs.dev/guide/assets.html
-    import '../app.css'
-    import { DEVICE_type } from 'uadetect'
-    import controller from '../../node_modules/bootstrap-icons/icons/controller.svg'
-    import boxes from '../../node_modules/bootstrap-icons/icons/boxes.svg'
-    import badge3d from '../../node_modules/bootstrap-icons/icons/badge-3d.svg'
-    import codeSlash from '../../node_modules/bootstrap-icons/icons/code-slash.svg'
-    import hedgehog from '/./../images/HedgehogIcon.png'
-    const HH = document.getElementById("HH")
-    const spin = () => {
-        HH.classList.add('spin');
-    }
+  // https://vitejs.dev/guide/assets.html
+  import '../app.css'
+  import { DEVICE_type } from 'uadetect'
+  import controller from '../../node_modules/bootstrap-icons/icons/controller.svg'
+  import boxes from '../../node_modules/bootstrap-icons/icons/boxes.svg'
+  import badge3d from '../../node_modules/bootstrap-icons/icons/badge-3d.svg'
+  import codeSlash from '../../node_modules/bootstrap-icons/icons/code-slash.svg'
+  import hedgehog from '/./../images/HedgehogIcon.png'
+  import houseDoor from '../../node_modules/bootstrap-icons/icons/house-door.svg'
+
+  const HH = document.getElementById("HH")
+  const spin = () => {
+  HH.classList.add('spin');
+  }
 </script>
 
 
@@ -20,6 +22,14 @@
         <div></div>
     {:else if DEVICE_type === "desktop"}
         <div class="flex content-center justify-between p-4">
+            
+            <div class="flex justify-between content-center p-2">
+                <a href="index.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-primary hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
+                    Home
+                </a>
+                <br>
+                <img src={houseDoor} alt="controller">
+            </div>
             <div class="flex justify-between content-center p-2">
                 <a href="games.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-primary hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
                     Games 
