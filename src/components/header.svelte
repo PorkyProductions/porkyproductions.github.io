@@ -28,7 +28,7 @@
                 <img src={controller} alt="controller">
             </div>
             <div class="flex justify-between content-center p-2">
-                <a href="3Dprints.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-primary hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
+                <a href="threeDprints.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-primary hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
                     3D Prints
                 </a>
                 <img src={badge3d} alt="">
