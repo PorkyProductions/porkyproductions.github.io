@@ -22,7 +22,6 @@
 
 <style>
 .blue-gradient {
-    border-radius: 13px;
     background: linear-gradient(90deg,hsl(240, 100%, 48%) 0%,hsl(169, 100%, 50%) 100%);
     background-size: auto;
     background-size: 400% 400%;

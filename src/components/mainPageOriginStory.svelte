@@ -29,7 +29,6 @@
 
 <style>
 .purp-gradient {
-    border-radius: 13px;
     background: linear-gradient(90deg,hsl(0, 100%, 48%) 0%,hsl(256, 100%, 50%) 100%);
     background-size: auto;
     background-size: 400% 400%;
