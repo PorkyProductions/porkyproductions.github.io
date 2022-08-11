@@ -5,7 +5,7 @@
 
 <section class="bg-slate-300 dark:bg-slate-800">
     
-    <h1 class="text-center font-semibold font-primary lg:text-2xl xl:text-3xl pt-40 pb-12">
+    <h1 class="font-semibold font-primary pt-40 pb-12 px-32 text-5xl">
         Our Founders
     </h1>
     <div class="grid">
