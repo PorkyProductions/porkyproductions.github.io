@@ -77,7 +77,8 @@
 </script>
 
 <footer>
-    <div class="flex justify-between content-center bg-slate-500 text-white">
+
+    <div class="flex justify-between content-center bg-slate-500 text-white pt-12 px-12">
         <img src={ppiologo} alt="the logo of the website">
         <div class="flex justify-between content-center"><a href="index.html">Home</a><img src={houseDoor} alt=""></div>
         <div class="flex justify-between content-center"><a href="games.html">Games</a><img src={controller} alt=""></div>
