@@ -10,7 +10,8 @@ export default defineConfig({
         input: {
             index: 'index.html',
             games: 'games.html',
-            threeDPrints: 'threeDprints.html'
+            threeDPrints: 'threeDprints.html',
+            models: 'models.html'
         },
         output: {
             dir: './docs',
