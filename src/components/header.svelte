@@ -23,51 +23,47 @@
     {:else if DEVICE_type === "desktop"}
     
         <div class="flex content-center justify-between p-4">
-          <div></div>
-          
-          <a href="index.html" class="hover:bg-slate-300 dark:hover:bg-slate-800 hover:rounded-xl rounded-lg">
-            <img src={hedgehog} alt="a hedgehog" id="HH" on:mouseover={spin} on:focus={spin}>
-          </a>
+            <div></div>
+            
+            <a href="index.html" class="hover:bg-slate-300 dark:hover:bg-slate-800 hover:rounded-xl rounded-lg">
+                <img src={hedgehog} alt="a hedgehog" id="HH" on:mouseover={spin} on:focus={spin}>
+            </a>
 
-          <div class="flex justify-between content-center p-2">
-                <a href="index.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-primary hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
+            <div class="flex justify-between content-center p-2">
+                <a href="index.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-500 hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
                     Home
                     <img src = {houseDoor} alt ="house">
                 </a>
                 <br>
             </div>
             <div class="flex justify-between content-center p-2">
-                <a href="games.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-primary hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
+                <a href="games.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-500 hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
                     Games 
                     <img src = {controller} alt ="controller">
-
                 </a>
                 <br>
             </div>
             <div class="flex justify-between content-center p-2">
-                <a href="threeDprints.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-primary hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
-                  3D Prints
-                  <img src ={badge3d} alt ="3d">
-
+                <a href="threeDprints.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-500 hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
+                    3D Prints
+                    <img src ={badge3d} alt ="3d">
                 </a>
             </div>
             <div class="flex justify-between content-center p-2">
-                <a href="models.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-primary hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
-                  Models
-                  <img src = {boxes} alt ="box">
-
+                <a href="models.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-500 hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
+                    Models
+                    <img src = {boxes} alt ="box">
                 </a>
             </div>
             <div class="flex justify-between content-center p-2">
-                <a href="developments.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-primary hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
-                  Developments
-                  <img src={codeSlash} alt="code">
-
+                <a href="developments.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-500 hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
+                    Developments
+                    <img src={codeSlash} alt="code">
                 </a>
-              </div>
-          <div></div>
-          <div></div>
-          <div></div>
+            </div>
+        <div></div>
+        <div></div>
+        <div></div>
         </div>
     {/if}
 </header>
