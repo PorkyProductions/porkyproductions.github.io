@@ -1,9 +1,8 @@
 <script>
     import '../app.css'
     import icelands from '../../images/icelands.png'
-    import hedgeHogModel from '../../images/hedgehogmodel.png'
-    import hedgehog from '../../models/hedgehog.stl'
-    import icelandsModel from '../../models/icelands.stl'
+    import hedgehog from '../../images/hedgehogmodel.png'
+    import hedgehogModel from '../../models/hedgehog.stl'
 </script>
 
 <section>
@@ -12,13 +11,13 @@
             <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
                 Hedgehog
             </h1>
-            <img src={hedgeHogModel} alt="hedgehogModel" class="p-4">
+            <img src={hedgehog} alt="hedgehogModel" class="p-4">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iste molestias repellendus dolorum qui quia, iure fugiat in vel optio! Iusto, cumque distinctio delectus fuga repellat at accusamus quis repudiandae!
             </p>
             <br>
             <hr>
-            <a href={hedgehog}>Download (.stl)</a>
+            <a href={hedgehogModel}>Download (.stl)</a>
         </div>
         <div class="tile">
             <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
@@ -30,7 +29,7 @@
             </p>
             <br>
             <hr>
-            <a href={icelandsModel}>
+            <a href={hedgehog}>
                 Download (.stl)
             </a>
         </div>

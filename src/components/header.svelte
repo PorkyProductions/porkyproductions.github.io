@@ -73,9 +73,7 @@
         top: 0;
         z-index: 5;
     }
-    .spin {
-        animation: spin 2s infinite cubic-bezier(0.96, 0.95, 0, 1.22);
-    }
+    
     @keyframes spin {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
