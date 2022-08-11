@@ -22,7 +22,7 @@
 
 <style>
 .blue-gradient {
-    background: linear-gradient(90deg,hsl(240, 100%, 48%) 0%,hsl(169, 100%, 50%) 100%);
+    background: hsl(216, 100%, 50%);
     background-size: auto;
     background-size: 400% 400%;
     -webkit-animation: gradient 25s ease infinite;
