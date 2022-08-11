@@ -8,6 +8,10 @@
     <h1 class="font-semibold font-primary pt-40 pb-12 px-32 text-5xl">
         Our Founders
     </h1>
+    <h4 class="font-primary pb-12 px-40 text-3xl">
+        Tristan and Ryan have worked together to create a metaphorical<br>
+        library to see all of their awesome projects!
+    </h4>
     <div class="grid">
         <div class="tile bg-slate-100 dark:bg-slate-600 drop-shadow-lg">
             <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
