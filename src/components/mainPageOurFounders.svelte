@@ -10,7 +10,7 @@
     <div class="grid">
         <div class="tile">
             <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
-                Ryan Mullin
+                Ryan
             </h1>
             <h2 class="font-normal font-secondary sm:text-sm md:text-md lg:text-md xl:text-lg">
                 (hiteacheryouare)
@@ -22,14 +22,14 @@
         </div>
         <div class="tile">
             <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
-                Tristan Winata
+                Tristan
             </h1>
             <h2 class="font-normal font-secondary sm:text-sm md:text-md lg:text-md xl:text-lg">
                 (HedgehogDubz)
             </h2>
             <img src="https://avatars.githubusercontent.com/u/53802238?v=4" alt="hedgehog">
             <p class="font-light font-secondary sm:text-sm md:text-md lg:text-md xl:text-lg">
-                Tristan is a hobbiest software developer and 3d printer. While he specializes in creating video games, he also has experience with JS, HTML5, C# (Unity, Winforms), and Python. He is currently working on a bullet hell top-down game and an easy-to-use machine learning library for C#. Most of his projects are NOT seen in his GitHub page. Also really likes hedgehogs!
+                Tristan is a software / hardware developer as a hobbiest. He uses a multitude of languages to accomodate to his needs. Some of these languages include: HTML, CSS, Javascript + (jQuery), C# + (Winforms, .Net, Unity), Java, Typescript, Python, and aspx. Has a 3D printer and all creations can be seen in his 3D Prints Tab tab. Also creates models seen in the Models Tab Also creates games but currently none are published. 
             </p>
         </div>
     </div>

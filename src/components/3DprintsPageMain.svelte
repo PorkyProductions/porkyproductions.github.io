@@ -1,5 +1,7 @@
 <script>
     import '../app.css'
+    import impCredit from '../../images/imp_credit.jpg'
+    import hedehog3D from '../../images/hedgehogs_3dprint.jpg'
 </script>
 
 <section>
@@ -12,7 +14,7 @@
                 The Imperial Credit
             </h2>
             <div class="m-auto">
-                <img src="https://porkyproductions.github.io/assets/IMG_4488.f5df3d1c.JPG" id="imp" alt="">
+                <img src={impCredit} id="imp" alt="">
             </div>
             <p class="font-light font-secondary sm:text-sm md:text-md lg:text-md xl:text-lg">
                 The Imperial Credit is a replacement for the existing monetary standard. It can eaisly be mass-produced due to it's 3D printed nature. Instead of relying on cryptography like cryptocurrency, it is a simple, easy to use, and secure payment system. It is the first currency to be created using 3D printing, and the first to be regulated by a company 
@@ -23,7 +25,7 @@
                     Hedgehog
                 </h2>
                 <div class="m-auto">
-                    <img src="https://porkyproductions.github.io/assets/270296317_652388366132155_3743031954038196014_n.8eaf40d6.jpg" id="imp" alt="">
+                    <img src={hedehog3D} id="imp" alt="">
                 </div>
                 <p class="font-light font-secondary sm:text-sm md:text-md lg:text-md xl:text-lg">
                     The Hedgehog is a 3D printed model of our mascot, Porky. It is a small, cute, and cute. It is a hedgehog, and it is a hedgehog.

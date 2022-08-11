@@ -25,7 +25,7 @@
     </script>
     
     <main class="pl-3">
-        <div id="bg" class="p-10 -m-10">
+        <div id="bg" class="p-10">
             <p class="text-white text-2xl">
                 Hi, we're 
         <Typewriter --cursor-width={props["--cursor-width"]} --cursor-color={props["--cursor-color"]} on:done={() => console.log("The animation has finished!")} {...props}>
