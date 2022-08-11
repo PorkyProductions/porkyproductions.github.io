@@ -10,7 +10,7 @@
     <div class="grid">
         <div class="tile">
             <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
-                Ryan
+                Ryan Mullin
             </h1>
             <h2 class="font-normal font-secondary sm:text-sm md:text-md lg:text-md xl:text-lg">
                 (hiteacheryouare)
@@ -22,7 +22,7 @@
         </div>
         <div class="tile">
             <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
-                Tristan
+                Tristan Winata
             </h1>
             <h2 class="font-normal font-secondary sm:text-sm md:text-md lg:text-md xl:text-lg">
                 (HedgehogDubz)
