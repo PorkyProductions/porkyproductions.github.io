@@ -3,12 +3,13 @@
 </script>
 
 
-<section>
-    <h1 class="text-center font-semibold font-primary sm:text-lg md:text-xl lg:text-2xl xl:text-3xl p-6">
+<section class="bg-slate-300">
+    
+    <h1 class="text-center font-semibold font-primary lg:text-2xl xl:text-3xl pt-40 pb-12">
         Our Founders
     </h1>
     <div class="grid">
-        <div class="tile">
+        <div class="tile bg-slate-100 drop-shadow-lg">
             <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
                 Ryan
             </h1>
@@ -20,7 +21,7 @@
                 Ryan is a software developer as a hobbiest. He mainly focuses on web development, but also has some experience in Python and Rust (specifically targeting WebAssembly.) Some of the technologies in his stack include Svelte, taiilwindcss, and vite. All powered by node.js experience. Ryan is working on a variety of projects which you can see in his GitHub repository
             </p>
         </div>
-        <div class="tile">
+        <div class="tile bg-slate-100 drop-shadow-lg">
             <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
                 Tristan
             </h1>
@@ -43,8 +44,8 @@
 .tile {
     padding:50px;
     margin:50px;
-    border:5px solid hsl(240, 100%, 48%);
     border-radius:30px;
     text-align:left;
 }
+
 </style>
