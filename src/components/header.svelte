@@ -25,38 +25,38 @@
         <div class="flex content-center justify-between p-4">
             <div></div>
             
-            <a href="index.html" class="hover:bg-slate-300 dark:hover:bg-slate-800 hover:rounded-xl rounded-lg">
+            <a href="index.html" class="header-link hover:bg-slate-300 dark:hover:bg-slate-800 hover:rounded-xl rounded-lg">
                 <img src={hedgehog} alt="a hedgehog" id="HH" on:mouseover={spin} on:focus={spin}>
             </a>
 
             <div class="flex justify-between content-center p-2">
-                <a href="index.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-500 hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
+                <a href="index.html" class="header-link sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-400 hover:font-semibold  hover:rounded-xl">
                     Home
                     <img src = {houseDoor} alt ="house">
                 </a>
                 <br>
             </div>
             <div class="flex justify-between content-center p-2">
-                <a href="games.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-500 hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
+                <a href="games.html" class="header-link sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-400  hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
                     Games 
                     <img src = {controller} alt ="controller">
                 </a>
                 <br>
             </div>
             <div class="flex justify-between content-center p-2">
-                <a href="threeDprints.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-500 hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
+                <a href="threeDprints.html" class="header-link sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-400  hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
                     3D Prints
                     <img src ={badge3d} alt ="3d">
                 </a>
             </div>
             <div class="flex justify-between content-center p-2">
-                <a href="models.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-500 hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
+                <a href="models.html" class="header-link sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-400  hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
                     Models
                     <img src = {boxes} alt ="box">
                 </a>
             </div>
             <div class="flex justify-between content-center p-2">
-                <a href="developments.html" class="sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-500 hover:text-white hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
+                <a href="developments.html" class="header-link sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-400  hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
                     Developments
                     <img src={codeSlash} alt="code">
                 </a>
@@ -84,4 +84,13 @@
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
     }
+    .header-link {
+        padding:20px;
+        margin-top: -15px;
+        margin-bottom:-15px;
+        padding-right: 50px;
+        padding-left:50px;
+        
+    }
+    
 </style>
