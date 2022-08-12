@@ -1,6 +1,6 @@
 <script>
   import './app.css'
-import Footer from './components/footer.svelte';
+  import Footer from './components/footer.svelte';
   import Header from './components/header.svelte';
   import MainPageBreakOurMission from './components/mainPageBreakOurMission.svelte';
   import Hero from './components/mainPageHero.svelte';
