@@ -3,11 +3,11 @@
 </script>
 <section>
     <div class="blue-gradient">
-        <div class="p-20">
-            <h1 class="text-center font-semibold text-white font-primary sm:text-lg md:text-xl lg:text-2xl xl:text-3xl p-6">
+        <div class="py-20">
+            <h1 class="font-semibold text-white font-primary pb-12 px-32 text-5xl pt-24">
                 Our Mission
             </h1>
-            <p class="text-center text-white font-secondary sm:text-sm md:text-md lg:text-lg xl:text-xl px-10 pb-10">
+            <p class="text-white font-secondary  pb-12 px-40 text-xl" style = "margin-right: 800px">
                 Here at PorkyProductions© we are on a mission to create technology that can change the world.
                 Whether it be a game, a model, or a software development, we are dedicated to positively impacting the world.
                 We chose to do this because we believe that technology (when used in the right ways) can and will positively impact humanity.
@@ -19,7 +19,7 @@
     </div>
 </section>
 
-
+0
 <style>
 .blue-gradient {
     background: hsl(216, 100%, 50%);
