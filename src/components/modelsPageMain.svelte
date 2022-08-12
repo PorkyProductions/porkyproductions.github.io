@@ -53,9 +53,9 @@
                 </h1>
 
                 <div class="flex justify-center">
-                    <button class = "previewButton text-8xl">&lt;</button>
-                    <img src={hedgehog} alt="hedgehogModelPreview" class="previewImage p-4 w-3/4"><!--ACTUAL IMAGE ACTUAL IMAGEACTUAL IMAGE ACTUAL IMAGEACTUAL IMAGE ACTUAL IMAGEACTUAL IMAGE ACTUAL IMAGE-->
-                    <button class = "previewButton text-8xl">&gt;</button>
+                    <button id="button_HedgehogPreviewLeft" class = "previewButton text-8xl">&lt;</button>
+                    <img src={hedgehog} alt="hedgehogModelPreview" id = "hedgehogModelPreview"class="previewImage p-4 w-3/4"><!--ACTUAL IMAGE ACTUAL IMAGEACTUAL IMAGE ACTUAL IMAGEACTUAL IMAGE ACTUAL IMAGEACTUAL IMAGE ACTUAL IMAGE-->
+                    <button id="button_HedgehogPreviewRight"class = "previewButton text-8xl">&gt;</button>
 
                 </div>
                 <p>
