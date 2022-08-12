@@ -22,8 +22,9 @@
         <div class="flex content-center justify-between p-4 border-b-4 border-slate-800">
             <div></div>
             
-            <a href="index.html" class="header-link hover:bg-slate-300 dark:hover:bg-slate-800 hover:rounded-xl rounded-lg">
-                <img src={hedgehog} alt="a hedgehog" id="HH" on:mouseover={spin} on:focus={spin}>
+            <a href="index.html" class="header-link hover:bg-slate-300 dark:hover:bg-slate-800 hover:rounded-xl rounded-lg  h-24">
+                <img class = "float-left"src={hedgehog} alt="a hedgehog" id="HH" on:mouseover={spin} on:focus={spin}>
+                <p class="float-right"><b>PorkyProductions</b>.io</p>
             </a>
   
             <div class="flex justify-between content-center p-2">
@@ -66,10 +67,12 @@
 </header>
 <style>
     #HH {
-        width: 35%;
+        padding-right:0px;
+        height:90%;
     }
     #HH:hover{
         animation: spin 1s;
+        
     }
     header {
         position: sticky;
