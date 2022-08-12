@@ -5,7 +5,7 @@
         time--
         if (time === 0) {
             clearInterval()
-            //window.location.href="https://porkyproductions.github.io/"
+            window.location.href="https://porkyproductions.github.io/"
         }
     }, 1000);
     import hedgehog from '../../../images/HedgehogIcon.png'
@@ -34,7 +34,7 @@
         position: absolute;
     }
     .spin {
-        animation: spin 2s infinite;
+        animation: spin 1s infinite;
         margin: auto;
         padding-bottom: 400px;
     }
@@ -47,7 +47,7 @@
         }
     }
     .spin2 {
-        animation: spin2 2.2s infinite;
+        animation: spin2 1.2s infinite;
         margin: auto;
         padding-bottom: 400px;
     }
@@ -60,7 +60,7 @@
         }
     }
     .spin3 {
-        animation: spin3 2.4s infinite;
+        animation: spin3 1.4s infinite;
         margin: auto;
         padding-bottom: 400px;
     }
@@ -73,7 +73,7 @@
         }
     }
     .spin4 {
-        animation: spin4 2.6s infinite;
+        animation: spin4 1.6s infinite;
         margin: auto;
         padding-bottom: 400px;
     }
@@ -86,7 +86,7 @@
         }
     }
     .spin5 {
-        animation: spin5 2.8s infinite;
+        animation: spin5 1.8s infinite;
         margin: auto;
         padding-bottom: 400px;
     }
