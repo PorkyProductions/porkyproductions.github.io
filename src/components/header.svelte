@@ -19,7 +19,7 @@
         <div></div>
     {:else if DEVICE_type === "desktop"}
     
-        <div class="flex content-center justify-between p-4">
+        <div class="flex content-center justify-between p-4 border-b-4 border-slate-800">
             <div></div>
             
             <a href="index.html" class="header-link hover:bg-slate-300 dark:hover:bg-slate-800 hover:rounded-xl rounded-lg">
@@ -67,6 +67,9 @@
 <style>
     #HH {
         width: 35%;
+    }
+    #HH:hover{
+        animation: spin 1s;
     }
     header {
         position: sticky;
