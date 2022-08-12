@@ -7,18 +7,26 @@
   import MainPageOriginStory from './components/mainPageOriginStory.svelte';
   import MainPageOurFounders from './components/mainPageOurFounders.svelte';
   import MainPageSectionOneGrid from './components/mainPageSectionOneGrid.svelte';
+  import { onMount } from 'svelte'
+  import HedgehogSpinner from './components/hedgehogSpinner.svelte';
+  let ready = false
+  onMount(() => ready = true)
 </script>
 
+{#if ready}
+  <div class="bg-white dark:bg-black text-black dark:text-white">
+    <Header />
+    <Hero />
+    <MainPageSectionOneGrid />
+    <MainPageBreakOurMission />
+    <MainPageOurFounders />
+    <MainPageOriginStory />
+    <Footer />
+  </div>
+{:else}
+  <HedgehogSpinner />
+{/if}
 
-<div class="bg-white dark:bg-black text-black dark:text-white">
-  <Header />
-  <Hero />
-  <MainPageSectionOneGrid />
-  <MainPageBreakOurMission />
-  <MainPageOurFounders />
-  <MainPageOriginStory />
-  <Footer />
-</div>
 
 <style>
   * {
