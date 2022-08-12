@@ -13,7 +13,9 @@ module.exports = {
         'secondary-dark': '#7BE0AD',
         'secondary-darkest': '#357266',
         'ppio-red': '#710627',
-        'ppio-hotshot': '#FF4D80'
+        'ppio-hotshot': '#FF4D80',
+        'UADblue': '#0003f9',
+        'UADGreen': '#00c00d',
       },
     }
   },
