@@ -9,7 +9,7 @@
     <h1 class="font-semibold font-primary pt-40 pb-12 px-32 text-5xl">
         Our Founders
     </h1>
-    <h4 class="font-primary pb-12 px-40 text-3xl">
+    <h4 class="font-primary pb-12 px-40 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
         Tristan and Ryan have worked together to create a metaphorical<br>
         library to see all of their awesome projects!
     </h4>
