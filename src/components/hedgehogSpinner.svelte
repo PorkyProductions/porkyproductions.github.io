@@ -16,7 +16,32 @@
         position: absolute;
     }
     .spin {
-        animation: spin 1s infinite;
+        animation: spin 1.3s infinite;
+        animation-delay: 0ms;
+        margin: auto;
+        padding-bottom: 400px;
+    }
+    .spin2 {
+        animation: spin 1.3s infinite;
+        animation-delay: 200ms;
+        margin: auto;
+        padding-bottom: 400px;
+    }
+    .spin3 {
+        animation: spin 1.3s infinite;
+        animation-delay: 400ms;
+        margin: auto;
+        padding-bottom: 400px;
+    }
+    .spin4 {
+        animation: spin 1.3s infinite;
+        animation-delay: 600ms;
+        margin: auto;
+        padding-bottom: 400px;
+    }
+    .spin5 {
+        animation: spin 1.3s infinite;
+        animation-delay: 800ms;
         margin: auto;
         padding-bottom: 400px;
     }
@@ -28,57 +53,7 @@
             transform:rotate(360deg)
         }
     }
-    .spin2 {
-        animation: spin2 1.2s infinite;
-        margin: auto;
-        padding-bottom: 400px;
-    }
-    @keyframes spin2 {
-        0% {
-            transform:rotate(0)
-        }
-        to {
-            transform:rotate(360deg)
-        }
-    }
-    .spin3 {
-        animation: spin3 1.4s infinite;
-        margin: auto;
-        padding-bottom: 400px;
-    }
-    @keyframes spin3 {
-        0% {
-            transform:rotate(0)
-        }
-        to {
-            transform:rotate(360deg)
-        }
-    }
-    .spin4 {
-        animation: spin4 1.6s infinite;
-        margin: auto;
-        padding-bottom: 400px;
-    }
-    @keyframes spin4 {
-        0% {
-            transform:rotate(0)
-        }
-        to {
-            transform:rotate(360deg)
-        }
-    }
-    .spin5 {
-        animation: spin5 1.8s infinite;
-        margin: auto;
-        padding-bottom: 400px;
-    }
-    @keyframes spin5 {
-        0% {
-            transform:rotate(0)
-        }
-        to {
-            transform:rotate(360deg)
-        }
-    }
 </style>
+
+    
 
