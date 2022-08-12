@@ -95,6 +95,11 @@
     }
     .previewImage{
         border-radius: 30px;
+        padding: 0;
+    }
+    .previewButton:hover{
+        border-radius: 20px;
+        background-color: rgb(183, 206, 228);
     }
     .grid {
         display:grid;
