@@ -4,7 +4,7 @@
 </script>
 
 {#if DEVICE_type === "mobile"}
-    <section>
+    <section class="text-black dark:text-white dark:bg-black">
         <h1 class="text-center font-primary font-semibold text-black sm:text-lg md:text-xl lg:text-2xl xl:text-3xl p-6">
             Hedgehog Studios Games
         </h1>
@@ -27,7 +27,7 @@
         </div>
     </section>
 {:else}
-    <section>
+    <section class="text-black dark:text-white dark:bg-black">
         <h1 class="text-center font-primary font-semibold text-black sm:text-lg md:text-xl lg:text-2xl xl:text-3xl p-6">
             Hedgehog Studios Games
         </h1>

@@ -7,7 +7,7 @@
 </script>
 
 {#if DEVICE_type === "mobile"}
-    <section>
+    <section class="text-black dark:text-white dark:bg-black">
         <div class="gridMobile">
             <div class="tileMobile">
                 <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
@@ -38,7 +38,7 @@
         </div>
     </section>
 {:else}
-    <section>
+    <section class="text-black dark:text-white dark:bg-black">
         <div class="grid">
             <div class="tile">
                 <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
