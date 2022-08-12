@@ -5,10 +5,10 @@
 <section>
     <div class="blue-gradient">
         <div class="py-20">
-            <h1 class="font-semibold text-white font-primary  px-32 text-5xl py-24 text-center">
+            <h1 class="font-semibold text-white font-primary px-32 sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl py-24 text-center">
                 Our Mission
             </h1>
-            <div class="tiletext-white font-secondary  pb-12 px-40 text-xl grid" >
+            <div class="tiletext-white font-secondary pb-12 px-40 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl grid" >
                 <div>
                 Here at PorkyProductions© we are on a mission to create technology that can change the world.
                 Whether it be a game, a model, or a software development, we are dedicated to positively impacting the world.
