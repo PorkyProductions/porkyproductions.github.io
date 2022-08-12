@@ -38,9 +38,9 @@
         </div>
     </section>
 {:else}
-    <section class="text-black dark:text-white dark:bg-black">
+    <section class="text-black dark:text-white dark:bg-black bg-slate-300">
         <div class="grid">
-            <div class="tile">
+            <div class="tile bg-slate-100 drop-shadow-lg">
                 <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
                     Hedgehog
                 </h1>
@@ -54,7 +54,7 @@
                 <hr>
                 <a href={hedgehogModel}>Download (.stl)</a>
             </div>
-            <div class="tile drop-shadow-lg">
+            <div class="tile bg-slate-100 drop-shadow-lg">
                 <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
                     Icelands
                 </h1>
