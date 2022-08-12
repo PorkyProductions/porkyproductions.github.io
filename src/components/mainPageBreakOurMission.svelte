@@ -19,7 +19,7 @@
     </div>
 </section>
 
-0
+
 <style>
 .blue-gradient {
     background: hsl(216, 100%, 50%);
