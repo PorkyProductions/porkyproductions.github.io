@@ -1,13 +1,13 @@
 <script>
     import '../../app.css'
     let time = 15
-    setInterval(() => {
-        time--
-        if (time === 0) {
-            clearInterval()
-            window.location.href="https://porkyproductions.github.io/"
-        }
-    }, 1000);
+    // setInterval(() => {
+    //     time--
+    //     if (time === 0) {
+    //         clearInterval()
+    //         //window.location.href="https://porkyproductions.github.io/"
+    //     }
+    // }, 1000);
     import hedgehog from '../../../images/HedgehogIcon.png'
 </script>
 
@@ -21,17 +21,20 @@
     <h3 class="font-primary text-center text-4xl font-bold">
         You will be automatically redirected in {time} seconds
     </h3>
-    <div>
-        <img src={hedgehog} alt="hedgehog" class="spin">
-        <img src={hedgehog} alt="hedgehog" class="spin2">
-        <img src={hedgehog} alt="hedgehog" class="spin3">
-        <img src={hedgehog} alt="hedgehog" class="spin4">
-        <img src={hedgehog} alt="hedgehog" class="spin5">
+    <div class="flex justify-center">
+        <img src={hedgehog} alt="hedgehog" class="hedgehog-spin spin">
+        <img src={hedgehog} alt="hedgehog" class="hedgehog-spin spin2">
+        <img src={hedgehog} alt="hedgehog" class="hedgehog-spin spin3">
+        <img src={hedgehog} alt="hedgehog" class="hedgehog-spin spin4">
+        <img src={hedgehog} alt="hedgehog" class="hedgehog-spin spin5">
     </div>
 </div>
 <style>
+    .hedgehog-spin {
+        position: absolute;
+    }
     .spin {
-        animation: spin 3s infinite;
+        animation: spin 2s infinite;
         margin: auto;
         padding-bottom: 400px;
     }
@@ -44,52 +47,52 @@
         }
     }
     .spin2 {
-        animation: spin 3s infinite;
+        animation: spin2 2.2s infinite;
         margin: auto;
-        padding-bottom: 300px;
+        padding-bottom: 400px;
     }
     @keyframes spin2 {
         0% {
-            transform:rotate(5)
+            transform:rotate(0)
         }
         to {
             transform:rotate(360deg)
         }
     }
     .spin3 {
-        animation: spin 3s infinite;
+        animation: spin3 2.4s infinite;
         margin: auto;
-        padding-bottom: 200px;
+        padding-bottom: 400px;
     }
     @keyframes spin3 {
         0% {
-            transform:rotate(15)
+            transform:rotate(0)
         }
         to {
             transform:rotate(360deg)
         }
     }
     .spin4 {
-        animation: spin 3s infinite;
+        animation: spin4 2.6s infinite;
         margin: auto;
-        padding-bottom: 100px;
+        padding-bottom: 400px;
     }
     @keyframes spin4 {
         0% {
-            transform:rotate(25)
+            transform:rotate(0)
         }
         to {
             transform:rotate(360deg)
         }
     }
     .spin5 {
-        animation: spin 3s infinite;
+        animation: spin5 2.8s infinite;
         margin: auto;
-        padding-bottom: 0px;
+        padding-bottom: 400px;
     }
     @keyframes spin5 {
         0% {
-            transform:rotate(40)
+            transform:rotate(0)
         }
         to {
             transform:rotate(360deg)
