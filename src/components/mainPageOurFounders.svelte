@@ -10,8 +10,9 @@
         Our Founders
     </h1>
     <h4 class="font-primary pb-12 px-40 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
-        Tristan and Ryan have worked together to create a metaphorical<br>
-        library to see all of their awesome projects!
+        Tristan and Ryan have worked together to create a <br>
+        technological library to see all of their creative<br>
+        and amazing projects!
     </h4>
     {#if DEVICE_type === "mobile"}
         <div class="gridMobile">
