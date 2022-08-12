@@ -9,7 +9,7 @@
 <!-- TODO: Make dark mode compatible -->
 
 {#if DEVICE_type === "mobile"}
-    <section class="text-black dark:text-white dark:bg-black">
+    <section class="section text-black dark:text-white dark:bg-black">
         <div class="gridMobile">
             <div class="tileMobile">
                 <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
@@ -45,7 +45,7 @@
         </div>
     </section>
 {:else}
-    <section class="text-black dark:text-white dark:bg-black bg-slate-300">
+    <section class="section text-black dark:text-white dark:bg-black bg-slate-300">
         <div class="grid">
             <div class="tile bg-slate-100 drop-shadow-lg">
                 <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
@@ -89,6 +89,10 @@
 {/if}
 
 <style>
+    .section {
+        background-image: linear-gradient(#710627, #FF4D80);
+
+    }
     .previewImage{
         border-radius: 30px;
     }
