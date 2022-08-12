@@ -11,7 +11,8 @@ export default defineConfig({
             index: 'index.html',
             games: 'games.html',
             threeDPrints: 'threeDprints.html',
-            models: 'models.html'
+            models: 'models.html',
+            fourOhFour: '404.html'
         },
         output: {
             dir: './docs',
