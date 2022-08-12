@@ -1,13 +1,13 @@
 <script>
     import '../../app.css'
     let time = 15
-    // setInterval(() => {
-    //     time--
-    //     if (time === 0) {
-    //         clearInterval()
-    //         //window.location.href="https://porkyproductions.github.io/"
-    //     }
-    // }, 1000);
+    setInterval(() => {
+        time--
+        if (time === 0) {
+            clearInterval()
+            //window.location.href="https://porkyproductions.github.io/"
+        }
+    }, 1000);
     import hedgehog from '../../../images/HedgehogIcon.png'
 </script>
 
