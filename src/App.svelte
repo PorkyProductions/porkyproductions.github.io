@@ -23,7 +23,7 @@ import Footer from './components/footer.svelte';
 <style>
   * {
     scroll-behavior: smooth;
-    scrollbar-color: blue;
+    scrollbar-color: hsl(240, 100%, 50%);
     accent-color: hsl(343, 100%, 65%);
   }
   *::selection {

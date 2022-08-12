@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
+
+* {
+    scroll-behavior: smooth;
+    scrollbar-color: blue;
+    accent-color: hsl(343, 100%, 65%);
+}
+*::selection {
+    background-color: hsl(343, 100%, 65%);
+    color: white;
+}

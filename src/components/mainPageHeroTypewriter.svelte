@@ -2,6 +2,7 @@
 // @ts-nocheck
 
     import '../app.css'
+    import { DEVICE_type } from 'uadetect' 
     // @ts-ignore
     import Typewriter from 'svelte-typewriter'
             
@@ -24,29 +25,35 @@
         }
     </script>
     
-    <main class="pl-3">
+    <main class="p-3">
         <div id="bg" class="p-10 -m-10">
-            <p class="text-white text-2xl">
+            <p class="text-white sm:text-md md:text-lg lg:text-xl xl:text-2xl">
                 Hi, we're 
         <Typewriter --cursor-width={props["--cursor-width"]} --cursor-color={props["--cursor-color"]} on:done={() => console.log("The animation has finished!")} {...props}>
-            <h3 class="font-primary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
+            <h3 class="font-primary font-bold text-white sm:text-2xl md:text-3xl lg:text-6xl xl:text-8xl">
                 PorkyProductions
             </h3>
-            <h3 class="font-primary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
+            <h3 class="font-primary font-bold text-white sm:text-2xl md:text-3xl lg:text-6xl xl:text-8xl">
                 Making Games
             </h3>
-            <h3 class="font-primary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
+            <h3 class="font-primary font-bold text-white sm:text-2xl md:text-3xl lg:text-6xl xl:text-8xl">
                 Developing Software
             </h3>
-            <h3 class="font-primary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
+            <h3 class="font-primary font-bold text-white sm:text-2xl md:text-3xl lg:text-6xl xl:text-8xl">
                 3D Printing
             </h3>
-            <h3 class="font-primary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
+            <h3 class="font-primary font-bold text-white sm:text-2xl md:text-3xl lg:text-6xl xl:text-8xl">
                 Pushing What's Possible
             </h3>
-            <h3 class="font-primary font-bold text-white sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl">
-                PorkyProductions
-            </h3>
+            {#if DEVICE_type === "mobile"}
+                <h3 class="font-primary font-bold text-white text-sm">
+                    PorkyProductions
+                </h3>
+            {:else}
+                <h3 class="font-primary font-bold text-white sm:text-2xl md:text-3xl lg:text-6xl xl:text-8xl">
+                    PorkyProductions
+                </h3>
+            {/if}
         </Typewriter>
     </p>
         </div>

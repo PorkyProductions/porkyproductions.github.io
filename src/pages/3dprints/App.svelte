@@ -8,7 +8,3 @@
 <Header />
 <ThreeDPrintsMain />
 <Footer />
-
-<style>
-
-</style>
