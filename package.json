@@ -11,6 +11,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.8",
     "bootstrap-icons": "^1.9.1",
+    "jQuery": "^1.7.4",
     "jszip": "^3.10.1",
     "postcss": "^8.4.14",
     "sass": "^1.54.1",
