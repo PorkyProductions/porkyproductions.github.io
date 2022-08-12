@@ -8,15 +8,20 @@
             <h1 class="font-semibold text-white font-primary px-32 sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl py-24 text-center">
                 Our Mission
             </h1>
-            <div class="tile text-white font-secondary  pb-12 px-40 sm:text-sm md:text-md lg:text-lg xl:text-xl grid" >
-                <div>
-                Here at PorkyProductions© we are on a mission to create technology that can change the world.
+            <div class="text-white font-secondary  pb-12 px-40 sm:text-sm md:text-md lg:text-lg xl:text-xl grid" >
+                <div id = "mission-text" class=" tile px-20 mb-32 drop-shadow-lg">
+                Here at <b>PorkyProductions©</b> we are on a mission to create technology that can change the world.
                 Whether it be a game, a model, or a software development, we are dedicated to positively impacting the world.
                 We chose to do this because we believe that technology (when used in the right ways) can and will positively impact humanity.
-                We believe that technology can be used to create a better world, and that we can use technology to help us do that.
-                Join us as we create technology that can change the world! 
+                <br>
+                <br>
+                <br>
+                <p class="text-right">
+                -Join us as we create technology that can change the world! 
+                </p>
                 </div>
-                <div class = "tile pt-0 -mt-20">
+                <div class = "tile py-0 -mt-20 drop-shadow-lg">
+                    <br>
                     <img src={hedgehogOnComputer} id="hedgehogComputerImage" alt="">
                 </div>
             </div>
@@ -31,6 +36,13 @@
         height: 80%;
         border-radius: 30px;
         border: 3px solid white;
+    }
+    #mission-text {
+        border-radius: 30px;
+        border:3px solid white;
+        padding-top: 110px;
+        background-color: darkblue;
+        
     }
     .grid{
         grid-template-columns: 1fr 1fr;
