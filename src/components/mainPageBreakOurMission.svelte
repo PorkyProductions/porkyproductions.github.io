@@ -2,8 +2,8 @@
     import '../app.css';
     import hedgehogOnComputer from '../../images/compHedgehog.jpg'
 </script>
-<section>
-    <div class="blue-gradient">
+<section class= "section bg-blue-500">
+    <div class="">
         <div class="py-20">
             <h1 class="font-semibold text-white font-primary px-32 sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl py-24 text-center">
                 Our Mission
@@ -32,6 +32,10 @@
 
 
 <style>
+    .section {
+        
+        background-image: linear-gradient(#0003f9, #00c00d);
+    }
     #hedgehogComputerImage{
         height: 80%;
         border-radius: 30px;
@@ -50,13 +54,7 @@
     .tile{
         padding:50px;
     }
-    .blue-gradient {
-        background: hsl(216, 100%, 50%);
-        background-size: auto;
-        background-size: 400% 400%;
-        -webkit-animation: gradient 25s ease infinite;
-        animation: gradient 25s ease infinite;
-    }
+    
     @keyframes gradient {
         0% {
             background-position:0% 50%
