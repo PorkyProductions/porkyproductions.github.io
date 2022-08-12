@@ -21,7 +21,7 @@
     <h3 class="font-primary text-center text-4xl font-bold">
         You will be automatically redirected in {time} seconds
     </h3>
-    <div class="flex justify-center">
+    <div class="flex justify-center bg-white text-black dark:bg-black dark:text-white">
         <img src={hedgehog} alt="hedgehog" class="hedgehog-spin spin">
         <img src={hedgehog} alt="hedgehog" class="hedgehog-spin spin2">
         <img src={hedgehog} alt="hedgehog" class="hedgehog-spin spin3">
