@@ -6,6 +6,8 @@
     import { DEVICE_type } from 'uadetect'
 </script>
 
+<!-- TODO: Make dark mode compatible -->
+
 {#if DEVICE_type === "mobile"}
     <section class="text-black dark:text-white dark:bg-black">
         <div class="gridMobile">
