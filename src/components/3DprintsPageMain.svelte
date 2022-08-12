@@ -8,7 +8,7 @@
 
 {#if DEVICE_type === "mobile"}
     <section class="text-black dark:text-white dark:bg-black">
-        <h1 class="text-center font-primary font-semibold text-black sm:text-lg md:text-xl lg:text-2xl xl:text-3xl p-6">
+        <h1 class="text-center font-primary font-semibold sm:text-lg md:text-xl lg:text-2xl xl:text-3xl p-6">
             3D Prints
         </h1>
         <div class="gridMobile">
@@ -38,7 +38,7 @@
     </section>
 {:else}
     <section class="text-black dark:text-white dark:bg-black">
-        <h1 class="text-center font-primary font-semibold text-black sm:text-lg md:text-xl lg:text-2xl xl:text-3xl p-6">
+        <h1 class="text-center font-primary font-semibold sm:text-lg md:text-xl lg:text-2xl xl:text-3xl p-6">
             3D Prints
         </h1>
         <div class="grid">
