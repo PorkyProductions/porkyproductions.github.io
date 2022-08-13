@@ -75,6 +75,13 @@ function OnStart() {
   document.getElementById("button_HedgehogPreviewRight").onclick = (function () {
       HedgehogModelPreview.OnSwitchRight();
   });
+  var BowModelPreview = new ImagePreview("bowModelPreview", ["BowPreview_Top", "BowPreview_Front", "BowPreview_Bottom", "BowPreview_Back"]);
+  document.getElementById("button_BowPreviewLeft").onclick = (function () {
+      BowModelPreview.OnSwitchLeft();
+  });
+  document.getElementById("button_BowPreviewRight").onclick = (function () {
+      BowModelPreview.OnSwitchRight();
+  });
 }
 document.addEventListener('DOMContentLoaded', function () {
   // do something here ...
