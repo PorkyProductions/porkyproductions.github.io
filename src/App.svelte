@@ -9,8 +9,9 @@
   import MainPageSectionOneGrid from './components/mainPageSectionOneGrid.svelte';
   import { onMount } from 'svelte'
   import HedgehogSpinner from './components/hedgehogSpinner.svelte';
+  import 'jquery'
   let ready = false
-  onMount(() => ready = true)
+  onMount(() => ready = true);
 </script>
 
 {#if ready}

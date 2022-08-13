@@ -3,13 +3,7 @@
 
     import '../../app.css'
     let time = 15
-    setInterval(() => {
-        time--
-        if (time === 0) {
-            clearInterval()
-            window.location.href="https://porkyproductions.github.io/"
-        }
-    }, 1000);
+    setInterval(() => {time--;if (time === 0) {clearInterval();window.location.href="https://porkyproductions.github.io/";};}, 1000);
 </script>
 
 <div class="bg-white text-black dark:bg-black dark:text-white">
@@ -22,5 +16,8 @@
     <h3 class="font-primary text-center text-4xl font-bold">
         You will be automatically redirected in {time} seconds
     </h3>
+    <h4 class="font-secondary text-center text3xl font-semibold">
+        In the meantime, enjoy this masterpiece
+    </h4>
     <HedgehogSpinner />
 </div>
