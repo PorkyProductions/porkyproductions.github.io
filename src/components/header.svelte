@@ -7,7 +7,7 @@
     import badge3d from '../../node_modules/bootstrap-icons/icons/badge-3d.svg'
     import codeSlash from '../../node_modules/bootstrap-icons/icons/code-slash.svg'
     import slider from '../../node_modules/bootstrap-icons/icons/sliders.svg'
-    import hedgehog from '/./../images/HedgehogIcon.png'
+    import hedgehog from '../../images/HedgehogIcon.png'
     import houseDoor from '../../node_modules/bootstrap-icons/icons/house-door.svg'
   
     const HH = document.getElementById("HH")
