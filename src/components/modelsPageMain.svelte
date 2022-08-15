@@ -111,7 +111,7 @@
 <style>
     .section {
         background-image: linear-gradient(#710627, #FF4D80);
-
+ 
     }
     .previewImage{
         border-radius: 30px;
