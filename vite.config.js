@@ -12,6 +12,7 @@ export default defineConfig({
             games: 'games.html',
             threeDPrints: 'threeDprints.html',
             models: 'models.html',
+            developments: 'developments.html',
             fourOhFour: '404.html'
         },
         output: {
