@@ -13,6 +13,7 @@ export default defineConfig({
             threeDPrints: 'threeDprints.html',
             models: 'models.html',
             developments: 'developments.html',
+            experiments: 'experimental.html',
             fourOhFour: '404.html'
         },
         output: {
