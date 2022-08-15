@@ -69,10 +69,7 @@
 {/if}
 
 <style>
-    .section {
-        background-image: linear-gradient(#, #FF4D80);
-
-    }
+    
     .grid {
         display:grid;
         grid-template-columns:1fr 1fr
