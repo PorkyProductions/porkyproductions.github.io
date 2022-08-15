@@ -30,6 +30,8 @@
 #hedgehogReadingImage{
     border-radius: 30px;
     border:20px solid brown;
+    width: 40rem;
+    margin: auto;
 }
 @keyframes gradient {
     0% {
