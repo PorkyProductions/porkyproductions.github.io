@@ -1,8 +1,7 @@
 <script>
-// @ts-nocheck
     import '../app.css'
     import { DEVICE_type } from 'uadetect' 
-    // import Typewriter from 'svelte-typewriter'
+    import Typewriter from '../../node_modules/svelte-typewriter/src/lib/Typewriter.svelte'
             
     let props = {
             // general-purpose props
@@ -66,7 +65,7 @@
             border-radius: 10px;
             border: 1px solid rgba( 255, 255, 255, 0.18 );
         }
-        #bg:hover {
+        #bg::hover {
             background: rgba( 74, 144, 226, 0.2 );
             box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
             backdrop-filter: blur( 45px );
