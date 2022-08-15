@@ -9,15 +9,20 @@
 </script>
 
 <section class="bg-white text-black dark:text-white dark:bg-black">
+    
     {#if darkMode}
-        <img src={lightLogo} class="m-auto" alt="Porky Productions Experimental">
+        <img src={lightLogo} class="absolute right-0 h-48" alt="Porky Productions Experimental">
     {:else if !darkMode}
-        <img src={darkLogo} class="m-auto" alt="Porky Productions Experimental">
+        <img src={darkLogo} class="absolute right-0 h-48" alt="Porky Productions Experimental">
     {/if}
-    <h1 class="font-primary font-semibold text-6xl p-6 pt-11 pl-32">
+    <h1 class="font-primary font-semibold text-6xl p-6 pt-11 pl-32 clear-right">
         Experimental Applications 
+        <br>
+        
     </h1>
+    
     <div class="p-4 pl-32">incomplete or decidedly unfinished programs that we decided to still push out for the public to see!</div>
+    <br>
     <a href="https://porkyproductions.github.io/RayMarching/">
         <div class="bg-gradient-to-r bg-slate-300 hover:bg-slate-600 dark:bg-slate-600 dark:hover:bg-slate-900 p-10">
             <h1 class="text-center font-semibold p-24sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-primary">
