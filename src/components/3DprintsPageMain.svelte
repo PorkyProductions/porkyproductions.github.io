@@ -70,8 +70,7 @@
 
 <style>
     .section {
-        background-image: linear-gradient(#, #FF4D80);
-
+        background-image: linear-gradient(#FF4D80);
     }
     .grid {
         display:grid;
