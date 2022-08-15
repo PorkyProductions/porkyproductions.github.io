@@ -7,7 +7,7 @@
         Experimental Applications 
     </h1>
     <div class="p-4 pl-32">incomplete or decidedly unfinished programs that we decided to still push out for the public to see!</div>
-    <a href="404.html">
+    <a href="https://porkyproductions.github.io/RayMarching/">
         <div class="bg-gradient-to-r from-slate-300 to-slate-400 hover:bg-slate-600 p-10">
             <h1 class="text-center font-semibold p-24sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-primary">
                 Ray Marching
