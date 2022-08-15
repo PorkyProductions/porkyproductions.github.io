@@ -29,7 +29,7 @@
             </a>
   
             <div class="flex justify-between content-center p-2">
-                <a href="index.html" class="header-link sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-400 hover:font-semibold  hover:rounded-xl">
+                <a href="index.html" class="header-link sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-400 dark:hover:bg-slate-800 hover:font-semibold hover:rounded-xl">
                     Home
                     <img src = {houseDoor} alt ="house">
                 </a>

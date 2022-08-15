@@ -1,9 +1,7 @@
 <script>
-// @ts-nocheck
 
     import '../app.css'
     import { DEVICE_type } from 'uadetect' 
-    // @ts-ignore
     import Typewriter from 'svelte-typewriter'
             
     let props = {
