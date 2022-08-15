@@ -6,7 +6,7 @@
     import boxes from '../../node_modules/bootstrap-icons/icons/boxes.svg'
     import badge3d from '../../node_modules/bootstrap-icons/icons/badge-3d.svg'
     import codeSlash from '../../node_modules/bootstrap-icons/icons/code-slash.svg'
-    import experiments from '../../node_modules/bootstrap-icons/icons/lightbulb.svg'
+    import slider from '../../node_modules/bootstrap-icons/icons/sliders.svg'
     import hedgehog from '/./../images/HedgehogIcon.png'
     import houseDoor from '../../node_modules/bootstrap-icons/icons/house-door.svg'
   
@@ -63,7 +63,7 @@
             <div class="flex justify-between content-center p-2">
                 <a href="experimental.html" class="header-link sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-400  hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
                     Experimental
-                    <img src={experiments} alt="lightbulb">
+                    <img src={slider} alt="lightbulb">
                 </a>
             </div>
         <div></div>

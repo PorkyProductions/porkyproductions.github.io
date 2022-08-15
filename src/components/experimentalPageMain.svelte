@@ -15,7 +15,6 @@
             <p class="text-center font-normal p-4 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">using a series of distance functions, we can conclude if and where a ray collides with certain objects</p>
         </div>  
     </a>
-    
 </section>
 
 <style>
