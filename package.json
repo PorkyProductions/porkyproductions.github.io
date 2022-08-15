@@ -14,6 +14,7 @@
     "jquery": "^3.6.0",
     "jszip": "^3.10.1",
     "postcss": "^8.4.14",
+    "postcss-minify-selectors": "^5.2.1",
     "sass": "^1.54.1",
     "svelte-typewriter": "^3.0.1",
     "tailwindcss": "^3.1.7",
