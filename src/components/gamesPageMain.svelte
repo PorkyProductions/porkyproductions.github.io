@@ -4,10 +4,8 @@
 </script>
 
 {#if DEVICE_type === "mobile"}
-    <section class="text-black dark:text-white dark:bg-black">
-        <h1 class="text-center font-primary font-semibold sm:text-lg md:text-xl lg:text-2xl xl:text-3xl p-6">
-            Hedgehog Studios Games
-        </h1>
+    <section class="section text-black dark:text-white dark:bg-black">
+       
         <div class="gridMobile">
             <div class="tileMobile">
                 <b>RUSH!</b> - in with your friends and play this NEW SUPER AMAZING GREAT ULTRA MEGA GAME made by us called <b>RUSH!</b> a fun 2D fighter with a great campaign for anyone
@@ -27,12 +25,10 @@
         </div>
     </section>
 {:else}
-    <section class="text-black dark:text-white dark:bg-black">
-        <h1 class="text-center font-primary font-semibold sm:text-lg md:text-xl lg:text-2xl xl:text-3xl p-6">
-            Hedgehog Studios Games
-        </h1>
+    <section class="section text-black dark:text-white dark:bg-black">
+        
         <div class="grid">
-            <div class="tile">
+            <div class="tile drop-shadow-xl">
                 <b>RUSH!</b> - in with your friends and play this NEW SUPER AMAZING GREAT ULTRA MEGA GAME made by us called <b>RUSH!</b> a fun 2D fighter with a great campaign for anyone
                             to enjoy! Make sure you check this one out! 
                 <br />
@@ -42,7 +38,7 @@
                 -Controller Support ONLY<br />
                 -In Development<br />
             </div>
-            <div class="tile">
+            <div class="tile  drop-shadow-xl">
                 <h1 class="text-center font-bold font-primary sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
                     UNDER CONSTRUCTION
                 </h1>
@@ -52,6 +48,10 @@
 {/if}
 
 <style>
+    .section {
+        background-image: linear-gradient(#1c204a, #3f47a1);
+
+    }
 .grid {
     display:grid;
     grid-template-columns:1fr 1fr
@@ -61,7 +61,7 @@
     margin: 50px;
     border-radius:30px;
     text-align:left;
-    border: 3px solid #0000F4;
+    background-color: whitesmoke;
 }
 
 .gridMobile {
@@ -77,4 +77,5 @@
     border: 3px solid #0000F4;
 }
 </style>
+
 
