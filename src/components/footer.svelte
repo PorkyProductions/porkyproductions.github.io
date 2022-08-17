@@ -2,11 +2,7 @@
     import '../app.css'
     import ppiologo from '../../images/PPio logo.png'
     import heart from '../../node_modules/bootstrap-icons/icons/suit-heart-fill.svg'
-    import controller from '../../node_modules/bootstrap-icons/icons/controller.svg'
-    import boxes from '../../node_modules/bootstrap-icons/icons/boxes.svg'
-    import badge3d from '../../node_modules/bootstrap-icons/icons/badge-3d.svg'
-    import codeSlash from '../../node_modules/bootstrap-icons/icons/code-slash.svg'
-    import houseDoor from '../../node_modules/bootstrap-icons/icons/house-door.svg'
+    
 
     // Audios
     import audio_airWooshUnderwater from '../../audio/audio_Air_Woosh_Underwater.mp3'
@@ -77,23 +73,40 @@
 </script>
 
 <footer>
-
-    <div class="flex justify-between content-center bg-slate-500 text-white pt-12 px-12">
-        <img src={ppiologo} alt="the logo of the website">
-        <div class="flex justify-between content-center"><a href="index.html">Home</a><img src={houseDoor} alt=""></div>
-        <div class="flex justify-between content-center"><a href="games.html">Games</a><img src={controller} alt=""></div>
-        <div class="flex justify-between content-center"><a href="threeDprints.html">3D Prints</a><img src={badge3d} alt=""></div>
-        <div class="flex justify-between content-center"><a href="models.html">Models</a><img src={boxes} alt=""></div>
-        <div class="flex justify-between content-center"><a href="developments.html">Developments</a><img src={codeSlash} alt=""></div>
+    <div class="flex justify-between content-center bg-sky-900 text-slate-200 pt-12 px-12">
+        <div class="columns">
+            <div class='px-10'>
+                <p class='font-primary text-xl text-white'>Contact Us</p><br>
+                <ul>
+                    <li>tristankenshin@gmail.com</li>
+                    <li>rpmullin@comcast.net</li>
+                </ul>
+            </div>
+            <div class='px-10'>
+                <p class='font-primary text-xl'>Issues</p><br>
+                <a href='https://github.com/PorkyProductions/porkyproductions.github.io/issues' class='underline text-blue-300 hover:text-blue-100'>Report on Github</a>
+            </div>
+            <div class='px-10'>
+                <p class='font-primary text-xl'>Socials</p><br>
+                None
+            </div>
+        </div>
     </div>
-    <div class="bg-slate-500 text-white m-auto" on:click={increment}>
-        <p class="text-center">Made With</p>
-        <img src={heart} alt="" on:click={increment} class="m-auto">
-        <p class="text-center">at PorkyProductions</p>
+    <div class= 'text-white m-auto' on:click={increment}>
+        <div class='absolute bg-sky-900' style="padding-left:90%; padding-right: 10%; padding-top:0px"> 
+            <p class="text-center">Made With</p>
+            <img src={heart} alt="" on:click={increment} class="m-auto h-12">
+            <p class="text-center">at PorkyProductions</p>
+         </div>
     </div>
 </footer>
 
 <style>
+    .columns{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
     img {
         width: 15%;
     }
