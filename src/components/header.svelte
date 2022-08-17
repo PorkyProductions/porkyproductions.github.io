@@ -9,10 +9,10 @@
     import slider from '../../node_modules/bootstrap-icons/icons/sliders.svg'
     import hedgehog from '../../images/HedgehogIcon.png'
     import houseDoor from '../../node_modules/bootstrap-icons/icons/house-door.svg'
-  
+    import NavbarItem from './navbarItem.svelte'
     const HH = document.getElementById("HH")
     const spin = () => {
-    HH.classList.add('spin');
+        HH.classList.add('spin');
     }
 </script>
 <header class="bg-slate-200 dark:bg-slate-700 dark:text-white">
@@ -27,45 +27,12 @@
                 <img class = "float-left"src={hedgehog} alt="a hedgehog" id="HH" on:mouseover={spin} on:focus={spin}>
                 <p class="float-right"><b>PorkyProductions</b>.io</p>
             </a>
-  
-            <div class="flex justify-between content-center p-2">
-                <a href="index.html" class="header-link sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-400 dark:hover:bg-slate-800 hover:font-semibold hover:rounded-xl">
-                    Home
-                    <img src = {houseDoor} alt ="house">
-                </a>
-                <br>
-            </div>
-            <div class="flex justify-between content-center p-2">
-                <a href="games.html" class="header-link sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-400  hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
-                    Games 
-                    <img src = {controller} alt ="controller">
-                </a>
-                <br>
-            </div>
-            <div class="flex justify-between content-center p-2">
-                <a href="threeDprints.html" class="header-link sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-400  hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
-                    3D Prints
-                    <img src ={badge3d} alt ="3d">
-                </a>
-            </div>
-            <div class="flex justify-between content-center p-2">
-                <a href="models.html" class="header-link sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-400  hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
-                    Models
-                    <img src = {boxes} alt ="box">
-                </a>
-            </div>
-            <div class="flex justify-between content-center p-2">
-                <a href="developments.html" class="header-link sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-400  hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
-                    Developments
-                    <img src={codeSlash} alt="code">
-                </a>
-            </div>
-            <div class="flex justify-between content-center p-2">
-                <a href="experimental.html" class="header-link sm:text-sm md:text-md lg:text-lg xl:text-xl font-primary font-medium hover:bg-slate-400  hover:font-semibold dark:hover:bg-slate-800 hover:rounded-xl">
-                    Experimental
-                    <img src={slider} alt="lightbulb">
-                </a>
-            </div>
+            <NavbarItem href={"index.html"} text={"Home"} icon={houseDoor} iconAlt={"a house"} />
+            <NavbarItem href={"games.html"} text={"Games"} icon={controller} iconAlt={"controller"} />
+            <NavbarItem href={"threeDprints.html"} text={"3D Prints"} icon={badge3d} iconAlt={"3D"} />
+            <NavbarItem href={"models.html"} text={"Models"} icon={boxes} iconAlt={"boxes"} />
+            <NavbarItem href={"developments.html"} text={"Developments"} icon={codeSlash} iconAlt={"code"} />
+            <NavbarItem href={"experimental.html"} text={"Experimental"} icon={slider} iconAlt={"knobs"} />
         <div></div>
         <div></div>
         <div></div>
