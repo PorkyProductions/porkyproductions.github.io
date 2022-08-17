@@ -75,11 +75,14 @@
 <footer>
     <div class="flex justify-between content-center bg-sky-900 text-slate-200 pt-12 px-12">
         <div class="columns">
+            <div class="px-10">
+                <img src={ppiologo} alt="">
+            </div>
             <div class='px-10'>
                 <p class='font-primary text-xl text-white'>Contact Us</p><br>
                 <ul>
-                    <li>tristankenshin@gmail.com</li>
-                    <li>rpmullin@comcast.net</li>
+                    <li class="underline text-blue-300 hover:text-blue-100"><a href="mailto:tristankenshin@gmail.com">Tristan</a></li>
+                    <li class="underline text-blue-300 hover:text-blue-100"><a href="mailto:rpmullin@comcast.net">Ryan</a></li>
                 </ul>
             </div>
             <div class='px-10'>
@@ -108,6 +111,6 @@
     }
     
     img {
-        width: 15%;
+        width: 75%;
     }
 </style>
