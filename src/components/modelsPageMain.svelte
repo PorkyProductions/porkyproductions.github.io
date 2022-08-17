@@ -6,6 +6,7 @@
     import hedgehogModel from '../../models/hedgehog.stl'
     import bowModel from '../../models/Bow.stl'
     import { DEVICE_type } from 'uadetect'
+import ModelsTile from './modelsTile.svelte'
 </script>
 
 <!-- TODO: Make dark mode compatible -->
@@ -49,61 +50,9 @@
 {:else}
     <section class="section text-black dark:text-white dark:bg-black bg-slate-300">
         <div class="grid">
-            <div class="tile bg-slate-100 drop-shadow-lg">
-                <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
-                    Hedgehog
-                </h1>
-
-                <div class="flex justify-center">
-                    <button id="button_HedgehogPreviewLeft" class = "previewButton text-8xl">&lt;</button>
-                    <img src={hedgehog} alt="hedgehogModelPreview" id = "hedgehogModelPreview"class="previewImage p-4 w-3/4 h-1/2  "><!--ACTUAL IMAGE ACTUAL IMAGEACTUAL IMAGE ACTUAL IMAGEACTUAL IMAGE ACTUAL IMAGEACTUAL IMAGE ACTUAL IMAGE-->
-                    <button id="button_HedgehogPreviewRight"class = "previewButton text-8xl">&gt;</button>
-
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iste molestias repellendus dolorum qui quia, iure fugiat in vel optio! Iusto, cumque distinctio delectus fuga repellat at accusamus quis repudiandae!
-                </p>
-                <br>
-                <hr>
-                <a href={hedgehogModel}>Download (.stl)</a>
-            </div>
-            <div class="tile bg-slate-100 drop-shadow-lg">
-                <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
-                    Bow
-                </h1>
-
-                <div class="flex justify-center">
-                    <button id="button_BowPreviewLeft" class = "previewButton text-8xl">&lt;</button>
-                    <img src={bow} alt="bowModelPreview" id = "bowModelPreview"class="previewImage p-4 w-3/4"><!--ACTUAL IMAGE ACTUAL IMAGEACTUAL IMAGE ACTUAL IMAGEACTUAL IMAGE ACTUAL IMAGEACTUAL IMAGE ACTUAL IMAGE-->
-                    <button id="button_BowPreviewRight"class = "previewButton text-8xl">&gt;</button>
-
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iste molestias repellendus dolorum qui quia, iure fugiat in vel optio! Iusto, cumque distinctio delectus fuga repellat at accusamus quis repudiandae!
-                </p>
-                <br>
-                <hr>
-                <a href={bowModel}>Download (.stl)</a>
-            </div>
-            <div class="tile bg-slate-100 drop-shadow-lg">
-                <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
-                    Icelands
-                </h1>
-                <div class="flex justify-center">
-                    <button class = "previewButton text-8xl">&lt;</button>
-                    <img src={icelands} alt="" class="previewImage p-4  w-3/4"><!--ACTUAL IMAGE ACTUAL IMAGEACTUAL IMAGE ACTUAL IMAGEACTUAL IMAGE ACTUAL IMAGEACTUAL IMAGE ACTUAL IMAGE-->
-                    <button class = "previewButton text-8xl">&gt;</button>
-
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nam? Reprehenderit consequatur alias neque ullam error. Repellat beatae ex, ducimus corrupti nulla veritatis expedita unde excepturi aspernatur laboriosam provident officia.
-                </p>
-                <br>
-                <hr>
-                <a href={hedgehog}>
-                    Download (.stl)
-                </a>
-            </div>
+            <ModelsTile modelName = "Hedgehog" modelDownload={hedgehogModel} modelImage={hedgehog} id="hedgehogModelPreview"/>
+            <ModelsTile modelName = "Bow" modelDownload ={bowModel} modelImage = {bow} id = "bowModelPreview"/>
+            <ModelsTile modelName = "Iceland" modelDownload = {hedgehogModel} modelImage={icelands} id = "doesnt have one "/>
         </div>
     </section>
 {/if}
@@ -129,15 +78,7 @@
         display:grid;
         grid-template-columns:1fr 1fr
     }
-    .tile {
-        padding: 50px;
-        margin: 50px;
-        border-radius:30px;
-        text-align:left;
-        height: 800px;
-
-    }
-
+    
     .gridMobile {
         display:grid;
         grid-template-columns: 1

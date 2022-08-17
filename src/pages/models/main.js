@@ -69,17 +69,17 @@ class ImagePreview {
 function OnStart() {
   //runs when page loads
   var HedgehogModelPreview = new ImagePreview("hedgehogModelPreview", ["HedgehogPreview_Front", "HedgehogPreview_Side", "HedgehogPreview_Top", "HedgehogPreview_Back"]);
-  document.getElementById("button_HedgehogPreviewLeft").onclick = (function () {
+  document.getElementById("button_hedgehogModelPreviewLeft").onclick = (function () {
       HedgehogModelPreview.OnSwitchLeft();
   });
-  document.getElementById("button_HedgehogPreviewRight").onclick = (function () {
+  document.getElementById("button_hedgehogModelPreviewRight").onclick = (function () {
       HedgehogModelPreview.OnSwitchRight();
   });
   var BowModelPreview = new ImagePreview("bowModelPreview", ["BowPreview_Top", "BowPreview_Front", "BowPreview_Bottom", "BowPreview_Back"]);
-  document.getElementById("button_BowPreviewLeft").onclick = (function () {
+  document.getElementById("button_bowModelPreviewLeft").onclick = (function () {
       BowModelPreview.OnSwitchLeft();
   });
-  document.getElementById("button_BowPreviewRight").onclick = (function () {
+  document.getElementById("button_bowModelPreviewRight").onclick = (function () {
       BowModelPreview.OnSwitchRight();
   });
 }
