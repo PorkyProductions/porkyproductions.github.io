@@ -80,13 +80,20 @@ function InitiateModelTile(name, imagePreview){
   document.getElementById("button_" + name + "ModelPreviewRight").onclick = (function () {
       imagePreview.OnSwitchRight();
   });
-  document.getElementById("button_" + name + "ModelPreviewView").onclick = (function () {
+  var viewerButton =  document.getElementById("button_" + name + "ModelPreviewView");
+
+  viewerButton.onclick = (function () {
       var viewer = document.getElementById(name + "ModelPreviewViewer");
 
       //change display to coorect
+      var buttonText = "View 3D Model In Browser"
       var newDisplay = "none";      
-      if(viewer.style.display == "none"){ newDisplay= ""; }
+      if(viewer.style.display == "none"){
+          buttonText = "Close 3D Model Viewer"
+         newDisplay= ""; 
+      }
       viewer.style.display = newDisplay;
+      viewerButton.innerHTML = buttonText;
 
       //refreshes the object
       var viewerInner = viewer.innerHTML;
