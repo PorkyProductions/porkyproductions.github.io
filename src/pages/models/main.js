@@ -69,18 +69,28 @@ class ImagePreview {
 function OnStart() {
   //runs when page loads
   var HedgehogModelPreview = new ImagePreview("hedgehogModelPreview", ["HedgehogPreview_Front", "HedgehogPreview_Side", "HedgehogPreview_Top", "HedgehogPreview_Back"]);
-  document.getElementById("button_hedgehogModelPreviewLeft").onclick = (function () {
-      HedgehogModelPreview.OnSwitchLeft();
-  });
-  document.getElementById("button_hedgehogModelPreviewRight").onclick = (function () {
-      HedgehogModelPreview.OnSwitchRight();
-  });
+  InitiateModelTile("hedgehog", HedgehogModelPreview);
   var BowModelPreview = new ImagePreview("bowModelPreview", ["BowPreview_Top", "BowPreview_Front", "BowPreview_Bottom", "BowPreview_Back"]);
-  document.getElementById("button_bowModelPreviewLeft").onclick = (function () {
-      BowModelPreview.OnSwitchLeft();
+  InitiateModelTile("bow", BowModelPreview);
+}
+function InitiateModelTile(name, imagePreview){
+    document.getElementById("button_" + name + "ModelPreviewLeft").onclick = (function () {
+      imagePreview.OnSwitchLeft();
   });
-  document.getElementById("button_bowModelPreviewRight").onclick = (function () {
-      BowModelPreview.OnSwitchRight();
+  document.getElementById("button_" + name + "ModelPreviewRight").onclick = (function () {
+      imagePreview.OnSwitchRight();
+  });
+  document.getElementById("button_" + name + "ModelPreviewView").onclick = (function () {
+      var viewer = document.getElementById(name + "ModelPreviewViewer");
+
+      //change display to coorect
+      var newDisplay = "none";      
+      if(viewer.style.display == "none"){ newDisplay= ""; }
+      viewer.style.display = newDisplay;
+
+      //refreshes the object
+      var viewerInner = viewer.innerHTML;
+      viewer.innerHTML = viewerInner;
   });
 }
 document.addEventListener('DOMContentLoaded', function () {

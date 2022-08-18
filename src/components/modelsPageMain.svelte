@@ -1,5 +1,4 @@
 <script>
-    // @ts-nocheck
     import '../app.css'
     import icelands from '../../images/icelands.png'
     import hedgehog from '../../images/HedgehogPreview_Front.png'
@@ -50,9 +49,9 @@
 {:else}
     <section class="bg-gradient-to-b from-pink-600 to-rose-600 dark:from-slate-500 dark:to-slate-500 text-black dark:text-white bg-slate-300">
         <div class="grid">
-            <ModelsTile modelName = "Hedgehog" modelDownload={hedgehogModel} iFrameTitle={"hedgehog"} iFrameSource={"https://my.spline.design/untitled-9b130a1005f56022c585fab65feabcf1/"} id="hedgehogModelPreview"/>
-            <ModelsTile modelName = "Bow" modelDownload ={bowModel} iFrameTitle={"Bow"} iFrameSource = {"https://my.spline.design/bow-25bd00f35d7812dea212e793b6fef34d/"} id = "bowModelPreview"/>
-            <ModelsTile modelName = "Iceland" modelDownload = {hedgehogModel} image={icelands} id = "doesnt have one "/>
+            <ModelsTile modelName = "Hedgehog" modelDownload={hedgehogModel} modelImage = {hedgehog} id = "hedgehogModelPreview" iFrameTitle={"hedgehog"} iFrameSource={"https://my.spline.design/untitled-9b130a1005f56022c585fab65feabcf1/"}/>
+            <ModelsTile modelName = "Bow" modelDownload ={bowModel} modelImage = {bow} iFrameTitle={"Bow"} id = "bowModelPreview" iFrameSource = {"https://my.spline.design/bow-25bd00f35d7812dea212e793b6fef34d/"}/>
+            <ModelsTile modelName = "Iceland" modelDownload = {hedgehogModel} modelImage={icelands} id = "icelandModelPreview" iFrameTitle={"hedgehog"} iFrameSource={"https://my.spline.design/untitled-9b130a1005f56022c585fab65feabcf1/"}/>
         </div>
     </section>
 {/if}
