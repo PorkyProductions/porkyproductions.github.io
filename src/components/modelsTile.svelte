@@ -34,9 +34,9 @@
     <a href={modelDownload}>Download (.stl)</a>
     <canvas bind:this={canvas}></canvas>
 </div>
-<div  id="{id}Viewer"class="tile drop-shadow-lg  p-96 m-0 " style="height:auto; display:none">
-    <div class="flex justify-center z-10 bg-slate-50" style="border: 3px solid black; border-radius:5px">
-        <iframe src={iFrameSource} frameborder='0' width='100%' height='100%'title={iFrameTitle}></iframe>
+<div  id="{id}Viewer"class="tile drop-shadow-lg p-0 m-0 text-left" style="display:none">
+    <div class="flex justify-center bg-slate-50" style="border-radius:30px">
+        <iframe class='p-0 m-0 top-0' src={iFrameSource} frameborder='0' width='800px' height='500px'title={iFrameTitle}></iframe>
     </div>
 </div>
 
