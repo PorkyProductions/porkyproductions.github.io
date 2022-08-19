@@ -45,7 +45,8 @@
         </div>
     {:else}
         <div class="grid">
-            <div class="tile bg-slate-100 dark:bg-slate-600 drop-shadow-lg">
+            <div class= "tile" style="display:none"></div><!-- keep to load css-->
+            <div class="tile-preAnimate bg-slate-100 dark:bg-slate-600 drop-shadow-lg">
                 <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
                     Ryan
                 </h1>
@@ -57,7 +58,7 @@
                     Ryan is a software developer as a hobbiest. He mainly focuses on web development, but also has some experience in Python and Rust (specifically targeting WebAssembly.) Some of the technologies in his stack include Svelte, taiilwindcss, and vite. All powered by node.js experience. Ryan is working on a variety of projects which you can see in his GitHub repository
                 </p>
             </div>
-            <div class="tile bg-slate-100 dark:bg-slate-600 drop-shadow-lg">
+            <div class=" tile-preAnimate bg-slate-100 dark:bg-slate-600 drop-shadow-lg">
                 <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
                     Tristan
             </h1>
@@ -84,8 +85,13 @@
     margin: 50px;
     border-radius:30px;
     text-align:left;
-}
+    animation: enter 1s;
 
+}
+.tile-preAnimate{
+    transform: scale(0,0);
+    opacity:0;
+}
 .gridMobile {
     display:grid;
     grid-template-columns: 1
@@ -97,5 +103,19 @@
     border-radius:30px;
     text-align:left;
 }
+@keyframes enter {
+	0% {
+		transform: scale(0, 0);
+        opacity: 0;
+	}
+	50% {
+		transform: scale(1, 1);
+
+    }
+    70%{
+        opacity: 1;
+    }
+}
+
 
 </style>
