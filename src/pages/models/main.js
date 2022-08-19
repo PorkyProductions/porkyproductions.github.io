@@ -84,15 +84,18 @@ function InitiateModelTile(name, imagePreview){
 
   viewerButton.onclick = (function () {
       var viewer = document.getElementById(name + "ModelPreviewViewer");
-
+      var imageContainer = document.getElementById(name + "ModelPreviewImageContainer");
       //change display to coorect
       var buttonText = "View 3D Model In Browser"
-      var newDisplay = "none";      
+      var newDisplay = "none";  
+      var imgContainerDisplay = "";    
       if(viewer.style.display == "none"){
           buttonText = "Close 3D Model Viewer"
          newDisplay= ""; 
+         imgContainerDisplay = "none";
       }
       viewer.style.display = newDisplay;
+      imageContainer.style.display = imgContainerDisplay;
       viewerButton.innerHTML = buttonText;
 
       //refreshes the object
