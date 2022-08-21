@@ -88,10 +88,7 @@
     animation: enter 1s;
 
 }
-.tile-preAnimate{
-    transform: scale(0,0);
-    opacity:0;
-}
+
 .gridMobile {
     display:grid;
     grid-template-columns: 1
@@ -102,6 +99,10 @@
     margin: 25px;
     border-radius:30px;
     text-align:left;
+}
+.tile-preAnimate{
+    transform: scale(0,0);
+    opacity:0;
 }
 @keyframes enter {
 	0% {
