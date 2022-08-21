@@ -96,7 +96,7 @@
         </div>
     </div>
     <div class= 'text-white m-auto' on:click={increment}>
-        <div class='absolute bg-sky-900' style="padding-left:90%; padding-right: 10%; padding-top:0px"> 
+        <div class='absolute bg-sky-900' style="padding-left:83%; padding-right: 10%; padding-top:0px"> 
             <p class="text-center">Made With</p>
             <img src={heart} alt="" on:click={increment} class="m-auto h-12">
             <p class="text-center">at PorkyProductions</p>
