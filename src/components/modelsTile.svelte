@@ -12,7 +12,7 @@
    
 </script>
 
-<div class="tile bg-slate-100 dark:bg-slate-600 drop-shadow-lg text-left">
+<div class="tile bg-slate-100 dark:bg-slate-600 drop-shadow-2xl text-left">
     <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
         {modelName}
     </h1>
@@ -31,7 +31,7 @@
         <button class='bg-slate-300 hover:bg-slate-500 px-32' style="border-radius:5px" id="button_{id}View">View 3D Model In Browser</button>
     </div>
     
-    
+
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iste molestias repellendus dolorum qui quia, iure fugiat in vel optio! Iusto, cumque distinctio delectus fuga repellat at accusamus quis repudiandae!
     </p>

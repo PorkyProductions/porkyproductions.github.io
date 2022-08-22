@@ -9,7 +9,8 @@
                 Our Mission
             </h1>
             <div class="text-white font-secondary  pb-12 px-40 sm:text-sm md:text-md lg:text-lg xl:text-xl grid" >
-                <div id = "mission-text" class=" tile px-20 mb-32 drop-shadow-2xl">
+                <div class="tile" style="display:none"></div>
+                <div id = "mission-text" class=" tile-preAnimate px-20 mb-32 drop-shadow-2xl">
                 Here at <b>PorkyProductions©</b> we are on a mission to create technology that can change the world.
                 Whether it be a game, a model, or a software development, we are dedicated to positively impacting the world.
                 We chose to do this because we believe that technology (when used in the right ways) can and will positively impact humanity.
@@ -20,7 +21,7 @@
                 -Join us as we create technology that can change the world! 
                 </p>
                 </div>
-                <div class = "tile py-0 -mt-20 drop-shadow-2xl">
+                <div class = "tile-preAnimate py-0 -mt-20 drop-shadow-2xl">
                     <br>
                     <img src={hedgehogOnComputer} id="hedgehogComputerImage" alt="">
                 </div>
@@ -53,8 +54,25 @@
     }
     .tile{
         padding:50px;
+        animation: enter 1s;
     }
-    
+    .tile-preAnimate{
+    transform: scale(0,0);
+    opacity:0;
+}
+@keyframes enter {
+	0% {
+		transform: scale(0, 0);
+        opacity: 0;
+	}
+	50% {
+		transform: scale(1, 1);
+
+    }
+    70%{
+        opacity: 1;
+    }
+}
     @keyframes gradient {
         0% {
             background-position:0% 50%
