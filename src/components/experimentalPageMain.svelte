@@ -26,7 +26,7 @@
     <a href="https://porkyproductions.github.io/Particle-Simulator/">
         <div class="bg-gradient-to-r bg-slate-300 hover:bg-slate-600 dark:bg-slate-600 dark:hover:bg-slate-900 p-10">
             <h1 class="text-center font-semibold p-24sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-primary">
-                Ray Marching
+                Particle-Simulator
             </h1>
             <p class="text-center font-normal p-4 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Change the laws of physics in your own Particle-Simulator        </div>  
     </a>
