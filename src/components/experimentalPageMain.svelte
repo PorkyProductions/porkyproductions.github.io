@@ -23,7 +23,7 @@
     
     <div class="p-4 pl-32">incomplete or decidedly unfinished programs that we decided to still push out for the public to see!</div>
     <br>
-    <a href="https://porkyproductions.github.io/RayMarching/">
+    <a href="https://porkyproductions.github.io/Boids/">
         <div class="bg-gradient-to-r bg-slate-300 hover:bg-slate-600 dark:bg-slate-600 dark:hover:bg-slate-900 p-10">
             <h1 class="text-center font-semibold p-24sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-primary">
                 Boids
@@ -31,7 +31,7 @@
             <p class="text-center font-normal p-4 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">simple behaviours combined can create complex behaviours</p>
         </div>  
     </a>
-    <a href="https://porkyproductions.github.io/Boids/">
+    <a href="https://porkyproductions.github.io/RayMarching/">
         <div class="bg-gradient-to-r bg-slate-300 hover:bg-slate-600 dark:bg-slate-600 dark:hover:bg-slate-900 p-10">
             <h1 class="text-center font-semibold p-24sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-primary">
                 Ray Marching
