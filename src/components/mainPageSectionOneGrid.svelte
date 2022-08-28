@@ -1,9 +1,9 @@
 <script>
     import '../app.css'
-    import { DEVICE_type } from 'uadetect'
+    import { deviceType } from 'uadetect'
 </script>
 <section class = "bg-slate-300 dark:bg-slate-800">
-    {#if DEVICE_type === "mobile"}
+    {#if deviceType === "mobile"}
         <div class="gridMobile">
             <div class="tileMobile bg-slate-100 dark:bg-slate-600 drop-shadow-lg font-secondary">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum placeat quibusdam vero iure, maxime dignissimos, similique fugiat aliquam temporibus distinctio quis? Omnis minima at harum quia mollitia sunt velit enim.

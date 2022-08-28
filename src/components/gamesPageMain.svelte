@@ -1,9 +1,9 @@
 <script>
     import '../app.css'
-    import { DEVICE_type } from 'uadetect'
+    import { deviceType } from 'uadetect'
 </script>
 
-{#if DEVICE_type === "mobile"}
+{#if deviceType === "mobile"}
     <section class="section text-black dark:text-white dark:bg-black">
        
         <div class="gridMobile">

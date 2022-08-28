@@ -2,11 +2,11 @@
     import '../app.css'
     import impCredit from '../../images/imp_credit.jpg'
     import hedehog3D from '../../images/hedgehogs_3dprint.jpg'
-    import { DEVICE_type } from 'uadetect'
+    import { deviceType } from 'uadetect'
 </script>
 
 
-{#if DEVICE_type === "mobile"}
+{#if deviceType === "mobile"}
     <section class="bg-gradient-to-b  from-UADGreen to-green-600 text-black dark:text-white dark:bg-black">
         <h1 class="text-center font-primary font-semibold sm:text-lg md:text-xl lg:text-2xl xl:text-3xl p-6">
             3D Prints

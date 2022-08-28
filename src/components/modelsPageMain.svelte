@@ -5,13 +5,13 @@
     import bow from '../../images/BowPreview_Top.png'
     import hedgehogModel from '../../models/hedgehog.stl'
     import bowModel from '../../models/Bow.stl'
-    import { DEVICE_type } from 'uadetect'
+    import { deviceType } from 'uadetect'
     import ModelsTile from './modelsTile.svelte'
 </script>
 
 <!-- TODO: Make dark mode compatible -->
 
-{#if DEVICE_type === "mobile"}
+{#if deviceType === "mobile"}
     <section class="bg-gradient-to-b from-pink-600 to-rose-600 dark:bg-slate-400 text-black dark:text-white">
         <div class="gridMobile">
             <div class="tileMobile">

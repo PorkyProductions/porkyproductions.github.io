@@ -1,7 +1,7 @@
 <script>
     // https://vitejs.dev/guide/assets.html
     import '../app.css'
-    import { DEVICE_type } from 'uadetect'
+    import { deviceType } from 'uadetect'
     import controller from '../../node_modules/bootstrap-icons/icons/controller.svg'
     import boxes from '../../node_modules/bootstrap-icons/icons/boxes.svg'
     import badge3d from '../../node_modules/bootstrap-icons/icons/badge-3d.svg'
@@ -16,9 +16,9 @@
     }
 </script>
 <header class="bg-slate-200 dark:bg-slate-700 dark:text-white">
-    {#if DEVICE_type === "mobile"}
+    {#if deviceType === "mobile"}
         <div></div>
-    {:else if DEVICE_type === "desktop"}
+    {:else if deviceType === "desktop"}
     
         <div class="flex content-center justify-between p-4 border-b-4 border-slate-800">
             <div></div>

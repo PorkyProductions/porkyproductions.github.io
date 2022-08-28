@@ -1,6 +1,6 @@
 <script>
     import '../app.css'
-    import { DEVICE_type } from 'uadetect';
+    import { deviceType } from 'uadetect';
 </script>
 
 
@@ -14,7 +14,7 @@
         technological library to see all of their creative<br>
         and amazing projects!
     </h4>
-    {#if DEVICE_type === "mobile"}
+    {#if deviceType === "mobile"}
         <div class="gridMobile">
             <div class="gridMobile">
                 <div class="tileMobile bg-slate-100 dark:bg-slate-600 drop-shadow-lg">

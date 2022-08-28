@@ -1,6 +1,6 @@
 <script>
     import '../app.css'
-    import { DEVICE_type } from 'uadetect' 
+    import { deviceType } from 'uadetect' 
     import Typewriter from '../../node_modules/svelte-typewriter/src/lib/Typewriter.svelte'
             
     let props = {
@@ -42,7 +42,7 @@
             <h3 class="font-primary font-bold text-white sm:text-2xl md:text-3xl lg:text-6xl xl:text-8xl">
                 Pushing What's Possible
             </h3>
-            {#if DEVICE_type === "mobile"}
+            {#if deviceType === "mobile"}
                 <h3 class="font-primary font-bold text-white text-sm">
                     PorkyProductions
                 </h3>
