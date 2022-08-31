@@ -9,6 +9,7 @@
   import MainPageSectionOneGrid from './components/mainPageSectionOneGrid.svelte';
   import { onMount } from 'svelte'
   import HedgehogSpinner from './components/hedgehogSpinner.svelte';
+import MainPageMissionStatement from './components/mainPageMissionStatement.svelte';
   let ready = false
   onMount(() => ready = true);
 </script>
@@ -17,6 +18,7 @@
   <div class="bg-white dark:bg-black text-black dark:text-white">
     <Header />
     <Hero />
+    <MainPageMissionStatement />
     <MainPageSectionOneGrid />
     <MainPageBreakOurMission />
     <MainPageOurFounders />
