@@ -3,8 +3,8 @@
     import icelands from '../../images/icelands.png'
     import hedgehog from '../../images/HedgehogPreview_Front.png'
     import bow from '../../images/BowPreview_Top.png'
-    import hedgehogModel from '../../models/hedgehog.stl'
-    import bowModel from '../../models/Bow.stl'
+    // import hedgehogModel from '../../models/hedgehog.stl'
+    // import bowModel from '../../models/Bow.stl'
     import { deviceType } from 'uadetect'
     import ModelsTile from './modelsTile.svelte'
 </script>
@@ -26,7 +26,7 @@
                 </p>
                 <br>
                 <hr>
-                <a href={hedgehogModel}>Download (.stl)</a>
+                <!-- <a href={hedgehogModel}>Download (.stl)</a> -->
             </div>
             <div class="tileMobile">
                 <h1 class="font-bold p-4 font-primary sm:text-md md:text-lg lg:text-xl xl:text-2xl">
@@ -49,9 +49,9 @@
 {:else}
     <section class="bg-gradient-to-b from-pink-600 to-rose-600 dark:from-slate-500 dark:to-slate-500 text-black dark:text-white bg-slate-300">
         <div class="grid">
-            <ModelsTile modelName = "Hedgehog" modelDownload={hedgehogModel} modelImage = {hedgehog} id = "hedgehogModelPreview" iFrameTitle={"hedgehog"} iFrameSource={"https://my.spline.design/untitled-9b130a1005f56022c585fab65feabcf1/"}/>
-            <ModelsTile modelName = "Bow" modelDownload ={bowModel} modelImage = {bow} iFrameTitle={"Bow"} id = "bowModelPreview" iFrameSource = {"https://my.spline.design/bow-25bd00f35d7812dea212e793b6fef34d/"}/>
-            <ModelsTile modelName = "Iceland" modelDownload = {hedgehogModel} modelImage={icelands} id = "icelandModelPreview" iFrameTitle={"hedgehog"} iFrameSource={"https://my.spline.design/untitled-9b130a1005f56022c585fab65feabcf1/"}/>
+            <ModelsTile modelName = "Hedgehog" modelDownload="" modelImage = {hedgehog} id = "hedgehogModelPreview" iFrameTitle={"hedgehog"} iFrameSource={"https://my.spline.design/untitled-9b130a1005f56022c585fab65feabcf1/"}/>
+            <ModelsTile modelName = "Bow" modelDownload ="" modelImage = {bow} iFrameTitle={"Bow"} id = "bowModelPreview" iFrameSource = {"https://my.spline.design/bow-25bd00f35d7812dea212e793b6fef34d/"}/>
+            <ModelsTile modelName = "Iceland" modelDownload = "" modelImage={icelands} id = "icelandModelPreview" iFrameTitle={"hedgehog"} iFrameSource={"https://my.spline.design/untitled-9b130a1005f56022c585fab65feabcf1/"}/>
         </div>
     </section>
 {/if}

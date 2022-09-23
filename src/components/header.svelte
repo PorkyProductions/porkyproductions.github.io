@@ -10,7 +10,7 @@
     import hedgehog from '../../images/HedgehogIcon.png'
     import houseDoor from '../../node_modules/bootstrap-icons/icons/house-door.svg'
     import NavbarItem from './navbarItem.svelte'
-    const HH = document.getElementById("HH")
+    let HH;
     const spin = () => {
         HH.classList.add('spin');
     }
@@ -24,7 +24,7 @@
             <div></div>
             
             <a href="index.html" class="header-link hover:bg-slate-300 dark:hover:bg-slate-800 hover:rounded-xl rounded-lg  h-24">
-                <img class = "float-left"src={hedgehog} alt="a hedgehog" id="HH" on:mouseover={spin} on:focus={spin}>
+                <img class = "float-left"src={hedgehog} alt="a hedgehog" id="HH" bind:this={HH} on:mouseover={spin} on:focus={spin}>
                 <p class="float-right"><b>PorkyProductions</b>.io</p>
             </a>
             <NavbarItem href={"index.html"} text={"Home"} icon={houseDoor} iconAlt={"a house"} />

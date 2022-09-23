@@ -9,7 +9,6 @@
     let canvas;
     import { Application } from '@splinetool/runtime'
     new Application(canvas)
-   
 </script>
 
 <div class="tile bg-slate-100 dark:bg-slate-600 drop-shadow-2xl text-left">

@@ -1,4 +1,4 @@
-import{S as v,i as y,s as g,j as h,f as c,n as d,h as m,e as k,b as $,E as f,a as _,F as u,m as b,t as p,H as x}from"./HedgehogIcon.2b21d92b.js";import{D as M,H as w,F as E}from"./header.10782e2a.js";function R(o){let e;return{c(){e=k("section"),e.innerHTML=`<div class="grid svelte-57321r"><div class="tile drop-shadow-xl svelte-57321r"><b>RUSH!</b> - in with your friends and play this NEW SUPER AMAZING GREAT ULTRA MEGA GAME made by us called <b>RUSH!</b> a fun 2D fighter with a great campaign for anyone
+import{S as v,i as y,s as g,j as h,f as c,n as d,h as m,e as k,b as $,E as f,a as _,F as u,m as b,t as p,H as x}from"./HedgehogIcon.0138f2f0.js";import{D as M,H as w,F as E}from"./header.6d7eed89.js";function R(o){let e;return{c(){e=k("section"),e.innerHTML=`<div class="grid svelte-57321r"><div class="tile drop-shadow-xl svelte-57321r"><b>RUSH!</b> - in with your friends and play this NEW SUPER AMAZING GREAT ULTRA MEGA GAME made by us called <b>RUSH!</b> a fun 2D fighter with a great campaign for anyone
                             to enjoy! Make sure you check this one out! 
                 <br/> 
                 <hr/>
