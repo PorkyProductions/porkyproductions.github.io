@@ -25,236 +25,37 @@ porkyproductions.github.io
 
 
 -->
+<!--
+    
+
+open cmd
+cd C:\Users\Tristan\source\repos\PorkyProductions\porkyproductions.github.io
+npm run dev
+    
+-->
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="google-site-verification" content="tjDM7Pn8FDUHGsa6jqtmbDO1-MK8m3YNE56-iu2GxXc" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="The Offical Website of PorkyProductions">
-    <meta name="apple-touch-icon" content="assets/HedgehogIcon.png" />
-    <title>Porky Productions - Home</title>
-    
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-    <!-----SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS------SCRIPTS----->
-
-    
-    
-    
-    
-
-<!--CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS-----CSS------->
-<!--In-House-->
-    
-    
-    
-    
-<!--GFonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet"> 
-
-    <link rel="icon" type="icon" href="./assets/HedgehogIcon.4737d2b0.png" />
-    <link rel="apple-touch-icon" href="./assets/HedgehogIcon.4737d2b0.png">
-    <!--FAVICON-->
-    <link rel="alternate" href="data:application/xml;base64,77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCgkJPCEtLQljcmVhdGVkIHdpdGggd3d3Lm15c2l0ZW1hcGdlbmVyYXRvci5jb20JLS0+DQoJCTx1cmxzZXQgeG1sbnM9Imh0dHA6Ly93d3cuc2l0ZW1hcHMub3JnL3NjaGVtYXMvc2l0ZW1hcC8wLjkiPg0KPHVybD4NCgk8bG9jPmh0dHBzOi8vcG9ya3lwcm9kdWN0aW9ucy5naXRodWIuaW8vPC9sb2M+DQoJPGxhc3Rtb2Q+MjAyMi0wMS0xNVQyMToyNDowNyswMTowMDwvbGFzdG1vZD4NCgk8cHJpb3JpdHk+MS4wPC9wcmlvcml0eT4NCjwvdXJsPg0KPHVybD4NCgk8bG9jPmh0dHBzOi8vcG9ya3lwcm9kdWN0aW9ucy5naXRodWIuaW8vaW5kZXguaHRtbDwvbG9jPg0KCTxsYXN0bW9kPjIwMjItMDEtMTVUMjE6MjQ6MDcrMDE6MDA8L2xhc3Rtb2Q+DQoJPHByaW9yaXR5PjEuMDwvcHJpb3JpdHk+DQo8L3VybD4NCjx1cmw+DQoJPGxvYz5odHRwczovL3Bvcmt5cHJvZHVjdGlvbnMuZ2l0aHViLmlvL2dhbWVzLmh0bWw8L2xvYz4NCgk8bGFzdG1vZD4yMDIyLTAxLTE1VDIxOjI0OjA3KzAxOjAwPC9sYXN0bW9kPg0KCTxwcmlvcml0eT4xLjA8L3ByaW9yaXR5Pg0KPC91cmw+DQo8dXJsPg0KCTxsb2M+aHR0cHM6Ly9wb3JreXByb2R1Y3Rpb25zLmdpdGh1Yi5pby8zRFByaW50cy5odG1sPC9sb2M+DQoJPGxhc3Rtb2Q+MjAyMi0wMS0xNVQyMToyNDowNyswMTowMDwvbGFzdG1vZD4NCgk8cHJpb3JpdHk+MS4wPC9wcmlvcml0eT4NCjwvdXJsPg0KPHVybD4NCgk8bG9jPmh0dHBzOi8vcG9ya3lwcm9kdWN0aW9ucy5naXRodWIuaW8vbW9kZWxzLmh0bWw8L2xvYz4NCgk8bGFzdG1vZD4yMDIyLTAxLTE1VDIxOjI0OjA3KzAxOjAwPC9sYXN0bW9kPg0KCTxwcmlvcml0eT4xLjA8L3ByaW9yaXR5Pg0KPC91cmw+DQo8dXJsPg0KCTxsb2M+aHR0cHM6Ly9wb3JreXByb2R1Y3Rpb25zLmdpdGh1Yi5pby9kZXZlbG9wLmh0bWw8L2xvYz4NCgk8bGFzdG1vZD4yMDIyLTAxLTE1VDIxOjI0OjA3KzAxOjAwPC9sYXN0bW9kPg0KCTxwcmlvcml0eT4xLjA8L3ByaW9yaXR5Pg0KPC91cmw+DQo8dXJsPg0KCTxsb2M+aHR0cHM6Ly9wb3JreXByb2R1Y3Rpb25zLmdpdGh1Yi5pby9kZU1vdGl2YXRvcjwvbG9jPg0KCTxsYXN0bW9kPjIwMjItMDEtMTVUMjE6MjQ6MDkrMDE6MDA8L2xhc3Rtb2Q+DQoJPHByaW9yaXR5PjAuODwvcHJpb3JpdHk+DQo8L3VybD4NCjx1cmw+DQoJPGxvYz5odHRwczovL3Bvcmt5cHJvZHVjdGlvbnMuZ2l0aHViLmlvL2RlTW90aXZhdG9yLzwvbG9jPg0KCTxsYXN0bW9kPjIwMjItMDEtMTVUMjE6MjQ6MTMrMDE6MDA8L2xhc3Rtb2Q+DQoJPHByaW9yaXR5PjAuODwvcHJpb3JpdHk+DQo8L3VybD4NCjx1cmw+DQoJPGxvYz5odHRwczovL3Bvcmt5cHJvZHVjdGlvbnMuZ2l0aHViLmlvL2RlTW90aXZhdG9yL2Fib3V0Lmh0bWw8L2xvYz4NCgk8bGFzdG1vZD4yMDIyLTAxLTE1VDIxOjI0OjEzKzAxOjAwPC9sYXN0bW9kPg0KCTxwcmlvcml0eT4wLjg8L3ByaW9yaXR5Pg0KPC91cmw+DQo8dXJsPg0KCTxsb2M+aHR0cHM6Ly9wb3JreXByb2R1Y3Rpb25zLmdpdGh1Yi5pby9kZU1vdGl2YXRvci9jcmVkaXRzLmh0bWw8L2xvYz4NCgk8bGFzdG1vZD4yMDIyLTAxLTE1VDIxOjI0OjEzKzAxOjAwPC9sYXN0bW9kPg0KCTxwcmlvcml0eT4wLjg8L3ByaW9yaXR5Pg0KPC91cmw+DQo8L3VybHNldD4=" type="application/rss+xml" title="RSS">
-  <script type="module" crossorigin src="./assets/main.ec612030.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill.b7f2da20.js">
-  <link rel="modulepreload" crossorigin href="./assets/Header.afe3e71b.js">
-  <link rel="modulepreload" crossorigin href="./assets/index.dc15e910.js">
-  <link rel="stylesheet" href="./assets/index.8737f94e.css">
-  <link rel="stylesheet" href="./assets/MasterStyle.307b64a3.css">
-  <link rel="stylesheet" href="./assets/footer.eb66b3f0.css">
-  <link rel="stylesheet" href="./assets/output.533f3126.css">
+    <link rel="shortcut icon" href="./assets/HedgehogIcon.4737d2b0.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PorkyProductions - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="./assets/index.6e04af89.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/HedgehogIcon.0138f2f0.js">
+  <link rel="modulepreload" crossorigin href="./assets/header.6d7eed89.js">
+  <link rel="modulepreload" crossorigin href="./assets/preload-helper.37bfa890.js">
+  <link rel="modulepreload" crossorigin href="./assets/hedgehogSpinner.bd4a0a3d.js">
+  <link rel="stylesheet" href="./assets/HedgehogIcon.25c09ad7.css">
+  <link rel="stylesheet" href="./assets/header.a2504b82.css">
+  <link rel="stylesheet" href="./assets/hedgehogSpinner.ae159418.css">
+  <link rel="stylesheet" href="./assets/index.6d03e578.css">
 </head>
-
-  <body id="page" class="dark:bg-black dark:text-white">
-      <div id="header" class="header">
-        <!--Hegdehog logo thing-->
-        <a href="index.html" class="logo">
-          <img
-            src="./assets/HedgehogIcon.4737d2b0.png"
-            width="100"
-            height="70"
-            alt="hedgehog logo"
-          />
-        </a>
-        <div
-          id="logoText"
-          class="header-logoText dark:text-black"
-          onclick="generateText()"
-          oncontextmenu="generateText()"
-          style="left: 140px; top: 45px; font-size: 23px"
-        >
-          PorkyProductions
-        </div>
-        <div class="header-right">
-          <!--Different headers-->
-          <a class="active" href="index.html">Home <img src="./assets/house-door.0a323b79.svg" alt=""></a>
-          <a href="games.html">Games <img src="./assets/controller.8ff4ee2d.svg" alt=""></a>
-          <a href="3DPrints.html">3D Prints <img src="./assets/badge-3d.a960f3aa.svg" alt=""></a>
-          <a href="models.html">Models <img src="./assets/boxes.f1697c84.svg" alt=""></a>
-          <a href="develop.html">Developments <img src="./assets/code-slash.5f9b99fb.svg" alt=""></a>
-        </div>
-      </div>
-      <br />
-  <!--NOTE: Titles and Headers are the "Raleway" font, everything else is Arial or sans-serif -->
-      <div class="dark:bg-black dark:text-white">
-        <div class="padding-semi-large text-9xl sm:text-6xl md:text-9xl lg:text-9xl text-center font-bold" id="mainLogoText" style="font-family: 'Raleway', sans-serif;" onclick="changeColorOfMainLogoText()">
-          <h1>PorkyProductions</h1>
-        </div>
-        </div>
-        <br />
-      <br />
-      <div class="mainBody">
-          
-          <div class="mainBody-grid">
-              <div class="mainBody-tile">
-                  <h3 class="ralewayBold">You Make Games?</h3>
-                  <p>
-                      Current games are being produced by Hedgehog Studios and is
-                      setting a new foundation for releases of cool, slick games that
-                      everyone can enjoy! Follow our adventure and perhaps download our
-                      games here!
-                  </p>
-                  <a href="games.html">Games Tab</a>
-              </div>
-              <div class="mainBody-tile">
-                  <h3 class="ralewayBold">Porky Productions 3D Prints</h3>
-                  <p>
-                      Porky Productions also specialize in building real world models
-                      using our 3D printers. Our creations, and models can be viewed
-                      here!
-                  </p>
-                  <a href="3DPrints.html">3D Prints Tab</a>
-              </div>
-          </div>
-          <div class="mainBody-grid">
-              <div class="mainBody-tile">
-                  <h3 class="ralewayBold">Porky Productions Models</h3>
-                  <p>
-                        Porky Productions also specialize in building real world models
-                        using our 3D printers. Our creations, and models can be viewed
-                        here!
-                  </p>
-                  <a href="Models.html">Models Tab</a>
-              </div>
-              <div class="mainBody-tile">
-                  <h3 class="ralewayBold">Porky Productions Developments</h3>
-                  <p>
-                      Porky Productions also specialize in building software that can change the world. Our Developments can be seen here!
-                  </p>
-                  <a href="develop.html">Developments Tab</a>
-              </div>
-          </div>
-          <!--BLOCK DESCRIPTIONS-------------------------------------------------------------------------------BLOCK DESCRIPTIONS------------------------------------------------------------>
-          <div class='blue-gradient'>
-              
-              <br>
-              <h1 class="text-white mainTitleRale-white block-description-header" >
-                  Our Mission
-              </h1>
-
-              <p class="mainBody block-description-text" >
-                  Here at PorkyProductions© we are on a mission to create technology that can change the world. <br>
-                  Whether it be a game, a model, or a software development, we are dedicated to positively impacting the world. <br>
-                  We chose to do this because we believe that technology (when used in the right ways) can and will positively impact humanity. <br>
-                  We believe that technology can be used to create a better world, and that we can use technology to help us do that. <br>
-                  Join us as we create technology that can change the world!
-              </p>
-          </div>
-          <br>
-          <div id="flyin">
-              <h1 class=" block-description-header mainTitleRale">Our Founders</h1>
-              <div class="mainBody-grid">
-                  <div class="mainBody-tile">
-                      <h3 class="ralewayBold">Tristan</h3>
-                      <h5 class="raleway"> (HedgehogDubz) </h5>
-                      <img src="https://avatars.githubusercontent.com/u/53802238?v=4" width="210" alt="tristan's avatar" />
-                      <p>
-                          Tristan is a software / hardware developer as a hobbiest.
-                          He uses a multitude of languages to accomodate to his needs.
-                          Some of these languages include: HTML, CSS, Javascript + (jQuery), C# + (Winforms, .Net, Unity), Java, Typescript,
-                          Python, and aspx.
-                          Has a 3D printer and all creations can be seen in his <a href="3DPrints.html">3D Prints Tab</a> tab.
-                          Also creates models seen in the <a href="models.html">Models Tab</a>
-                          Also creates games but currently none are published.
-
-                      </p>
-                  </div>
-                  <div class="mainBody-tile">
-                      <h3 class="ralewayBold">Ryan</h3>
-                      <h5 class="raleway"> (hiteacheryouare) </h5>
-                      <img src="https://avatars.githubusercontent.com/u/82683251?v=4" width="210" alt="ryan's avatar" />
-                      <p>
-                          Ryan is a software developer as a hobbiest.
-                          He is currently learning many differnt languages.
-                          Some of these languages include: HTML, CSS, JavaScript, Python, C# via .NET 6, TypeScript, and Kotlin (although this was put on hold to learn C# to use Xamarin with .NET).
-                          Ryan is working on a variety of projects which you can see in his <a href="https://github.com/hiteacheryouare/projects">GitHub repository</a>
-                      </p>
-                  </div>
-              </div>
-
-          </div>
-
-          
-          <div class='red-orange-gradient' id="flyin">
-
-              <h1 class="mainTitleRale-white block-description-header text-white">The PorkyProductions Origin Story</h1>
-              <p class="mainBody block-description-text" style="padding-left: 20%; padding-right: 20%
-">
-                  Our story begins in 2017, when our founders, Tristan and Ryan met in school.
-                  They became friends and eventually discorvered that they could make a website using the "Google Sites" service.
-                  What better thing to make a website about than a hedgehog pencil sharpener that Tristan had brought to school and named "Porky".
-                  After this website (PorkyPictures.inc) was created, many other websites followed such as PorkySchool.edu, PorkyPizza.eat, and <br />PorkyBlackHolesThatWillDestroyTheEntireUniverse-<br>SoYouProbablyShouldntUseThem.com.com.inc  <br>
-                  <br />
-                  At this point, Porky had developed a cult following. But then, sadly, a hater of porky stole the pencil sharpener, and destroyed it.
-                  However, at the last moment, Porky transferred into a Hedgehog plush, where it resides to this day.
-                  Later on, the old websites were archived, and consolidated into one company, called PorkyProductions, which is where we are today.
-              </p>
-
-              <br>
-              <br>
-
-          </div>
-        <!--THIS is the div that contains the loading screen-->
-        <div class="loader-wrapper loader-padding">
-            <span class="loader"><span class="loader-inner"></span></span>  
-        </div>
-       <br />
-        <br />
-          <br />
-          <br />
-          
-          <!--BEYOND THIS POINT IS THE FOOTER -- NO TOUCHING OR ELSE IT WILL BREAK-->
-          <div class="footer">
-            <img src="./assets/PPio logo.5c1c65d7.png" height="60" width="265" alt="porky productions logo" />
-            <a class="center footer-text" href="index.html">Home</a>
-            <a class="center footer-text" href="games.html">Games</a>
-            <a class="center footer-text" href="3DPrints.html">3D Prints</a>
-            <a class="center footer-text" href="models.html">Models</a>
-            <a class="center footer-text" href="develop.html">Developments</a>
-            <a class="center footer-text" href="credits.html">Credits</a>
-            <a class="center footer-text" href="https://practical-lamport-2debac.netlify.app/">Fallback Site</a>
-        </div>
-        <div class="footer-bottom text-center" style="display: block;">
-            <p>
-                © 2022 PorkyProductions. All Rights Reserved. Licensed under the Apache-2.0 License
-            </p>
-            <br>
-            <p>
-              Made with <img src="./assets/heart-fill.da91aa2c.svg" alt="love" style="height: 100px; margin: auto;" onclick="addToCounter()"> at PorkyProductions
-            </p>
-        </div>
-      </div>
-      <!--BELOW is the function that hides the loading screen. Refer to "index.js"-->
-      <script>
-        $(window).on("load",function(){
-          $(".loader-wrapper").fadeOut("slow");
-        });
-      </script>
-  </body>
+<body>
+    <div id="app"></div>
+    
+</body>
 </html>
-<!--Hi there reader. It looks like youve reached the end of our code. Thats pretty cool. Have you been working this entire time? Maybe give yourself a break. You work more productive when youre not tired :) -->

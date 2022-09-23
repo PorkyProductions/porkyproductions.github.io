@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+* {
+    scroll-behavior: smooth;
+    scrollbar-color: blue;
+    accent-color: hsl(343, 100%, 65%);
+}
+*::selection {
+    background-color: hsl(343, 100%, 65%);
+    color: white;
+};
+
+a,
+.btn {
+    @apply transition-colors duration-200;
+    @apply hover:text-secondary;
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent focus:ring-secondary;
+}
+.gradient-text {
+    @apply text-transparent bg-clip-text;
+    @apply bg-gradient-to-br from-ppio-red via-fuchsia-500 to-ppio-hotshot dark:from-primary dark:via-secondary dark:to-secondary-darkest;
+}
