@@ -6,7 +6,7 @@
     {#if deviceType === "mobile"}
         <div class="gridMobile">
             <div class="tileMobile bg-slate-100 dark:bg-slate-600 drop-shadow-lg font-secondary">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum placeat quibusdam vero iure, maxime dignissimos, similique fugiat aliquam temporibus distinctio quis? Omnis minima at harum quia mollitia sunt velit enim.
+                This is a test cuz i cant figure out how github works ahhhhhhh
             </div>
             <div class="tileMobile bg-slate-100 dark:bg-slate-600 drop-shadow-lg font-secondary">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ea harum aperiam excepturi, tenetur, vero ex, aliquid corporis cumque quas fugiat error ipsam? Labore nobis eius libero necessitatibus quae eveniet!
