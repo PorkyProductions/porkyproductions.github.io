@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@meshhouse/model-viewer": "^1.0.1",
-    "@splinetool/runtime": "^0.9.97",
+    "@splinetool/runtime": "^0.9.119",
     "autoprefixer": "^10.4.8",
     "bootstrap-icons": "^1.9.1",
     "jquery": "^3.6.0",
