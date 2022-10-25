@@ -23,7 +23,7 @@
     "uadetect": "^4.1.1"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^1.0.1",
+    "@sveltejs/vite-plugin-svelte": "^1.1.0",
     "@types/jquery": "^3.5.14",
     "svelte": "^3.49.0",
     "svelte-typewriter": "^3.0.2",
