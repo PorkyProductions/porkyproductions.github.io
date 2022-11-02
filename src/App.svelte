@@ -7,11 +7,12 @@
   import MainPageOriginStory from './components/mainPageOriginStory.svelte';
   import MainPageOurFounders from './components/mainPageOurFounders.svelte';
   import MainPageSectionOneGrid from './components/mainPageSectionOneGrid.svelte';
-  import { onMount } from 'svelte'
+  import { onDestroy } from "svelte";
   import HedgehogSpinner from './components/hedgehogSpinner.svelte';
-import MainPageMissionStatement from './components/mainPageMissionStatement.svelte';
+  import MainPageMissionStatement from './components/mainPageMissionStatement.svelte';
   let ready = false
-  onMount(() => ready = true);
+  const timeoutId = setTimeout( () => ready = true, 1000);
+  onDestroy(() => clearTimeout(timeoutId));
 </script>
 
 {#if ready}
@@ -28,16 +29,3 @@ import MainPageMissionStatement from './components/mainPageMissionStatement.svel
 {:else}
   <HedgehogSpinner />
 {/if}
-
-
-<style>
-  * {
-    scroll-behavior: smooth;
-    scrollbar-color: hsl(240, 100%, 50%);
-    accent-color: hsl(343, 100%, 65%);
-  }
-  *::selection {
-    background-color: hsl(343, 100%, 65%);
-    color: white;
-  }
-</style>

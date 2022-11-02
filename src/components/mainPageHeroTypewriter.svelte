@@ -1,7 +1,7 @@
 <script>
     import '../app.css'
     import { deviceType } from 'uadetect' 
-    import Typewriter from '../../node_modules/svelte-typewriter/src/lib/Typewriter.svelte'
+    import Typewriter from 'svelte-typewriter'
             
     let props = {
             // general-purpose props

@@ -1,0 +1,9 @@
+* {
+    scroll-behavior: smooth;
+    scrollbar-color: hsl(240, 100%, 50%);
+    accent-color: hsl(343, 100%, 65%);
+    &::selection {
+        background-color: hsl(343, 100%, 65%);
+        color: white;
+    }
+}
