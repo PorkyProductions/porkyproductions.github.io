@@ -27,6 +27,6 @@
     "@types/jquery": "^3.5.14",
     "svelte": "^3.49.0",
     "svelte-typewriter": "^3.0.2",
-    "vite": "^3.0.7"
+    "vite": "^3.2.4"
   }
 }
