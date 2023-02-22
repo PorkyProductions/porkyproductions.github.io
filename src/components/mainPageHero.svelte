@@ -1,7 +1,7 @@
 <script>
     import '../app.css'
     import HeroTypewriter from './mainPageHeroTypewriter.svelte';
-    import hedgehog from '/./../images/HedgehogIcon.png'
+    import hedgehog from '../../images/HedgehogIcon.png'
     import { deviceType } from 'uadetect'
 </script>
 

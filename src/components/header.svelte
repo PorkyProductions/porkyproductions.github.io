@@ -23,8 +23,7 @@
             <div></div>
             
             <a href="index.html" class="header-link hover:bg-slate-300 dark:hover:bg-slate-800 hover:rounded-xl rounded-lg  h-24">
-                <img class = "float-left"src={hedgehog} alt="a hedgehog" id="HH" bind:this={HH} on:mouseover={spin} on:focus={spin}>
-                <p class="float-right"><b>PorkyProductions</b>.io</p>
+                <img src={hedgehog} alt="a hedgehog" id="HH" bind:this={HH} on:mouseover={spin} on:focus={spin}>
             </a>
             <NavbarItem href={"index.html"} text={"Home"} icon={houseDoor} iconAlt={"a house"} />
             <NavbarItem href={"games.html"} text={"Games"} icon={controller} iconAlt={"controller"} />

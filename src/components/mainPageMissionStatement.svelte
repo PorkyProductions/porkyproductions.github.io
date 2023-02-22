@@ -1,6 +1,6 @@
 <script>
     import '../app.css'
-    import arrow from '../../node_modules/bootstrap-icons/icons/arrow-down.svg'
+    import arrow from 'bootstrap-icons/icons/arrow-down.svg'
 </script>
 
 <div>

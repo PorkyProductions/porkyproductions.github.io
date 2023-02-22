@@ -5,27 +5,28 @@
     
 
     // Audios
-    import audio_airWooshUnderwater from '../../audio/audio_Air_Woosh_Underwater.mp3'
-    import audio_alarmClock from '../../audio/audio_Alarm_Clock.mp3'
-    import audio_beepShort from '../../audio/audio_Beep_Short.mp3'
-    import audio_bigExplosionDistant from '../../audio/audio_Big_Explosion_Distant.mp3'
-    import audio_cartoonBoing from '../../audio/audio_Cartoon_Boing.mp3'
-    import audio_crash from '../../audio/audio_Crash.mp3'
-    import audio_crunch from '../../audio/audio_Glass_Crunch.mp3'
-    import audio_shatter from '../../audio/audio_Glass_Shatters_Into_Debris.mp3'
-
-    const airWooshUnderwater = new Audio(audio_airWooshUnderwater)
-    const alarmClock = new Audio(audio_alarmClock)
-    const beepShort = new Audio(audio_beepShort)
-    const bigExplosionDistant = new Audio(audio_bigExplosionDistant)
-    const cartoonBoing = new Audio(audio_cartoonBoing)
-    const crash = new Audio(audio_crash)
-    const crunch = new Audio(audio_crunch)
-    const shatter = new Audio(audio_shatter)
-
-
+    
+    import audio_airWooshUnderwater from '../../audio/audio_Air_Woosh_Underwater.mp3';
+    import audio_alarmClock from '../../audio/audio_Alarm_Clock.mp3';
+    import audio_beepShort from '../../audio/audio_Beep_Short.mp3';
+    import audio_bigExplosionDistant from '../../audio/audio_Big_Explosion_Distant.mp3';
+    import audio_cartoonBoing from '../../audio/audio_Cartoon_Boing.mp3';
+    import audio_crash from '../../audio/audio_Crash.mp3';
+    import audio_crunch from '../../audio/audio_Glass_Crunch.mp3';
+    import audio_shatter from '../../audio/audio_Glass_Shatters_Into_Debris.mp3';
+    
     let heartCount = 0
-    const increment = () => {
+    const increment = async () => {
+    
+        const airWooshUnderwater = new Audio(audio_airWooshUnderwater)
+        const alarmClock = new Audio(audio_alarmClock)
+        const beepShort = new Audio(audio_beepShort)
+        const bigExplosionDistant = new Audio(audio_bigExplosionDistant)
+        const cartoonBoing = new Audio(audio_cartoonBoing)
+        const crash = new Audio(audio_crash)
+        const crunch = new Audio(audio_crunch)
+        const shatter = new Audio(audio_shatter)
+        
         heartCount += 1
         console.log(`count is at ${heartCount}`);
         switch(heartCount){
@@ -73,7 +74,7 @@
 </script>
 
 <footer>
-    <div class="flex justify-between content-center bg-sky-900 text-slate-200 pt-12 px-12">
+    <div class="flex justify-between content-center bg-secondary-darkest text-slate-200 pt-12 px-12">
         <div class="columns">
             <div class="px-10">
                 <img src={ppiologo} alt="">
@@ -95,10 +96,10 @@
             </div>
         </div>
     </div>
-    <div class= 'text-white m-auto' on:click={increment}>
-        <div class='absolute bg-sky-900' style="padding-left:83%; padding-right: 10%; padding-top:0px"> 
+    <div class= 'text-white m-auto' on:click={increment} on:keypress={increment}>
+        <div class='bg-secondary-darkest'> 
             <p class="text-center">Made With</p>
-            <img src={heart} alt="" on:click={increment} class="m-auto h-12 w-1/12">
+            <img src={heart} alt="" on:click={increment} on:keypress={increment} class="m-auto h-12 w-1/12">
             <p class="text-center">at PorkyProductions</p>
          </div>
     </div>

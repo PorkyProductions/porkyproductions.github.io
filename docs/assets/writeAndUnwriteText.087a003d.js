@@ -1,0 +1,2 @@
+import{w as s,t as e}from"./writeEffect.00189a77.js";import{u as f}from"./unwriteEffect.7bd7fe49.js";import{b as l}from"./animationSetup.95a7eef1.js";const y=async({currentNode:t,text:r},a)=>{await s({currentNode:t,text:r},a);const n=r.replaceAll("&","&amp;");t.innerHTML===n&&(a.dispatch("done"),await e(a.wordInterval),await f(t,a)),l(t,a.parentElement,i=>{t===i?i.classList.remove("typing"):i.classList.remove("finished-typing")})};export{y as w};
+//# sourceMappingURL=writeAndUnwriteText.087a003d.js.map

@@ -1,0 +1,18 @@
+import{S as u,i as b,s as v,e as y,b as $,f as g,n as l,h,F as m,a as w,G as p,m as c,t as d,I as f}from"./HedgehogIcon.e6965057.js";import{H as k,F as _}from"./header.8b0ae9c7.js";function M(i){let e;return{c(){e=y("section"),e.innerHTML=`<h1 class="font-primary font-semibold px-32 sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl py-12 text-center">Technological Developments</h1> 
+    <p class="text-center">Here at PorkyProductions we are working on a variety of projects. We innovate new technologies everyday, and create new ways to interact with the world around us. <br/> 
+                <br/>
+                We are currently working on a variety of projects, and we are always looking for new ideas to work on.
+                <br/> 
+                <br/>
+                Some of the projects we are working on include:
+                <br/> 
+                <br/></p>         
+    <a href="https://porkyproductions.github.io/deMotivator/"><div class="bg-gradient-to-r from-primary to-blue-400 hover:bg-slate-600 p-10"><h1 class="text-center font-semibold p-24 text-white sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-primary">(de)Motivator</h1> 
+            <p class="text-center font-normal p-4 text-white sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Our flagship product. (de)Motivator is the simple, push-button way of lowering your self esteem.<br/></p></div></a> 
+    <a href="https://porkyproductions.github.io/UA-detect/"><div class="bg-gradient-to-r from-UADblue to-UADGreen hover:bg-slate-600 p-10"><h1 class="text-center font-semibold p-24 text-white sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-primary">UADetect</h1> 
+            <p class="text-center font-normal p-4 text-white sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">The easiest and most simple way of interacting with the broswer <code>navigator</code> API. Download on npm.</p></div></a> 
+    <a href="https://www.npmjs.com/package/demotivator"><div class="bg-gradient-to-r from-orange-600 to-yellow-400 hover:bg-slate-600 p-10"><h1 class="text-center font-semibold p-24 text-white sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-primary">(de)Motivator.js</h1> 
+            <p class="text-center font-normal p-4 text-white sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">(de)Motivator&#39;s adjacent, and supporting library. This JavaScript library contains an array of the 250+ insults (de)Motivator uses.</p></div></a> 
+    <div class="bg-gradient-to-r from-black to-slate-800 hover:bg-slate-600 p-10"><h1 class="text-center font-semibold p-24 text-white sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-primary">Coming Soon</h1> 
+        <p class="text-center font-normal p-4 text-white sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">PorkyProductions is always innovating and creating new technologies to share with the world. Stay tuned for more exciting releases!</p></div>`,$(e,"class","bg-white text-black dark:text-white dark:bg-black")},m(r,o){g(r,e,o)},p:l,i:l,o:l,d(r){r&&h(e)}}}class j extends u{constructor(e){super(),b(this,e,null,M,v,{})}}function A(i){let e,r,o,x,a,s;return e=new k({}),o=new j({}),a=new _({}),{c(){m(e.$$.fragment),r=w(),m(o.$$.fragment),x=w(),m(a.$$.fragment)},m(t,n){p(e,t,n),g(t,r,n),p(o,t,n),g(t,x,n),p(a,t,n),s=!0},p:l,i(t){s||(c(e.$$.fragment,t),c(o.$$.fragment,t),c(a.$$.fragment,t),s=!0)},o(t){d(e.$$.fragment,t),d(o.$$.fragment,t),d(a.$$.fragment,t),s=!1},d(t){f(e,t),t&&h(r),f(o,t),t&&h(x),f(a,t)}}}class D extends u{constructor(e){super(),b(this,e,null,A,v,{})}}new D({target:document.getElementById("app")});
+//# sourceMappingURL=developments.0937f368.js.map

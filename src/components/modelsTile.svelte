@@ -1,14 +1,11 @@
-<script>
+<script lang="ts">
     import '../app.css'
-    export let modelName;
-    export let modelDownload;
-    export let modelImage;
-    export let id;
-    export let iFrameSource;
-    export let iFrameTitle;
-    let canvas;
-    import { Application } from '@splinetool/runtime'
-    new Application(canvas)
+    export let modelName: string;
+    export let modelDownload: any;
+    export let modelImage: any;
+    export let id: string;
+    export let iFrameSource: string;
+    export let iFrameTitle: string;
 </script>
 
 <div class="tile bg-slate-100 dark:bg-slate-600 drop-shadow-2xl text-left">
@@ -37,7 +34,6 @@
     <br>
     <hr>
     <a href={modelDownload}>Download (.stl)</a>
-    <canvas bind:this={canvas}></canvas>
 </div>
 
 

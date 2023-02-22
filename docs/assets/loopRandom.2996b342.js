@@ -1,0 +1,2 @@
+import{w as a}from"./writeAndUnwriteText.087a003d.js";import{r,a as m,m as l}from"./animationSetup.95a7eef1.js";import"./writeEffect.00189a77.js";import"./unwriteEffect.7bd7fe49.js";import"./HedgehogIcon.e6965057.js";let t=[];const c=e=>{for(;;){const n=r(0,e.length),o=typeof t=="number"&&n!==t,i=Array.isArray(t)&&!t.includes(n);if(e.length===1||i||o)return o&&(t=[]),t.push(n),e[n];t.length===e.length&&(t=t.pop())}},T=async(e,n)=>{const{options:o,elements:i}=m(e,n);for(;;){l(e);const s=c(i);await a(s,o)}};export{T as default};
+//# sourceMappingURL=loopRandom.2996b342.js.map
