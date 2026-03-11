@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FoundersSection from '../components/FoundersSection.astro';
+import OriginStory from '../components/OriginStory.astro';
+---
+
+<BaseLayout title="About" description="The story behind PorkyProductions.">
+	<div class="page-header">
+		<div class="page-header-inner">
+			<span class="section-number">PORKYPRODUCTIONS / ABOUT</span>
+			<h1 class="page-title">About</h1>
+			<div class="h-rule" style="max-width: 52px; margin-top: 1.5rem;"></div>
+			<p class="page-sub">A hedgehog, two guys, and a dream of free software.</p>
+		</div>
+	</div>
+	<FoundersSection />
+	<OriginStory />
+</BaseLayout>
+
+<style>
+	.page-header {
+		background: var(--bg);
+		border-bottom: 2px solid var(--border);
+		padding: 5rem max(2rem, 8vw) 3rem;
+	}
+
+	.page-header-inner { max-width: 640px; }
+
+	.page-title {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 900;
+		font-size: clamp(3rem, 7vw, 6rem);
+		color: var(--text);
+		margin: 0.75rem 0 0;
+		line-height: 1;
+		letter-spacing: -0.03em;
+	}
+
+	.page-sub {
+		font-family: 'Poppins', sans-serif;
+		font-size: 0.95rem;
+		color: var(--text-muted);
+		margin: 1.25rem 0 0;
+	}
+</style>

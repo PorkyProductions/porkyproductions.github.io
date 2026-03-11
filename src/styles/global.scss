@@ -1,0 +1,178 @@
+// ─── Bootstrap Compile-time Overrides ────────────────────────────────────────
+// These bake into the compiled CSS and cannot be overridden by media query.
+// Use Bootstrap's light defaults; dark theming is done via CSS custom properties.
+$primary:           #0000f4;
+$secondary:         #1AC8ED;
+$font-family-sans-serif: 'Poppins', sans-serif;
+$font-family-monospace:  'Courier New', Courier, monospace;
+
+// Brutalist: strip every border-radius
+$border-radius:     0;
+$border-radius-sm:  0;
+$border-radius-lg:  0;
+$border-radius-xl:  0;
+$border-radius-xxl: 0;
+$border-radius-pill:0;
+
+// Buttons — flat
+$btn-border-width:      2px;
+$btn-box-shadow:        none;
+$btn-focus-box-shadow:  none;
+$btn-active-box-shadow: none;
+
+@import 'bootstrap/scss/bootstrap';
+
+// ─── LIGHT MODE (default) ────────────────────────────────────────────────────
+:root {
+	--bg:           #f7f6f2;
+	--bg-alt:       #eeecea;
+	--surface:      #ffffff;
+	--text:         #0c0c10;
+	--text-muted:   #555566;
+	--border:       #0000f4;
+	--nav-bg:       #ffffff;
+	--footer-bg:    #eeecea;
+	--primary:      #0000f4;
+	--accent:       #FF4D80;
+	--card-shadow:  4px 4px 0 #0000f4;
+	--card-shadow-hover: 6px 6px 0 #FF4D80;
+	--mission-bg:   #0000f4;
+	--mission-text: #ffffff;
+	--hero-bg:      #f7f6f2;
+	--hero-text:    #0c0c10;
+	--hero-muted:   #555566;
+	--hero-vignette: rgba(247,246,242,0.8);
+	--ascii-cold:   rgba(0, 0, 244, 0.07);
+	--ascii-hot-r:  0;
+	--ascii-hot-g:  0;
+	--ascii-hot-peak: rgba(0, 0, 200, 1);
+}
+
+// ─── DARK MODE ───────────────────────────────────────────────────────────────
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg:           #050505;
+		--bg-alt:       #0d0d0d;
+		--surface:      #0d0d0d;
+		--text:         #f0f0f0;
+		--text-muted:   #888899;
+		--nav-bg:       #000000;
+		--footer-bg:    #000000;
+		--card-shadow:  4px 4px 0 #0000f4;
+		--card-shadow-hover: 6px 6px 0 #FF4D80;
+		--mission-bg:   #000000;
+		--mission-text: #ffffff;
+		--hero-bg:      #000000;
+		--hero-text:    #ffffff;
+		--hero-muted:   #a0a0b0;
+		--hero-vignette: rgba(0,0,0,0.72);
+		--ascii-cold:   rgba(0, 0, 244, 0.07);
+		--ascii-hot-peak: rgba(255, 255, 255, 1);
+
+		// Bootstrap CSS var overrides for dark mode
+		--bs-body-bg:         #050505;
+		--bs-body-color:      #f0f0f0;
+		--bs-card-bg:         #0d0d0d;
+		--bs-card-border-color: #0000f4;
+		--bs-border-color:    rgba(0,0,244,0.25);
+	}
+}
+
+// ─── Global Reset ─────────────────────────────────────────────────────────────
+*, *::before, *::after {
+	border-radius: 0 !important;
+}
+
+::selection {
+	background-color: #0000f4;
+	color: #ffffff;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--text);
+	font-family: 'Poppins', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+// ─── Scrollbar ────────────────────────────────────────────────────────────────
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--primary); }
+
+// ─── Utility classes ─────────────────────────────────────────────────────────
+.label-mono {
+	font-family: 'Courier New', monospace;
+	font-size: 0.68rem;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: var(--primary);
+}
+
+.section-number {
+	font-family: 'Courier New', monospace;
+	font-size: 0.65rem;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: var(--text-muted);
+}
+
+.h-rule {
+	border: none;
+	border-top: 2px solid var(--border);
+	margin: 0;
+}
+
+// ─── Brutalist Card ───────────────────────────────────────────────────────────
+.brutal-card {
+	background: var(--surface);
+	border: 2px solid var(--border);
+	box-shadow: var(--card-shadow);
+	transition: box-shadow 0.12s ease, transform 0.12s ease;
+	padding: 1.75rem;
+
+	&:hover {
+		box-shadow: var(--card-shadow-hover);
+		transform: translate(-2px, -2px);
+	}
+}
+
+// ─── Brutalist Buttons ────────────────────────────────────────────────────────
+.btn-brutal {
+	font-family: 'Courier New', monospace;
+	font-size: 0.72rem;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	padding: 11px 22px;
+	border: 2px solid var(--text);
+	color: var(--text);
+	background: transparent;
+	text-decoration: none;
+	display: inline-block;
+	transition: background 0.1s, color 0.1s, box-shadow 0.1s;
+	box-shadow: 3px 3px 0 var(--text-muted);
+	cursor: pointer;
+
+	&:hover, &:focus {
+		background: var(--text);
+		color: var(--bg);
+		box-shadow: 3px 3px 0 var(--primary);
+		outline: none;
+	}
+}
+
+.btn-brutal-primary {
+	border-color: var(--primary);
+	color: var(--primary);
+	box-shadow: 3px 3px 0 var(--primary);
+
+	&:hover, &:focus {
+		background: var(--primary);
+		color: #fff;
+		box-shadow: 3px 3px 0 var(--accent);
+	}
+}

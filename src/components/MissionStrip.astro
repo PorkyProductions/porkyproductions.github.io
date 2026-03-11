@@ -1,0 +1,42 @@
+---
+---
+
+<section class="mission-strip">
+	<div class="mission-inner">
+		<p class="mission-text">
+			Open source.<span class="mission-accent"> Professional.</span><span class="mission-hot"> A little bit unhinged.</span>
+		</p>
+	</div>
+</section>
+
+<style>
+	.mission-strip {
+		/* Always high-contrast — a visual punch on both light and dark modes */
+		background: var(--mission-bg);
+		border-top: 2px solid var(--border);
+		border-bottom: 2px solid var(--border);
+	}
+
+	.mission-inner {
+		padding: 3.5rem max(2rem, 8vw);
+	}
+
+	.mission-text {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 900;
+		font-size: clamp(1.5rem, 4.2vw, 3rem);
+		line-height: 1.2;
+		letter-spacing: -0.01em;
+		color: var(--mission-text);
+		margin: 0;
+	}
+
+	.mission-accent {
+		color: var(--mission-text);
+		opacity: 0.75;
+	}
+
+	.mission-hot {
+		color: var(--accent);
+	}
+</style>

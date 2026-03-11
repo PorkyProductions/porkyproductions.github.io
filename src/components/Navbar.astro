@@ -1,0 +1,191 @@
+---
+const navLinks = [
+	{ href: '/', label: 'Home' },
+	{ href: '/software', label: 'Software' },
+	{ href: '/about', label: 'About' },
+];
+
+const currentPath = Astro.url.pathname;
+const isActive = (href: string) =>
+	href === '/' ? currentPath === '/' : currentPath.startsWith(href);
+---
+
+<nav class="site-nav">
+	<div class="nav-inner">
+		<a href="/" class="nav-brand">
+			<img
+				src="/images/HedgehogIcon.png"
+				alt="PorkyProductions"
+				width="26"
+				height="26"
+				class="nav-logo"
+			/>
+			<span class="nav-brand-text">PP<span class="nav-brand-dot">.</span>io</span>
+		</a>
+
+		<ul class="nav-links">
+			{navLinks.map(link => (
+				<li>
+					<a
+						href={link.href}
+						class={`nav-link${isActive(link.href) ? ' nav-link--active' : ''}`}
+					>
+						{link.label}
+					</a>
+				</li>
+			))}
+		</ul>
+
+		<button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+			<span></span><span></span><span></span>
+		</button>
+	</div>
+
+	<div class="nav-mobile" id="nav-mobile">
+		{navLinks.map(link => (
+			<a
+				href={link.href}
+				class={`nav-mobile-link${isActive(link.href) ? ' nav-mobile-link--active' : ''}`}
+			>
+				{link.label}
+			</a>
+		))}
+	</div>
+</nav>
+
+<script>
+	document.getElementById('nav-toggle')?.addEventListener('click', () => {
+		document.getElementById('nav-mobile')?.classList.toggle('nav-mobile--open');
+	});
+</script>
+
+<style>
+	.site-nav {
+		position: sticky;
+		top: 0;
+		z-index: 1000;
+		background: var(--nav-bg);
+		border-bottom: 2px solid var(--border);
+	}
+
+	.nav-inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 2rem;
+		height: 54px;
+	}
+
+	.nav-brand {
+		display: flex;
+		align-items: center;
+		gap: 0.6rem;
+		text-decoration: none;
+	}
+
+	.nav-logo {
+		transition: transform 0.25s ease;
+	}
+	.nav-logo:hover {
+		transform: rotate(15deg) scale(1.1);
+	}
+
+	.nav-brand-text {
+		font-family: 'Courier New', monospace;
+		font-size: 0.92rem;
+		font-weight: bold;
+		letter-spacing: 0.04em;
+		color: var(--text);
+	}
+
+	.nav-brand-dot {
+		color: var(--primary);
+	}
+
+	.nav-links {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav-link {
+		display: block;
+		font-family: 'Courier New', monospace;
+		font-size: 0.7rem;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--text-muted);
+		text-decoration: none;
+		padding: 0 1.2rem;
+		height: 54px;
+		line-height: 54px;
+		border-left: 1px solid rgba(0, 0, 244, 0.18);
+		transition: color 0.1s, background 0.1s;
+	}
+
+	.nav-link:last-child {
+		border-right: 1px solid rgba(0, 0, 244, 0.18);
+	}
+
+	.nav-link:hover {
+		color: var(--text);
+		background: rgba(0, 0, 244, 0.06);
+	}
+
+	.nav-link--active {
+		color: var(--primary);
+		border-bottom: 2px solid var(--primary);
+	}
+
+	.nav-toggle {
+		display: none;
+		flex-direction: column;
+		gap: 5px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 4px;
+	}
+
+	.nav-toggle span {
+		display: block;
+		width: 22px;
+		height: 2px;
+		background: var(--text);
+	}
+
+	.nav-mobile {
+		display: none;
+		flex-direction: column;
+		border-top: 1px solid rgba(0, 0, 244, 0.15);
+		background: var(--nav-bg);
+	}
+
+	.nav-mobile--open {
+		display: flex;
+	}
+
+	.nav-mobile-link {
+		font-family: 'Courier New', monospace;
+		font-size: 0.78rem;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: var(--text-muted);
+		text-decoration: none;
+		padding: 1rem 2rem;
+		border-bottom: 1px solid rgba(0, 0, 244, 0.08);
+		transition: color 0.1s, background 0.1s;
+	}
+
+	.nav-mobile-link:hover,
+	.nav-mobile-link--active {
+		color: var(--primary);
+		background: rgba(0, 0, 244, 0.04);
+	}
+
+	@media (max-width: 640px) {
+		.nav-links { display: none; }
+		.nav-toggle { display: flex; }
+	}
+</style>

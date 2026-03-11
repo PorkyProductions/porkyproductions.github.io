@@ -1,0 +1,145 @@
+---
+const founders = [
+	{
+		name: 'Ryan',
+		handle: 'hiteacheryouare',
+		avatar: 'https://avatars.githubusercontent.com/u/82683251?v=4',
+		bio: 'Software developer as a hobbyist. Mainly focuses on web development, with experience in Python and Rust targeting WebAssembly. Stack includes Svelte, Tailwind CSS, and Vite — all powered by Node.js. Working on a variety of open-source projects visible on GitHub.',
+		githubUrl: 'https://github.com/hiteacheryouare',
+	},
+	{
+		name: 'Tristan',
+		handle: 'HedgehogDubz',
+		avatar: 'https://avatars.githubusercontent.com/u/53802238?v=4',
+		bio: 'Hobbyist software developer and 3D printer. Specializes in video games, with experience in JS, HTML5, C# (Unity, WinForms), and Python. Working on a bullet-hell game and a machine learning library for C#. Really likes hedgehogs.',
+		githubUrl: 'https://github.com/HedgehogDubz',
+	},
+];
+---
+
+<section class="founders-section">
+	<div class="founders-header">
+		<span class="section-number">01 — FOUNDERS</span>
+		<h2 class="founders-title">Our Founders</h2>
+		<div class="h-rule" style="max-width: 52px;"></div>
+	</div>
+
+	<div class="founders-grid">
+		{founders.map(f => (
+			<div class="brutal-card founder-card">
+				<div class="founder-meta">
+					<img
+						src={f.avatar}
+						alt={`${f.name} GitHub avatar`}
+						width="56"
+						height="56"
+						class="founder-avatar"
+					/>
+					<div>
+						<h3 class="founder-name">{f.name}</h3>
+						<p class="founder-handle">@{f.handle}</p>
+					</div>
+				</div>
+				<p class="founder-bio">{f.bio}</p>
+				<a
+					href={f.githubUrl}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="founder-gh-link"
+				>
+					GITHUB ↗
+				</a>
+			</div>
+		))}
+	</div>
+</section>
+
+<style>
+	.founders-section {
+		background: var(--bg);
+		padding: 5rem max(2rem, 8vw);
+		border-top: 2px solid var(--border);
+	}
+
+	.founders-header {
+		margin-bottom: 3rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.founders-title {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 900;
+		font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+		color: var(--text);
+		margin: 0;
+		line-height: 1;
+	}
+
+	.founders-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+
+	.founder-card {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+	}
+
+	.founder-meta {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.founder-avatar {
+		border: 2px solid var(--border);
+		flex-shrink: 0;
+	}
+
+	.founder-name {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 800;
+		font-size: 1.2rem;
+		color: var(--text);
+		margin: 0 0 0.2rem;
+	}
+
+	.founder-handle {
+		font-family: 'Courier New', monospace;
+		font-size: 0.68rem;
+		letter-spacing: 0.08em;
+		color: var(--accent);
+		margin: 0;
+	}
+
+	.founder-bio {
+		font-family: 'Poppins', sans-serif;
+		font-size: 0.875rem;
+		line-height: 1.75;
+		color: var(--text-muted);
+		margin: 0;
+		flex-grow: 1;
+	}
+
+	.founder-gh-link {
+		font-family: 'Courier New', monospace;
+		font-size: 0.62rem;
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 6px 12px;
+		border: 1px solid var(--text-muted);
+		color: var(--text-muted);
+		transition: border-color 0.1s, color 0.1s;
+		display: inline-block;
+	}
+
+	.founder-gh-link:hover {
+		border-color: var(--text);
+		color: var(--text);
+	}
+</style>

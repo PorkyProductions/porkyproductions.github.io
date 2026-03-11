@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+const projects = [
+	{
+		name: '(de)Motivator',
+		description: "Flagship product. Push-button self-esteem reducer. Get an instant dose of brutal honesty whenever you need it most. Great for those days when you're feeling too good about yourself.",
+		tags: ['Web App', 'JavaScript', 'Open Source'],
+		liveUrl: 'https://porkyproductions.github.io/deMotivator/',
+		githubUrl: 'https://github.com/PorkyProductions/deMotivator',
+	},
+	{
+		name: 'UADetect',
+		description: 'The simplest way to interact with the browser navigator API. Detect device type, OS, browser, and more — zero configuration, zero drama.',
+		tags: ['npm', 'TypeScript', 'Browser API'],
+		npmUrl: 'https://www.npmjs.com/package/uadetect',
+		githubUrl: 'https://github.com/PorkyProductions/UADetect',
+	},
+	{
+		name: '(de)Motivator.js',
+		description: '250+ hand-crafted insults powering the (de)Motivator experience. Drop this library into any project that could use a little humility.',
+		tags: ['npm', 'JavaScript', 'Library'],
+		npmUrl: 'https://www.npmjs.com/package/demotivator.js',
+		githubUrl: 'https://github.com/PorkyProductions/demotivator.js',
+	},
+];
+---
+
+<BaseLayout title="Software" description="All PorkyProductions open-source projects.">
+	<div class="page-header">
+		<div class="page-header-inner">
+			<span class="section-number">PORKYPRODUCTIONS / SOFTWARE</span>
+			<h1 class="page-title">Software</h1>
+			<div class="h-rule" style="max-width: 52px; margin-top: 1.5rem;"></div>
+			<p class="page-sub">Everything we've built. All of it open source. All of it free.</p>
+		</div>
+	</div>
+
+	<section class="sw-grid-section">
+		<div class="sw-grid">
+			{projects.map((project, i) => (
+				<ProjectCard {...project} index={i} />
+			))}
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.page-header {
+		background: var(--bg);
+		border-bottom: 2px solid var(--border);
+		padding: 5rem max(2rem, 8vw) 3rem;
+	}
+
+	.page-header-inner { max-width: 640px; }
+
+	.page-title {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 900;
+		font-size: clamp(3rem, 7vw, 6rem);
+		color: var(--text);
+		margin: 0.75rem 0 0;
+		line-height: 1;
+		letter-spacing: -0.03em;
+	}
+
+	.page-sub {
+		font-family: 'Poppins', sans-serif;
+		font-size: 0.95rem;
+		color: var(--text-muted);
+		margin: 1.25rem 0 0;
+	}
+
+	.sw-grid-section {
+		background: var(--bg-alt);
+		padding: 4rem max(2rem, 8vw);
+	}
+
+	.sw-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+</style>

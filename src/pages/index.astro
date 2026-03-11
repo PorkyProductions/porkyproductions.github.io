@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ParticleHero from '../components/ParticleHero.astro';
+import MissionStrip from '../components/MissionStrip.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+const featuredProjects = [
+	{
+		name: '(de)Motivator',
+		description: 'Flagship product. Push-button self-esteem reducer. Get an instant dose of brutal honesty whenever you need it most.',
+		tags: ['Web App', 'JavaScript', 'Open Source'],
+		liveUrl: 'https://porkyproductions.github.io/deMotivator/',
+		githubUrl: 'https://github.com/PorkyProductions/deMotivator',
+	},
+	{
+		name: 'UADetect',
+		description: 'The simplest way to interact with the browser navigator API. Detect device type, OS, and browser with zero configuration.',
+		tags: ['npm', 'TypeScript', 'Browser API'],
+		npmUrl: 'https://www.npmjs.com/package/uadetect',
+		githubUrl: 'https://github.com/PorkyProductions/UADetect',
+	},
+	{
+		name: '(de)Motivator.js',
+		description: '250+ insults library powering (de)Motivator. Drop it into any project for on-demand demotivation.',
+		tags: ['npm', 'JavaScript', 'Library'],
+		npmUrl: 'https://www.npmjs.com/package/demotivator.js',
+		githubUrl: 'https://github.com/PorkyProductions/demotivator.js',
+	},
+];
+---
+
+<BaseLayout title="Home" description="PorkyProductions — open source software collective.">
+	<ParticleHero />
+	<MissionStrip />
+
+	<!-- Featured Projects -->
+	<section class="projects-section">
+		<div class="section-header-row">
+			<span class="section-number">FEATURED PROJECTS</span>
+			<a href="/software" class="section-all-link">VIEW ALL →</a>
+		</div>
+		<div class="projects-grid">
+			{featuredProjects.map((project, i) => (
+				<ProjectCard {...project} index={i} />
+			))}
+		</div>
+	</section>
+
+	<!-- Vision -->
+	<section class="vision-section">
+		<div class="vision-inner">
+			<span class="section-number">WHAT WE BUILD</span>
+			<h2 class="vision-title">Built for everyone,<br />by anyone.</h2>
+			<div class="h-rule" style="max-width: 52px; margin: 1.5rem 0;"></div>
+			<p class="vision-body">
+				PorkyProductions is a small software collective focused on open-source tools that are genuinely
+				useful. We believe great software doesn't have to be expensive, closed, or boring. Everything we
+				ship is free, documented, and built to last.
+			</p>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.projects-section {
+		background: var(--bg);
+		padding: 4rem max(2rem, 8vw);
+		border-top: 2px solid var(--border);
+	}
+
+	.section-header-row {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		margin-bottom: 2.5rem;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+
+	.section-all-link {
+		font-family: 'Courier New', monospace;
+		font-size: 0.62rem;
+		letter-spacing: 0.2em;
+		color: var(--primary);
+		text-decoration: none;
+		transition: opacity 0.1s;
+	}
+	.section-all-link:hover { opacity: 0.7; }
+
+	.projects-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+		gap: 2rem;
+	}
+
+	.vision-section {
+		background: var(--bg-alt);
+		padding: 5rem max(2rem, 8vw);
+		border-top: 1px solid rgba(0, 0, 244, 0.15);
+	}
+
+	.vision-inner { max-width: 600px; }
+
+	.vision-title {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 900;
+		font-size: clamp(1.8rem, 3.5vw, 2.75rem);
+		color: var(--text);
+		margin: 0.75rem 0 0;
+		line-height: 1.1;
+	}
+
+	.vision-body {
+		font-family: 'Poppins', sans-serif;
+		font-size: 0.95rem;
+		line-height: 1.85;
+		color: var(--text-muted);
+		margin: 0;
+	}
+</style>

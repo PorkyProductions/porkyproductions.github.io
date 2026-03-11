@@ -1,0 +1,97 @@
+---
+---
+
+<section class="origin-section">
+	<div class="origin-label-row">
+		<span class="section-number">02 — ORIGIN STORY</span>
+	</div>
+
+	<div class="origin-layout">
+		<div class="origin-image-col">
+			<img
+				src="/images/hedgehogReadingBook.jpeg"
+				alt="A hedgehog reading a book"
+				class="origin-image"
+			/>
+			<div class="origin-image-caption">Porky, reading the docs.</div>
+		</div>
+
+		<div class="origin-text-col">
+			<h2 class="origin-title">The PorkyProductions Origin Story</h2>
+			<div class="h-rule" style="max-width: 52px; margin-bottom: 2rem;"></div>
+			<div class="origin-body">
+				<p>Our story begins in 2017, when our founders, Tristan and Ryan, met in school. They became friends and eventually discovered that they could make a website using Google Sites. What better thing to make a website about than a hedgehog pencil sharpener Tristan had named "Porky".</p>
+				<p>After PorkyPictures.inc was created, many other websites followed: PorkySchool.edu, PorkyPizza.eat, and <abbr title="PorkyBlackHolesThatWillDestroyTheEntireUniverseSoYouProbablyShouldntUseThe.com.com.inc">PBHTWDTEUSYPSUT.c.c.i</abbr>. Porky had developed a cult following.</p>
+				<p>Unfortunately, a disgusting hater stole the pencil sharpener and destroyed it. During his last moments, Porky transferred into a hedgehog plush, where he resides to this day.</p>
+				<p>The old websites were archived and consolidated into one company — PorkyProductions, the site you're visiting now.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.origin-section {
+		background: var(--bg-alt);
+		padding: 5rem max(2rem, 8vw);
+		border-top: 1px solid rgba(0, 0, 244, 0.15);
+	}
+
+	.origin-label-row {
+		margin-bottom: 2.5rem;
+	}
+
+	.origin-layout {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		gap: 4rem;
+		align-items: start;
+	}
+
+	@media (max-width: 680px) {
+		.origin-layout {
+			grid-template-columns: 1fr;
+			gap: 2.5rem;
+		}
+	}
+
+	.origin-image {
+		width: 240px;
+		max-width: 100%;
+		border: 3px solid #6b4226;
+		box-shadow: 6px 6px 0 var(--border);
+		display: block;
+	}
+
+	.origin-image-caption {
+		font-family: 'Courier New', monospace;
+		font-size: 0.6rem;
+		letter-spacing: 0.1em;
+		color: var(--text-muted);
+		opacity: 0.6;
+		margin-top: 0.75rem;
+		text-align: center;
+	}
+
+	.origin-title {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 900;
+		font-size: clamp(1.5rem, 3vw, 2.25rem);
+		color: var(--text);
+		margin: 0 0 1.5rem;
+		line-height: 1.15;
+	}
+
+	.origin-body p {
+		font-family: 'Poppins', sans-serif;
+		font-size: 0.92rem;
+		line-height: 1.85;
+		color: var(--text-muted);
+		margin-bottom: 1rem;
+	}
+
+	abbr {
+		text-decoration: underline dotted;
+		cursor: help;
+		color: var(--accent);
+	}
+</style>
