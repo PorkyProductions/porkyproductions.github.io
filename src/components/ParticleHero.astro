@@ -10,7 +10,7 @@
 			<h1 class="hero-wordmark">
 				PorkyProductions<br />
 				<span class="hero-wordmark-mid">is a software</span><br />
-				collective.
+				<span id="collective-word">collective</span>.
 			</h1>
 			<div class="hero-rule"></div>
 			<div class="hero-cta">
@@ -144,6 +144,56 @@
 
 	resize();
 	render();
+
+	// ── "collective" style flipper ───────────────────────────────────────────
+	const word = document.getElementById('collective-word')!;
+
+	type Style = {
+		fontFamily: string;
+		fontWeight: string;
+		fontStyle: string;
+		textDecoration: string;
+		letterSpacing: string;
+	};
+
+	const styles: Style[] = [
+		{ fontFamily: "'Raleway', sans-serif",          fontWeight: '900',  fontStyle: 'normal',  textDecoration: 'none',      letterSpacing: '-0.03em' },
+		{ fontFamily: "'Courier New', monospace",       fontWeight: '400',  fontStyle: 'normal',  textDecoration: 'none',      letterSpacing: '0.12em'  },
+		{ fontFamily: "'Poppins', sans-serif",          fontWeight: '300',  fontStyle: 'italic',  textDecoration: 'none',      letterSpacing: '0'       },
+		{ fontFamily: "'Raleway', sans-serif",          fontWeight: '700',  fontStyle: 'italic',  textDecoration: 'underline', letterSpacing: '-0.01em' },
+		{ fontFamily: "'Courier New', monospace",       fontWeight: '700',  fontStyle: 'normal',  textDecoration: 'underline', letterSpacing: '0.05em'  },
+		{ fontFamily: "'Poppins', sans-serif",          fontWeight: '900',  fontStyle: 'normal',  textDecoration: 'none',      letterSpacing: '-0.04em' },
+		{ fontFamily: "'Georgia', serif",               fontWeight: '400',  fontStyle: 'italic',  textDecoration: 'none',      letterSpacing: '0.02em'  },
+		{ fontFamily: "'Raleway', sans-serif",          fontWeight: '400',  fontStyle: 'normal',  textDecoration: 'none',      letterSpacing: '0.08em'  },
+		{ fontFamily: "'Courier New', monospace",       fontWeight: '400',  fontStyle: 'italic',  textDecoration: 'underline', letterSpacing: '0'       },
+		{ fontFamily: "'Georgia', serif",               fontWeight: '700',  fontStyle: 'normal',  textDecoration: 'none',      letterSpacing: '-0.02em' },
+		{ fontFamily: "'Poppins', sans-serif",          fontWeight: '500',  fontStyle: 'normal',  textDecoration: 'underline', letterSpacing: '0.04em'  },
+		{ fontFamily: "'Raleway', sans-serif",          fontWeight: '900',  fontStyle: 'italic',  textDecoration: 'underline', letterSpacing: '-0.02em' },
+	];
+
+	let styleIdx = 0;
+
+	const normalStyle = styles[0];
+
+	const applyStyle = (s: Style) => {
+		word.style.fontFamily     = s.fontFamily;
+		word.style.fontWeight     = s.fontWeight;
+		word.style.fontStyle      = s.fontStyle;
+		word.style.textDecoration = s.textDecoration;
+		word.style.letterSpacing  = s.letterSpacing;
+	};
+
+	applyStyle(normalStyle);
+
+	const interval = setInterval(() => {
+		styleIdx = (styleIdx + 1) % styles.length;
+		applyStyle(styles[styleIdx]);
+	}, 520);
+
+	setTimeout(() => {
+		clearInterval(interval);
+		applyStyle(normalStyle);
+	}, 15000);
 </script>
 
 <style>
@@ -213,6 +263,10 @@
 	.hero-wordmark-mid {
 		font-weight: 400;
 		color: var(--hero-muted);
+	}
+
+	#collective-word {
+		display: inline-block;
 	}
 
 	.hero-rule {
