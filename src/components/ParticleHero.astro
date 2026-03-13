@@ -1,0 +1,300 @@
+---
+---
+
+<section class="ascii-hero">
+	<canvas id="ascii-canvas"></canvas>
+
+	<div class="hero-overlay">
+		<div class="hero-inner">
+			<h1 class="hero-wordmark">
+				PorkyProductions<br />
+				<span class="hero-wordmark-mid">is a software</span><br />
+				<span id="collective-word">collective</span>.
+			</h1>
+			<div class="hero-rule"></div>
+			<div class="hero-cta">
+				<a href="/software" class="btn-brutal btn-brutal-primary">View Projects →</a>
+				<a href="/about" class="btn-brutal">About</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	const canvas = document.getElementById('ascii-canvas') as HTMLCanvasElement;
+	const ctx = canvas.getContext('2d')!;
+
+	// Character set — visible but non-distracting mix
+	const CHARS = '0123456789ABCDEF!@#$%><|/\\=+-_:.;,~^√PORKY';
+	const FONT_SIZE = 13;
+	const CHAR_W = 8;
+	const CHAR_H = 16;
+	const MOUSE_RADIUS = 140;
+	const HEAT_GAIN = 0.4;
+	const DECAY = 0.88;
+	const DARK_AMBIENT_STATIC_CHANCE = 0.03;
+	const DARK_AMBIENT_STATIC_MIN = 0.16;
+	const DARK_AMBIENT_STATIC_RANGE = 0.3;
+	const LIGHT_AMBIENT_STATIC_CHANCE = 0.014;
+	const LIGHT_AMBIENT_STATIC_MIN = 0.06;
+	const LIGHT_AMBIENT_STATIC_RANGE = 0.16;
+
+	// Detect and track color scheme
+	const mq = window.matchMedia('(prefers-color-scheme: dark)');
+	let isDark = mq.matches;
+	mq.addEventListener('change', e => { isDark = e.matches; });
+
+	let cols = 0;
+	let rows = 0;
+	let heat: Float32Array;
+	let cellChar: Uint8Array;
+
+	const mouse = { x: -9999, y: -9999 };
+
+	const resize = () => {
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+		const newCols = Math.ceil(canvas.width / CHAR_W);
+		const newRows = Math.ceil(canvas.height / CHAR_H);
+		// Preserve existing heat/char data when possible on resize
+		heat = new Float32Array(newCols * newRows);
+		cellChar = new Uint8Array(newCols * newRows).map(
+			() => (Math.random() * CHARS.length) | 0
+		);
+		cols = newCols;
+		rows = newRows;
+	};
+
+	window.addEventListener('resize', resize);
+	window.addEventListener('mousemove', e => {
+		mouse.x = e.clientX;
+		mouse.y = e.clientY;
+	});
+	window.addEventListener('mouseleave', () => {
+		mouse.x = -9999;
+		mouse.y = -9999;
+	});
+	window.addEventListener('touchmove', e => {
+		mouse.x = e.touches[0].clientX;
+		mouse.y = e.touches[0].clientY;
+	}, { passive: true });
+
+	// Returns the fill color for a cell given heat 0–1
+	const getColor = (h: number): string => {
+		if (isDark) {
+			// Dark mode: visible electric-blue noise → white highlights
+			if (h < 0.5) {
+				const a = 0.23 + h * 1.35;
+				return `rgba(16,48,255,${Math.min(a, 0.98)})`;
+			}
+			const t = (h - 0.5) / 0.5;
+			const rv = Math.round(t * 255);
+			const gv = Math.round(t * 255);
+			return `rgba(${rv},${gv},255,1)`;
+		} else {
+			// Light mode: soft scanline/static blue with brighter hotspots
+			const a = 0.08 + h * 0.92;
+			return `rgba(0,0,220,${Math.min(a, 1)})`;
+		}
+	};
+
+	// Base (resting) color — always visible
+	const getBaseColor = (): string =>
+		isDark ? 'rgba(16,48,255,0.22)' : 'rgba(0,0,220,0.08)';
+
+	// Canvas background color
+	const getBgColor = (): string =>
+		isDark ? '#000000' : '#f7f6f2';
+
+	const render = () => {
+		// Fill background each frame
+		ctx.fillStyle = getBgColor();
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+		ctx.font = `bold ${FONT_SIZE}px "Courier New", monospace`;
+		ctx.textBaseline = 'top';
+
+		const baseColor = getBaseColor();
+
+		for (let r = 0; r < rows; r++) {
+			for (let c = 0; c < cols; c++) {
+				const i = r * cols + c;
+				const cx = c * CHAR_W + CHAR_W * 0.5;
+				const cy = r * CHAR_H + CHAR_H * 0.5;
+
+				// Apply mouse heat
+				const dx = cx - mouse.x;
+				const dy = cy - mouse.y;
+				const dist = Math.sqrt(dx * dx + dy * dy);
+				if (dist < MOUSE_RADIUS) {
+					heat[i] = Math.min(1, heat[i] + HEAT_GAIN * (1 - dist / MOUSE_RADIUS));
+				}
+
+				// Decay
+				heat[i] *= DECAY;
+
+				// Add ambient flicker in both modes for a TV-static feel
+				const ambientChance = isDark ? DARK_AMBIENT_STATIC_CHANCE : LIGHT_AMBIENT_STATIC_CHANCE;
+				const ambientMin = isDark ? DARK_AMBIENT_STATIC_MIN : LIGHT_AMBIENT_STATIC_MIN;
+				const ambientRange = isDark ? DARK_AMBIENT_STATIC_RANGE : LIGHT_AMBIENT_STATIC_RANGE;
+				if (Math.random() < ambientChance) {
+					heat[i] = Math.max(
+						heat[i],
+						ambientMin + Math.random() * ambientRange
+					);
+				}
+
+				// Scramble hot cells
+				if (heat[i] > 0.08 && Math.random() < heat[i]) {
+					cellChar[i] = (Math.random() * CHARS.length) | 0;
+				}
+
+				// Always draw every cell — use base color when cold
+				ctx.fillStyle = heat[i] > 0.04 ? getColor(heat[i]) : baseColor;
+				ctx.fillText(CHARS[cellChar[i]], c * CHAR_W, r * CHAR_H);
+			}
+		}
+
+		requestAnimationFrame(render);
+	};
+
+	resize();
+	render();
+
+	// ── "collective" style flipper ───────────────────────────────────────────
+	const word = document.getElementById('collective-word')!;
+
+	type Style = {
+		fontFamily: string;
+		fontWeight: string;
+		fontStyle: string;
+		textDecoration: string;
+		letterSpacing: string;
+	};
+
+	const styles: Style[] = [
+		{ fontFamily: "'Raleway', sans-serif",          fontWeight: '900',  fontStyle: 'normal',  textDecoration: 'none',      letterSpacing: '-0.03em' },
+		{ fontFamily: "'Courier New', monospace",       fontWeight: '400',  fontStyle: 'normal',  textDecoration: 'none',      letterSpacing: '0.12em'  },
+		{ fontFamily: "'Poppins', sans-serif",          fontWeight: '300',  fontStyle: 'italic',  textDecoration: 'none',      letterSpacing: '0'       },
+		{ fontFamily: "'Raleway', sans-serif",          fontWeight: '700',  fontStyle: 'italic',  textDecoration: 'underline', letterSpacing: '-0.01em' },
+		{ fontFamily: "'Courier New', monospace",       fontWeight: '700',  fontStyle: 'normal',  textDecoration: 'underline', letterSpacing: '0.05em'  },
+		{ fontFamily: "'Poppins', sans-serif",          fontWeight: '900',  fontStyle: 'normal',  textDecoration: 'none',      letterSpacing: '-0.04em' },
+		{ fontFamily: "'Georgia', serif",               fontWeight: '400',  fontStyle: 'italic',  textDecoration: 'none',      letterSpacing: '0.02em'  },
+		{ fontFamily: "'Raleway', sans-serif",          fontWeight: '400',  fontStyle: 'normal',  textDecoration: 'none',      letterSpacing: '0.08em'  },
+		{ fontFamily: "'Courier New', monospace",       fontWeight: '400',  fontStyle: 'italic',  textDecoration: 'underline', letterSpacing: '0'       },
+		{ fontFamily: "'Georgia', serif",               fontWeight: '700',  fontStyle: 'normal',  textDecoration: 'none',      letterSpacing: '-0.02em' },
+		{ fontFamily: "'Poppins', sans-serif",          fontWeight: '500',  fontStyle: 'normal',  textDecoration: 'underline', letterSpacing: '0.04em'  },
+		{ fontFamily: "'Raleway', sans-serif",          fontWeight: '900',  fontStyle: 'italic',  textDecoration: 'underline', letterSpacing: '-0.02em' },
+	];
+
+	let styleIdx = 0;
+
+	const normalStyle = styles[0];
+
+	const applyStyle = (s: Style) => {
+		word.style.fontFamily     = s.fontFamily;
+		word.style.fontWeight     = s.fontWeight;
+		word.style.fontStyle      = s.fontStyle;
+		word.style.textDecoration = s.textDecoration;
+		word.style.letterSpacing  = s.letterSpacing;
+	};
+
+	applyStyle(normalStyle);
+
+	const interval = setInterval(() => {
+		styleIdx = (styleIdx + 1) % styles.length;
+		applyStyle(styles[styleIdx]);
+	}, 520);
+
+	setTimeout(() => {
+		clearInterval(interval);
+		applyStyle(normalStyle);
+	}, 15000);
+</script>
+
+<style>
+	.ascii-hero {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		min-height: 580px;
+		overflow: hidden;
+	}
+
+	#ascii-canvas {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+
+	.hero-overlay {
+		position: absolute;
+		inset: 0;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 0 max(3rem, 9vw);
+	}
+
+	/* Vignette: dark mode fades to black, light mode fades to the bg */
+	.hero-overlay::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: radial-gradient(
+			ellipse 55% 85% at 30% 50%,
+			var(--hero-vignette) 0%,
+			transparent 100%
+		);
+		pointer-events: none;
+	}
+
+	.hero-inner {
+		position: relative;
+		z-index: 1;
+		max-width: 700px;
+	}
+
+	.hero-label {
+		font-family: 'Courier New', monospace;
+		font-size: 0.62rem;
+		letter-spacing: 0.25em;
+		text-transform: uppercase;
+		color: var(--primary);
+		margin-bottom: 1.25rem;
+	}
+
+	.hero-wordmark {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 900;
+		font-size: clamp(2.4rem, 6vw, 5rem);
+		line-height: 1.05;
+		color: var(--hero-text);
+		margin-bottom: 1.5rem;
+		letter-spacing: -0.025em;
+	}
+
+	.hero-wordmark-mid {
+		font-weight: 400;
+		color: var(--hero-muted);
+	}
+
+	#collective-word {
+		display: inline-block;
+	}
+
+	.hero-rule {
+		width: 52px;
+		height: 3px;
+		background: var(--primary);
+		margin-bottom: 2rem;
+	}
+
+	.hero-cta {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+</style>

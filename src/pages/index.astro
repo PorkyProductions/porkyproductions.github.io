@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ParticleHero from '../components/ParticleHero.astro';
+import MissionStrip from '../components/MissionStrip.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+const featuredProjects = [
+	{
+		name: '(de)Motivator',
+		description: 'Flagship product. Push-button self-esteem reducer. And oh so much more.',
+		tags: ['Web App', 'JavaScript', 'Open Source'],
+		liveUrl: 'https://porkyproductions.github.io/deMotivator/',
+		githubUrl: 'https://github.com/PorkyProductions/deMotivator',
+	},
+	{
+		name: 'UADetect',
+		description: 'The simplest way to interact with the browser navigator API. Detect device type, OS, and browser with zero configuration.',
+		tags: ['npm', 'TypeScript', 'Browser API'],
+		npmUrl: 'https://www.npmjs.com/package/uadetect',
+		githubUrl: 'https://github.com/PorkyProductions/UA-Detect',
+	},
+	{
+		name: '(de)Motivator.js',
+		description: '650+ insults library powering (de)Motivator. Drop it into any project for on-demand demotivation.',
+		tags: ['npm', 'JavaScript', 'Library'],
+		npmUrl: 'https://www.npmjs.com/package/demotivator',
+		githubUrl: 'https://github.com/PorkyProductions/deMotivator',
+	},
+];
+---
+
+<BaseLayout title="Home" description="PorkyProductions — open source software collective.">
+	<ParticleHero />
+	<MissionStrip />
+
+	<!-- Featured Projects -->
+	<section class="projects-section">
+		<div class="section-header-row">
+			<span class="section-number">FEATURED PROJECTS</span>
+			<a href="/software" class="section-all-link">VIEW ALL →</a>
+		</div>
+		<div class="projects-grid">
+			{featuredProjects.map((project, i) => (
+				<ProjectCard {...project} index={i} />
+			))}
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.projects-section {
+		background: var(--bg);
+		padding: 4rem max(2rem, 8vw);
+		border-top: 2px solid var(--border);
+	}
+
+	.section-header-row {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		margin-bottom: 2.5rem;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+
+	.section-all-link {
+		font-family: 'Poppins', sans-serif;
+		font-size: 0.62rem;
+		letter-spacing: 0.2em;
+		color: var(--primary);
+		text-decoration: none;
+		transition: opacity 0.1s;
+	}
+	.section-all-link:hover { opacity: 0.7; }
+
+	.projects-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 2rem;
+	}
+
+	.vision-section {
+		background: var(--bg-alt);
+		padding: 5rem max(2rem, 8vw);
+		border-top: 1px solid rgba(0, 0, 244, 0.15);
+	}
+
+	.vision-inner { max-width: 600px; }
+
+	.vision-title {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 900;
+		font-size: clamp(1.8rem, 3.5vw, 2.75rem);
+		color: var(--text);
+		margin: 0.75rem 0 0;
+		line-height: 1.1;
+	}
+
+	.vision-body {
+		font-family: 'Poppins', sans-serif;
+		font-size: 0.95rem;
+		line-height: 1.85;
+		color: var(--text-muted);
+		margin: 0;
+	}
+</style>

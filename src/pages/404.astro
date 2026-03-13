@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="404 — Not Found" description="This page doesn't exist.">
+	<section class="notfound">
+		<img
+			src="/images/HedgehogIcon.png"
+			alt="Confused hedgehog"
+			width="72"
+			height="72"
+			class="nf-icon"
+		/>
+		<div class="nf-code">404</div>
+		<p class="nf-msg">This page doesn't exist.</p>
+		<p class="nf-sub">Porky looked everywhere. It's just not here.</p>
+		<a href="/" class="btn-brutal btn-brutal-primary nf-back">← BACK HOME</a>
+	</section>
+</BaseLayout>
+
+<style>
+	.notfound {
+		min-height: calc(100vh - 54px);
+		background: var(--bg);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		padding: 4rem max(2rem, 8vw);
+		border-top: 2px solid var(--border);
+		gap: 1rem;
+	}
+
+	.nf-icon {
+		animation: nf-float 3s ease-in-out infinite;
+		margin-bottom: 0.5rem;
+	}
+
+	@keyframes nf-float {
+		0%, 100% { transform: translateY(0); }
+		50% { transform: translateY(-10px); }
+	}
+
+	.nf-code {
+		font-family: 'Raleway', sans-serif;
+		font-size: clamp(4rem, 12vw, 9rem);
+		font-weight: bold;
+		color: var(--primary);
+		line-height: 1;
+	}
+
+	.nf-msg {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 700;
+		font-size: 1.4rem;
+		color: var(--text);
+		margin: 0;
+	}
+
+	.nf-sub {
+		font-family: 'Poppins', sans-serif;
+		font-size: 0.72rem;
+		letter-spacing: 0.1em;
+		color: var(--text-muted);
+		margin: 0;
+	}
+
+	.nf-back { margin-top: 1.5rem; }
+</style>
