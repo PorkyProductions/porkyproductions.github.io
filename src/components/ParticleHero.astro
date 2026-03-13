@@ -26,13 +26,19 @@
 	const ctx = canvas.getContext('2d')!;
 
 	// Character set — visible but non-distracting mix
-	const CHARS = '0123456789ABCDEF!@#$%><|/\\=+-_:.;,~^';
+	const CHARS = '0123456789ABCDEF!@#$%><|/\\=+-_:.;,~^√PORKY';
 	const FONT_SIZE = 13;
 	const CHAR_W = 8;
 	const CHAR_H = 16;
 	const MOUSE_RADIUS = 140;
 	const HEAT_GAIN = 0.4;
 	const DECAY = 0.88;
+	const DARK_AMBIENT_STATIC_CHANCE = 0.03;
+	const DARK_AMBIENT_STATIC_MIN = 0.16;
+	const DARK_AMBIENT_STATIC_RANGE = 0.3;
+	const LIGHT_AMBIENT_STATIC_CHANCE = 0.014;
+	const LIGHT_AMBIENT_STATIC_MIN = 0.06;
+	const LIGHT_AMBIENT_STATIC_RANGE = 0.16;
 
 	// Detect and track color scheme
 	const mq = window.matchMedia('(prefers-color-scheme: dark)');
@@ -77,25 +83,25 @@
 	// Returns the fill color for a cell given heat 0–1
 	const getColor = (h: number): string => {
 		if (isDark) {
-			// Dark mode: dim blue → bright blue → white
+			// Dark mode: visible electric-blue noise → white highlights
 			if (h < 0.5) {
-				const a = 0.07 + h * 1.7;
-				return `rgba(0,0,244,${Math.min(a, 0.9)})`;
+				const a = 0.23 + h * 1.35;
+				return `rgba(16,48,255,${Math.min(a, 0.98)})`;
 			}
 			const t = (h - 0.5) / 0.5;
 			const rv = Math.round(t * 255);
 			const gv = Math.round(t * 255);
 			return `rgba(${rv},${gv},255,1)`;
 		} else {
-			// Light mode: very subtle blue → saturated electric blue
-			const a = 0.06 + h * 0.94;
+			// Light mode: soft scanline/static blue with brighter hotspots
+			const a = 0.08 + h * 0.92;
 			return `rgba(0,0,220,${Math.min(a, 1)})`;
 		}
 	};
 
 	// Base (resting) color — always visible
 	const getBaseColor = (): string =>
-		isDark ? 'rgba(0,0,244,0.07)' : 'rgba(0,0,220,0.07)';
+		isDark ? 'rgba(16,48,255,0.22)' : 'rgba(0,0,220,0.08)';
 
 	// Canvas background color
 	const getBgColor = (): string =>
@@ -127,6 +133,17 @@
 
 				// Decay
 				heat[i] *= DECAY;
+
+				// Add ambient flicker in both modes for a TV-static feel
+				const ambientChance = isDark ? DARK_AMBIENT_STATIC_CHANCE : LIGHT_AMBIENT_STATIC_CHANCE;
+				const ambientMin = isDark ? DARK_AMBIENT_STATIC_MIN : LIGHT_AMBIENT_STATIC_MIN;
+				const ambientRange = isDark ? DARK_AMBIENT_STATIC_RANGE : LIGHT_AMBIENT_STATIC_RANGE;
+				if (Math.random() < ambientChance) {
+					heat[i] = Math.max(
+						heat[i],
+						ambientMin + Math.random() * ambientRange
+					);
+				}
 
 				// Scramble hot cells
 				if (heat[i] > 0.08 && Math.random() < heat[i]) {

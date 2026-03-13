@@ -56,9 +56,11 @@ $btn-active-box-shadow: none;
 		--surface:      #0d0d0d;
 		--text:         #f0f0f0;
 		--text-muted:   #888899;
+		--primary:      #5f7dff;
+		--border:       #5f7dff;
 		--nav-bg:       #000000;
 		--footer-bg:    #000000;
-		--card-shadow:  4px 4px 0 #0000f4;
+		--card-shadow:  4px 4px 0 #5f7dff;
 		--card-shadow-hover: 6px 6px 0 #FF4D80;
 		--mission-bg:   #000000;
 		--mission-text: #ffffff;
@@ -73,8 +75,8 @@ $btn-active-box-shadow: none;
 		--bs-body-bg:         #050505;
 		--bs-body-color:      #f0f0f0;
 		--bs-card-bg:         #0d0d0d;
-		--bs-card-border-color: #0000f4;
-		--bs-border-color:    rgba(0,0,244,0.25);
+		--bs-card-border-color: #5f7dff;
+		--bs-border-color:    rgba(95,125,255,0.3);
 	}
 }
 

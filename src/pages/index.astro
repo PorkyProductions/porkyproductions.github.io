@@ -7,7 +7,7 @@ import ProjectCard from '../components/ProjectCard.astro';
 const featuredProjects = [
 	{
 		name: '(de)Motivator',
-		description: 'Flagship product. Push-button self-esteem reducer. Get an instant dose of brutal honesty whenever you need it most.',
+		description: 'Flagship product. Push-button self-esteem reducer. And oh so much more.',
 		tags: ['Web App', 'JavaScript', 'Open Source'],
 		liveUrl: 'https://porkyproductions.github.io/deMotivator/',
 		githubUrl: 'https://github.com/PorkyProductions/deMotivator',
@@ -17,14 +17,14 @@ const featuredProjects = [
 		description: 'The simplest way to interact with the browser navigator API. Detect device type, OS, and browser with zero configuration.',
 		tags: ['npm', 'TypeScript', 'Browser API'],
 		npmUrl: 'https://www.npmjs.com/package/uadetect',
-		githubUrl: 'https://github.com/PorkyProductions/UADetect',
+		githubUrl: 'https://github.com/PorkyProductions/UA-Detect',
 	},
 	{
 		name: '(de)Motivator.js',
-		description: '250+ insults library powering (de)Motivator. Drop it into any project for on-demand demotivation.',
+		description: '650+ insults library powering (de)Motivator. Drop it into any project for on-demand demotivation.',
 		tags: ['npm', 'JavaScript', 'Library'],
-		npmUrl: 'https://www.npmjs.com/package/demotivator.js',
-		githubUrl: 'https://github.com/PorkyProductions/demotivator.js',
+		npmUrl: 'https://www.npmjs.com/package/demotivator',
+		githubUrl: 'https://github.com/PorkyProductions/deMotivator',
 	},
 ];
 ---
@@ -43,20 +43,6 @@ const featuredProjects = [
 			{featuredProjects.map((project, i) => (
 				<ProjectCard {...project} index={i} />
 			))}
-		</div>
-	</section>
-
-	<!-- Vision -->
-	<section class="vision-section">
-		<div class="vision-inner">
-			<span class="section-number">WHAT WE BUILD</span>
-			<h2 class="vision-title">Built for everyone,<br />by anyone.</h2>
-			<div class="h-rule" style="max-width: 52px; margin: 1.5rem 0;"></div>
-			<p class="vision-body">
-				PorkyProductions is a small software collective focused on open-source tools that are genuinely
-				useful. We believe great software doesn't have to be expensive, closed, or boring. Everything we
-				ship is free, documented, and built to last.
-			</p>
 		</div>
 	</section>
 </BaseLayout>
@@ -89,7 +75,7 @@ const featuredProjects = [
 
 	.projects-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 		gap: 2rem;
 	}
 

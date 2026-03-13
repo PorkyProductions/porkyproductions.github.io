@@ -1,17 +1,27 @@
 ---
+const footerWord = 'PorkyProductions';
+const footerChars = [...footerWord];
 ---
 
 <footer class="site-footer">
 	<div class="footer-top">
 		<div class="footer-col">
-			<img src="/images/PPio logo.png" alt="PorkyProductions" class="footer-logo" />
-			<p class="footer-tagline">Software collective.<br />Est. 2017.</p>
+			<div class="footer-brand">
+				<img src="/images/HedgehogIcon.png" alt="" class="footer-brand-icon" />
+				<div class="footer-wordmark" data-footer-word aria-hidden="true">
+					{footerChars.map((char, index) => (
+						<span class="footer-word-char" data-char={char} data-index={index}>{char}</span>
+					))}
+				</div>
+				<span class="visually-hidden">{footerWord}</span>
+			</div>
+			<p class="footer-tagline"><br />Est. 2017 in Philadelphia PA.</p>
 		</div>
 
 		<div class="footer-col">
 			<p class="footer-heading">CONTACT</p>
 			<a href="mailto:tristankenshin@gmail.com" class="footer-link">Tristan</a>
-			<a href="mailto:rpmullin@comcast.net" class="footer-link">Ryan</a>
+			<a href="mailto:rpmullin17@gmail.com" class="footer-link">Ryan</a>
 		</div>
 
 		<div class="footer-col">
@@ -77,6 +87,53 @@
 			sounds.forEach(s => play(s));
 		}
 	});
+
+	const animatedWord = document.querySelector<HTMLElement>('[data-footer-word]');
+	const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+	if (animatedWord && !reducedMotion.matches) {
+		const chars = Array.from(animatedWord.querySelectorAll<HTMLElement>('.footer-word-char'));
+		const targets = chars.map(char => char.dataset.char ?? '');
+		const glyphs = '[]{}<>!?*+-_=/\\|';
+
+		let previousTime = performance.now();
+		let phase = 0;
+
+		const animateWord = (time: number) => {
+			const dt = Math.min(40, time - previousTime);
+			previousTime = time;
+			phase += dt * 0.0023;
+
+			const sweep = ((phase * 3.2) % (chars.length + 8)) - 4;
+
+			chars.forEach((char, index) => {
+				const distance = Math.abs(index - sweep);
+				const wave = Math.max(0, 1 - distance / 3.2);
+				const orbit = Math.sin(phase * 2.5 + index * 0.68);
+				const driftY = orbit * wave * 3.3;
+				const driftX = Math.cos(phase * 1.6 + index * 0.55) * wave * 1.2;
+				const skew = orbit * wave * 8;
+				const scrambleChance = wave < 0.35 ? (0.18 - wave * 0.36) : 0.02;
+				const displayChar = Math.random() < scrambleChance
+					? glyphs[(Math.random() * glyphs.length) | 0]
+					: targets[index];
+				const glow = 0.12 + wave * 0.88;
+				const accent = (Math.sin(phase * 3.1 + index * 0.7) + 1) * 0.5;
+
+				if (char.textContent !== displayChar) {
+					char.textContent = displayChar;
+				}
+
+				char.style.transform = `translate(${driftX.toFixed(2)}px, ${driftY.toFixed(2)}px) skewX(${skew.toFixed(2)}deg)`;
+				char.style.opacity = `${0.45 + glow * 0.55}`;
+				char.style.textShadow = `0 0 ${2 + glow * 8}px rgba(95,125,255,${0.2 + glow * 0.5}), 0 0 ${2 + wave * 11}px rgba(255,77,128,${accent * wave * 0.45})`;
+			});
+
+			requestAnimationFrame(animateWord);
+		};
+
+		requestAnimationFrame(animateWord);
+	}
 </script>
 
 <style>
@@ -103,10 +160,34 @@
 		border-right: none;
 	}
 
-	.footer-logo {
-		width: 110px;
-		margin-bottom: 0.25rem;
-		opacity: 0.75;
+	.footer-brand {
+		display: flex;
+		align-items: center;
+		gap: 0.65rem;
+		min-height: 34px;
+	}
+
+	.footer-brand-icon {
+		width: 34px;
+		height: 34px;
+		object-fit: contain;
+		filter: drop-shadow(0 0 10px rgba(95, 125, 255, 0.35));
+	}
+
+	.footer-wordmark {
+		display: inline-flex;
+		align-items: center;
+		font-family: 'Courier New', monospace;
+		font-size: 0.78rem;
+		letter-spacing: 0.12em;
+		color: var(--primary);
+		line-height: 1;
+	}
+
+	.footer-word-char {
+		display: inline-block;
+		min-width: 0.63ch;
+		will-change: transform, opacity, text-shadow;
 	}
 
 	.footer-tagline {
@@ -188,5 +269,12 @@
 	#heart-svg {
 		transition: transform 0.12s ease;
 		display: block;
+	}
+
+	@media (max-width: 520px) {
+		.footer-wordmark {
+			font-size: 0.66rem;
+			letter-spacing: 0.09em;
+		}
 	}
 </style>
